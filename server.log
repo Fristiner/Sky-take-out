@@ -366,3 +366,606 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' fo
 2023-11-18 16:31:50.451 DEBUG 26408 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
 2023-11-18 16:31:50.484 DEBUG 26408 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 赵六(String), 赵六(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:31:50.250721800(LocalDateTime), 2023-11-18T16:31:50.250721800(LocalDateTime), 1(Long), 1(Long), 1(Integer)
 2023-11-18 16:31:50.496 DEBUG 26408 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : <==    Updates: 1
+2023-11-18 16:38:51.403  INFO 26408 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 16:38:51.413  INFO 26408 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 16:55:09.865  INFO 6860 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 6860 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 16:55:09.868  INFO 6860 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 16:55:10.763  INFO 6860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 16:55:10.766  INFO 6860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 16:55:10.791  INFO 6860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-11-18 16:55:11.433  INFO 6860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 16:55:11.434  INFO 6860 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 16:55:11.434  INFO 6860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 16:55:11.435  INFO 6860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 16:55:11.440  INFO 6860 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 16:55:11.453  INFO 6860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 16:55:11.453  INFO 6860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 16:55:11.584  INFO 6860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 16:55:11.585  INFO 6860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1678 ms
+2023-11-18 16:55:11.725  INFO 6860 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 16:55:11.859  INFO 6860 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 16:55:12.184  INFO 6860 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 16:55:12.244  INFO 6860 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 16:55:12.274  INFO 6860 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 16:55:12.889  INFO 6860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 16:55:12.972  INFO 6860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 16:55:12.974  INFO 6860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 16:55:12.975  INFO 6860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 16:55:13.142  INFO 6860 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.699 seconds (JVM running for 4.493)
+2023-11-18 16:55:13.145  INFO 6860 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 16:55:29.503  INFO 6860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 16:55:29.559  INFO 6860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:55:29.568  INFO 6860 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 16:55:29.882 DEBUG 6860 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 16:55:29.916 DEBUG 6860 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 16:55:29.956 DEBUG 6860 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 16:55:29.960 DEBUG 6860 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 16:55:29.962 DEBUG 6860 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 16:55:29.972 DEBUG 6860 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 16:56:28.786  INFO 6860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxODI5fQ.yK7QlxwYSH1zV_yCrfvMHA4J3O-7qJdeULrxQhv2tRc
+2023-11-18 16:56:28.787  WARN 6860 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 16:56:28.788  INFO 6860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:56:28.789  INFO 6860 --- [http-nio-8080-exec-7] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 16:56:28.791 DEBUG 6860 --- [http-nio-8080-exec-7] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 16:56:28.793 DEBUG 6860 --- [http-nio-8080-exec-7] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 16:56:28.796 DEBUG 6860 --- [http-nio-8080-exec-7] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 16:56:28.797 DEBUG 6860 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 16:56:28.798 DEBUG 6860 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 16:56:28.802 DEBUG 6860 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 16:56:29.074  WARN 6860 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/3cdxa5l13t3
+2023-11-18 16:59:18.877  INFO 6860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxODI5fQ.yK7QlxwYSH1zV_yCrfvMHA4J3O-7qJdeULrxQhv2tRc
+2023-11-18 16:59:18.878  INFO 6860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:59:18.879  INFO 6860 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 16:59:18.907 ERROR 6860 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 170097
+2023-11-18 16:59:18.912 DEBUG 6860 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee WHERE name LIKE concat('%', ?, '%')
+2023-11-18 16:59:18.913 DEBUG 6860 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 张三(String)
+2023-11-18 16:59:18.919 DEBUG 6860 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 16:59:18.920 DEBUG 6860 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee WHERE name like concat('%',?,'%') order by create_time desc LIMIT ?
+2023-11-18 16:59:18.920 DEBUG 6860 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 张三(String), 10(Integer)
+2023-11-18 16:59:18.922 DEBUG 6860 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 2
+2023-11-18 16:59:54.649  WARN 6860 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/employee/8
+2023-11-18 16:59:59.502  INFO 6860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxODI5fQ.yK7QlxwYSH1zV_yCrfvMHA4J3O-7qJdeULrxQhv2tRc
+2023-11-18 16:59:59.503  INFO 6860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:59:59.504  INFO 6860 --- [http-nio-8080-exec-3] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 16:59:59.504 DEBUG 6860 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 16:59:59.505 DEBUG 6860 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 16:59:59.507 DEBUG 6860 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 16:59:59.508 DEBUG 6860 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 16:59:59.508 DEBUG 6860 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 16:59:59.510 DEBUG 6860 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 17:02:50.723  INFO 6860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxODI5fQ.yK7QlxwYSH1zV_yCrfvMHA4J3O-7qJdeULrxQhv2tRc
+2023-11-18 17:02:50.724  INFO 6860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 17:02:53.678  INFO 6860 --- [http-nio-8080-exec-5] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=zhangsan, password=123456)
+2023-11-18 17:02:53.679 ERROR 6860 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 174170
+2023-11-18 17:02:53.693 DEBUG 6860 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 17:02:53.695 DEBUG 6860 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: zhangsan(String)
+2023-11-18 17:02:53.697 DEBUG 6860 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 17:02:53.824  WARN 6860 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/order/conditionSearch
+2023-11-18 17:02:53.840  WARN 6860 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 17:02:53.844  WARN 6860 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/businessData
+2023-11-18 17:02:53.849  WARN 6860 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewOrders
+2023-11-18 17:02:53.870  WARN 6860 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewDishes
+2023-11-18 17:02:53.876  WARN 6860 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewSetmeals
+2023-11-18 17:02:54.042  WARN 6860 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/dnso84xuzct
+2023-11-18 17:02:56.661  INFO 6860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzA1MzczfQ.mu7jIFcZx1ZcaalRzNgCqIV0vmmau1R-x8oax9OtcYo
+2023-11-18 17:02:56.662  INFO 6860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 17:02:56.663  INFO 6860 --- [http-nio-8080-exec-3] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 17:02:56.664 DEBUG 6860 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 17:02:56.665 DEBUG 6860 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 17:02:56.667 DEBUG 6860 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 17:02:56.667 DEBUG 6860 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 17:02:56.668 DEBUG 6860 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 17:02:56.671 DEBUG 6860 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 17:03:02.021  INFO 6860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzA1MzczfQ.mu7jIFcZx1ZcaalRzNgCqIV0vmmau1R-x8oax9OtcYo
+2023-11-18 17:03:02.022  INFO 6860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 17:03:03.427  INFO 6860 --- [http-nio-8080-exec-5] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 17:03:03.428 DEBUG 6860 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 17:03:03.428 DEBUG 6860 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 17:03:03.430 DEBUG 6860 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 17:03:03.472  WARN 6860 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/order/conditionSearch
+2023-11-18 17:03:03.498  WARN 6860 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 17:03:03.499  WARN 6860 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/businessData
+2023-11-18 17:03:03.501  WARN 6860 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewDishes
+2023-11-18 17:03:03.501  WARN 6860 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewOrders
+2023-11-18 17:03:03.502  WARN 6860 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewSetmeals
+2023-11-18 17:03:03.765  WARN 6860 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/1phf8f2c2he
+2023-11-18 17:03:19.912  WARN 6860 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 17:59:51.326  INFO 6860 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 17:59:51.327  INFO 6860 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 18:05:34.699  INFO 8564 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 8564 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 18:05:34.703  INFO 8564 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 18:05:35.478  INFO 8564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 18:05:35.480  INFO 8564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 18:05:35.506  INFO 8564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-11-18 18:05:36.145  INFO 8564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 18:05:36.145  INFO 8564 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 18:05:36.145  INFO 8564 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 18:05:36.145  INFO 8564 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 18:05:36.151  INFO 8564 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 18:05:36.164  INFO 8564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 18:05:36.165  INFO 8564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 18:05:36.291  INFO 8564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 18:05:36.291  INFO 8564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1547 ms
+2023-11-18 18:05:36.422  INFO 8564 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 18:05:36.548  INFO 8564 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 18:05:36.922  INFO 8564 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 18:05:36.980  INFO 8564 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 18:05:37.033  INFO 8564 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 18:05:37.653  INFO 8564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 18:05:37.839  INFO 8564 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.573 seconds (JVM running for 4.301)
+2023-11-18 18:05:37.841  INFO 8564 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 18:05:47.892  INFO 8564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 18:05:47.892  INFO 8564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 18:05:47.893  INFO 8564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 18:05:47.903  INFO 8564 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:05:50.963  INFO 8564 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:05:59.056  INFO 8564 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:06:05.816  INFO 8564 --- [http-nio-8080-exec-5] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 18:06:05.963 DEBUG 8564 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 18:06:05.984 DEBUG 8564 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 18:06:06.009 DEBUG 8564 --- [http-nio-8080-exec-5] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 18:06:20.801  INFO 8564 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:06:27.647  INFO 8564 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:06:42.625  INFO 8564 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:07:01.607  WARN 8564 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 18:07:01.607  WARN 8564 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:07:01.907  WARN 8564 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/rw1q4hm4rkp
+2023-11-18 18:07:04.870  WARN 8564 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 18:07:04.870  WARN 8564 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:07:05.169  WARN 8564 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/uumntm9son
+2023-11-18 18:07:05.620  WARN 8564 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:07:05.620  WARN 8564 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 18:07:05.932  WARN 8564 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/dygtksrmbd
+2023-11-18 18:08:04.269  INFO 8564 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:08:04.272  INFO 8564 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:08:04.276  INFO 8564 --- [http-nio-8080-exec-8] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:08:04.327 ERROR 8564 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 118326
+2023-11-18 18:08:04.361 DEBUG 8564 --- [http-nio-8080-exec-8] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:08:04.362 DEBUG 8564 --- [http-nio-8080-exec-8] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:08:04.365 DEBUG 8564 --- [http-nio-8080-exec-8] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:08:04.367 DEBUG 8564 --- [http-nio-8080-exec-8] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:08:04.368 DEBUG 8564 --- [http-nio-8080-exec-8] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:08:04.372 DEBUG 8564 --- [http-nio-8080-exec-8] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:08:07.528  INFO 8564 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:08:07.529  WARN 8564 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:08:07.529  INFO 8564 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:08:07.530  INFO 8564 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:08:07.531 DEBUG 8564 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:08:07.532 DEBUG 8564 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:08:07.534 DEBUG 8564 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:08:07.535 DEBUG 8564 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:08:07.537 DEBUG 8564 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:08:07.539 DEBUG 8564 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:08:07.830  WARN 8564 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/fkjn7uvwpxt
+2023-11-18 18:08:08.272  WARN 8564 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:08:08.272  INFO 8564 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:08:08.273  INFO 8564 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:08:08.274  INFO 8564 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:08:08.275 DEBUG 8564 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:08:08.276 DEBUG 8564 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:08:08.277 DEBUG 8564 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:08:08.279 DEBUG 8564 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:08:08.280 DEBUG 8564 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:08:08.282 DEBUG 8564 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:08:08.581  WARN 8564 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/vqxu7oe0n2q
+2023-11-18 18:08:24.174  INFO 8564 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 18:08:28.459  INFO 8564 --- [http-nio-8080-exec-9] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 18:08:28.460 DEBUG 8564 --- [http-nio-8080-exec-9] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 18:08:28.460 DEBUG 8564 --- [http-nio-8080-exec-9] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 18:08:28.462 DEBUG 8564 --- [http-nio-8080-exec-9] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 18:08:29.322  INFO 8564 --- [http-nio-8080-exec-10] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 18:08:29.323 DEBUG 8564 --- [http-nio-8080-exec-10] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 18:08:29.323 DEBUG 8564 --- [http-nio-8080-exec-10] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 18:08:29.325 DEBUG 8564 --- [http-nio-8080-exec-10] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 18:08:29.726  INFO 8564 --- [http-nio-8080-exec-8] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 18:08:29.727 DEBUG 8564 --- [http-nio-8080-exec-8] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 18:08:29.727 DEBUG 8564 --- [http-nio-8080-exec-8] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 18:08:29.728 DEBUG 8564 --- [http-nio-8080-exec-8] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 18:08:54.693  INFO 8564 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:08:54.694  INFO 8564 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:08:54.695  INFO 8564 --- [http-nio-8080-exec-7] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:08:54.697 DEBUG 8564 --- [http-nio-8080-exec-7] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:08:54.697 DEBUG 8564 --- [http-nio-8080-exec-7] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:08:54.697 DEBUG 8564 --- [http-nio-8080-exec-7] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:08:54.697 DEBUG 8564 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:08:54.697 DEBUG 8564 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:08:54.703 DEBUG 8564 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:12:20.879  INFO 8564 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 18:12:20.881  INFO 8564 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 18:12:26.637  INFO 26176 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 26176 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 18:12:26.640  INFO 26176 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 18:12:27.570  INFO 26176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 18:12:27.573  INFO 26176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 18:12:27.607  INFO 26176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-11-18 18:12:28.301  INFO 26176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 18:12:28.303  INFO 26176 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 18:12:28.303  INFO 26176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 18:12:28.303  INFO 26176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 18:12:28.309  INFO 26176 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 18:12:28.319  INFO 26176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 18:12:28.319  INFO 26176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 18:12:28.440  INFO 26176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 18:12:28.441  INFO 26176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+2023-11-18 18:12:28.566  INFO 26176 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 18:12:28.669  INFO 26176 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 18:12:29.008  INFO 26176 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 18:12:29.096  INFO 26176 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 18:12:29.141  INFO 26176 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-18 18:12:29.147  INFO 26176 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 18:12:29.758  INFO 26176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 18:12:30.002  INFO 26176 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.787 seconds (JVM running for 4.429)
+2023-11-18 18:12:30.005  INFO 26176 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 18:12:41.556  INFO 26176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 18:12:41.556  INFO 26176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 18:12:41.557  INFO 26176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 18:12:41.570  INFO 26176 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:12:41.619  INFO 26176 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:12:41.641  INFO 26176 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:12:41.868 DEBUG 26176 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:12:41.888 DEBUG 26176 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:12:41.911 DEBUG 26176 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:12:41.914 DEBUG 26176 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:12:41.915 DEBUG 26176 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:12:41.921 DEBUG 26176 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:12:48.447  INFO 26176 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:12:48.450  INFO 26176 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:12:48.451  WARN 26176 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:12:48.451  INFO 26176 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:12:48.453 DEBUG 26176 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:12:48.453 DEBUG 26176 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:12:48.456 DEBUG 26176 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:12:48.457 DEBUG 26176 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:12:48.458 DEBUG 26176 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:12:48.460 DEBUG 26176 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:12:48.747  WARN 26176 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/i6w9hp8x9qe
+2023-11-18 18:16:00.283  INFO 26176 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 18:16:00.293  INFO 26176 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 18:16:15.804  INFO 27268 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 27268 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 18:16:15.806  INFO 27268 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 18:16:16.494  INFO 27268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 18:16:16.496  INFO 27268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 18:16:16.520  INFO 27268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-11-18 18:16:17.004  INFO 27268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 18:16:17.005  INFO 27268 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 18:16:17.005  INFO 27268 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 18:16:17.005  INFO 27268 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 18:16:17.009  INFO 27268 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 18:16:17.017  INFO 27268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 18:16:17.017  INFO 27268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 18:16:17.119  INFO 27268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 18:16:17.119  INFO 27268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2023-11-18 18:16:17.229  INFO 27268 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 18:16:17.324  INFO 27268 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 18:16:17.661  INFO 27268 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 18:16:17.728  INFO 27268 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 18:16:17.759  INFO 27268 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-18 18:16:17.763  INFO 27268 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 18:16:18.264  INFO 27268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 18:16:18.445  INFO 27268 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.109 seconds (JVM running for 3.7)
+2023-11-18 18:16:18.448  INFO 27268 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 18:16:23.679  INFO 27268 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 18:16:23.679  INFO 27268 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 18:16:23.682  INFO 27268 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-18 18:16:23.698  WARN 27268 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:16:23.697  INFO 27268 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:16:23.759  INFO 27268 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:16:23.770  INFO 27268 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:16:23.903  WARN 27268 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/y4t4ocbwso
+2023-11-18 18:16:24.032 DEBUG 27268 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:16:24.057 DEBUG 27268 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:16:24.088 DEBUG 27268 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:16:24.091 DEBUG 27268 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:16:24.092 DEBUG 27268 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:16:24.099 DEBUG 27268 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:16:28.272  WARN 27268 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for POST /admin/employee/status/1
+2023-11-18 18:26:52.100  INFO 27268 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 18:26:52.106  INFO 27268 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 18:32:52.218  INFO 3608 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 3608 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 18:32:52.221  INFO 3608 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 18:32:53.210  INFO 3608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 18:32:53.215  INFO 3608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 18:32:53.251  INFO 3608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-11-18 18:32:54.031  INFO 3608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 18:32:54.032  INFO 3608 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 18:32:54.032  INFO 3608 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 18:32:54.032  INFO 3608 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 18:32:54.048  INFO 3608 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 18:32:54.060  INFO 3608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 18:32:54.060  INFO 3608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 18:32:54.199  INFO 3608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 18:32:54.200  INFO 3608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1925 ms
+2023-11-18 18:32:54.351  INFO 3608 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 18:32:54.489  INFO 3608 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 18:32:54.845  INFO 3608 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 18:32:54.921  INFO 3608 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 18:32:54.956  INFO 3608 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-18 18:32:54.963  INFO 3608 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 18:32:55.739  INFO 3608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 18:32:55.815  INFO 3608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 18:32:55.816  INFO 3608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 18:32:55.818  INFO 3608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-18 18:32:56.021  INFO 3608 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 4.311 seconds (JVM running for 5.19)
+2023-11-18 18:32:56.024  INFO 3608 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 18:33:25.117  INFO 3608 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:25.175  INFO 3608 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:25.179  INFO 3608 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：0，2
+2023-11-18 18:33:25.402 DEBUG 3608 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:25.430 DEBUG 3608 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 0(Integer), 2(Long)
+2023-11-18 18:33:25.439 DEBUG 3608 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:39.932  INFO 3608 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:39.933  INFO 3608 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:39.933  INFO 3608 --- [http-nio-8080-exec-9] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:39.934 DEBUG 3608 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:39.934 DEBUG 3608 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:39.948 DEBUG 3608 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:54.236  INFO 3608 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:54.237  INFO 3608 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:54.238  INFO 3608 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:54.239 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:54.240 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:54.241 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:56.531  INFO 3608 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:56.532  INFO 3608 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:56.533  INFO 3608 --- [http-nio-8080-exec-5] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:56.534 DEBUG 3608 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:56.535 DEBUG 3608 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:56.545 DEBUG 3608 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:57.076  INFO 3608 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:57.078  INFO 3608 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:57.079  INFO 3608 --- [http-nio-8080-exec-10] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:57.079 DEBUG 3608 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:57.080 DEBUG 3608 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:57.081 DEBUG 3608 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:57.254  INFO 3608 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:57.255  INFO 3608 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:57.255  INFO 3608 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:57.256 DEBUG 3608 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:57.256 DEBUG 3608 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:57.257 DEBUG 3608 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:57.411  INFO 3608 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:57.412  INFO 3608 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:57.412  INFO 3608 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:57.413 DEBUG 3608 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:57.413 DEBUG 3608 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:57.415 DEBUG 3608 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:33:57.574  INFO 3608 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:33:57.574  INFO 3608 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:33:57.575  INFO 3608 --- [http-nio-8080-exec-3] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:33:57.576 DEBUG 3608 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:33:57.577 DEBUG 3608 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:33:57.578 DEBUG 3608 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:34:01.603  INFO 3608 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:34:01.604  INFO 3608 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:34:01.605  INFO 3608 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：0，2
+2023-11-18 18:34:01.605 DEBUG 3608 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:34:01.606 DEBUG 3608 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 0(Integer), 2(Long)
+2023-11-18 18:34:01.611 DEBUG 3608 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:34:04.383  INFO 3608 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:34:04.384  INFO 3608 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:34:04.384  INFO 3608 --- [http-nio-8080-exec-9] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:34:04.385 DEBUG 3608 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:34:04.385 DEBUG 3608 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:34:04.398 DEBUG 3608 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:34:10.760  INFO 3608 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:34:10.761  WARN 3608 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:34:10.762  INFO 3608 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:34:10.771  INFO 3608 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:34:10.830 DEBUG 3608 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:34:10.832 DEBUG 3608 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:34:10.865 DEBUG 3608 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:34:10.869 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:34:10.870 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:34:10.879 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:34:11.066  WARN 3608 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/09io13klu974
+2023-11-18 18:34:23.108  INFO 3608 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA5MzA5fQ.8ppQoJc1mSSl2NpO9TsR17JXltnJ_DMnodkGjRNpWYc
+2023-11-18 18:34:23.109  INFO 3608 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:34:23.109  INFO 3608 --- [http-nio-8080-exec-5] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：0，2
+2023-11-18 18:34:23.109 DEBUG 3608 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:34:23.109 DEBUG 3608 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 0(Integer), 2(Long)
+2023-11-18 18:34:23.114 DEBUG 3608 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:34:29.362  INFO 3608 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:34:29.364  INFO 3608 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:34:29.364  INFO 3608 --- [http-nio-8080-exec-10] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:34:29.366 DEBUG 3608 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:34:29.366 DEBUG 3608 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:34:29.370 DEBUG 3608 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:34:29.370 DEBUG 3608 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:34:29.370 DEBUG 3608 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:34:29.373 DEBUG 3608 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:34:29.388  WARN 3608 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:34:29.678  WARN 3608 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/bjcd3lmo1rp
+2023-11-18 18:34:33.707  WARN 3608 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-18 18:34:37.495  WARN 3608 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-18 18:35:06.475  WARN 3608 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-18 18:35:31.555  INFO 3608 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:35:31.556  INFO 3608 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:35:31.557  INFO 3608 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:35:31.572 ERROR 3608 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 62190
+2023-11-18 18:35:31.580 DEBUG 3608 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:35:31.581 DEBUG 3608 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:35:31.584 DEBUG 3608 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:35:31.584 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:35:31.586 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:35:31.588 DEBUG 3608 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:35:31.599  WARN 3608 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:35:31.861  WARN 3608 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/oh6cenv4hu9
+2023-11-18 18:35:33.891  WARN 3608 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-18 18:35:58.747  INFO 3608 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 18:35:58.749  INFO 3608 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 18:36:02.611  INFO 22928 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 22928 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 18:36:02.614  INFO 22928 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 18:36:03.292  INFO 22928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 18:36:03.296  INFO 22928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 18:36:03.326  INFO 22928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-11-18 18:36:03.947  INFO 22928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 18:36:03.948  INFO 22928 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 18:36:03.948  INFO 22928 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 18:36:03.948  INFO 22928 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 18:36:03.954  INFO 22928 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 18:36:03.963  INFO 22928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 18:36:03.964  INFO 22928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 18:36:04.091  INFO 22928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 18:36:04.092  INFO 22928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1431 ms
+2023-11-18 18:36:04.223  INFO 22928 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 18:36:04.325  INFO 22928 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 18:36:04.577  INFO 22928 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 18:36:04.630  INFO 22928 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 18:36:04.654  INFO 22928 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-18 18:36:04.657  INFO 22928 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 18:36:05.154  INFO 22928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 18:36:05.355  INFO 22928 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.153 seconds (JVM running for 3.847)
+2023-11-18 18:36:05.357  INFO 22928 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 18:36:08.396  INFO 22928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 18:36:08.396  INFO 22928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 18:36:08.397  INFO 22928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 18:36:08.409  INFO 22928 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:08.452  INFO 22928 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:08.466  INFO 22928 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:36:08.650 DEBUG 22928 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:36:08.669 DEBUG 22928 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:36:08.674 DEBUG 22928 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:36:08.716  INFO 22928 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:08.717  INFO 22928 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:08.721  INFO 22928 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:08.751 DEBUG 22928 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:08.752 DEBUG 22928 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:08.769 DEBUG 22928 --- [http-nio-8080-exec-2] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:08.770 DEBUG 22928 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:08.770 DEBUG 22928 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:08.774 DEBUG 22928 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:11.136  INFO 22928 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:11.137  INFO 22928 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:11.137  INFO 22928 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：0，2
+2023-11-18 18:36:11.138 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:36:11.138 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 0(Integer), 2(Long)
+2023-11-18 18:36:11.142 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:36:11.153  INFO 22928 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:11.154  INFO 22928 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:11.155  INFO 22928 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:11.156 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:11.156 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:11.159 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:11.159 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:11.159 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:11.161 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:21.003  INFO 22928 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:21.004  INFO 22928 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:21.005  INFO 22928 --- [http-nio-8080-exec-10] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:21.006  WARN 22928 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:36:21.007 DEBUG 22928 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:21.007 DEBUG 22928 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:21.010 DEBUG 22928 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:21.011 DEBUG 22928 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:21.012 DEBUG 22928 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:21.015 DEBUG 22928 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:21.259  WARN 22928 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/3sz3d4lhzzk
+2023-11-18 18:36:26.789  INFO 22928 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:26.790  INFO 22928 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:30.841  INFO 22928 --- [http-nio-8080-exec-9] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=zhangsan, password=123456)
+2023-11-18 18:36:30.842 DEBUG 22928 --- [http-nio-8080-exec-9] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 18:36:30.844 DEBUG 22928 --- [http-nio-8080-exec-9] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: zhangsan(String)
+2023-11-18 18:36:30.846 DEBUG 22928 --- [http-nio-8080-exec-9] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 18:36:30.849 ERROR 22928 --- [http-nio-8080-exec-9] com.sky.handler.GlobalExceptionHandler   : 异常信息：账号被锁定
+2023-11-18 18:36:37.234  INFO 22928 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:37.235  INFO 22928 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:37.235  INFO 22928 --- [http-nio-8080-exec-5] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:36:37.236 DEBUG 22928 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:36:37.236 DEBUG 22928 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:36:37.249 DEBUG 22928 --- [http-nio-8080-exec-5] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:36:37.259  INFO 22928 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzA1MzgzfQ.q_X4vdUQokheODkD9nDAgeFMHj5eb-HikdASzEbUO2o
+2023-11-18 18:36:37.260  INFO 22928 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:37.261  INFO 22928 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:37.263 DEBUG 22928 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:37.263 DEBUG 22928 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:37.265 DEBUG 22928 --- [http-nio-8080-exec-1] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:37.266 DEBUG 22928 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:37.266 DEBUG 22928 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:37.268 DEBUG 22928 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:39.304  INFO 22928 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=zhangsan, password=123456)
+2023-11-18 18:36:39.305 DEBUG 22928 --- [http-nio-8080-exec-2] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 18:36:39.305 DEBUG 22928 --- [http-nio-8080-exec-2] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: zhangsan(String)
+2023-11-18 18:36:39.307 DEBUG 22928 --- [http-nio-8080-exec-2] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 18:36:39.374  WARN 22928 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:36:39.374  WARN 22928 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/order/conditionSearch
+2023-11-18 18:36:39.382  WARN 22928 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/businessData
+2023-11-18 18:36:39.382  WARN 22928 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewOrders
+2023-11-18 18:36:39.390  WARN 22928 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewDishes
+2023-11-18 18:36:39.390  WARN 22928 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewSetmeals
+2023-11-18 18:36:39.661  WARN 22928 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/seb0cqsi4pe
+2023-11-18 18:36:41.872  WARN 22928 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/dish/page
+2023-11-18 18:36:41.872  WARN 22928 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/list
+2023-11-18 18:36:42.525  WARN 22928 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 18:36:42.566  INFO 22928 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:42.568  INFO 22928 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:42.569  INFO 22928 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:42.570 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:42.570 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:42.572 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:42.572 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:42.573 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:42.574 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:49.059  INFO 22928 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:49.060  INFO 22928 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:49.060  INFO 22928 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：0，2
+2023-11-18 18:36:49.061 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:36:49.061 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 0(Integer), 2(Long)
+2023-11-18 18:36:49.067 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:36:49.076  INFO 22928 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:49.077  INFO 22928 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:49.078  INFO 22928 --- [http-nio-8080-exec-3] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:49.080 DEBUG 22928 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:49.080 DEBUG 22928 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:49.082 DEBUG 22928 --- [http-nio-8080-exec-3] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:49.083 DEBUG 22928 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:49.083 DEBUG 22928 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:49.084 DEBUG 22928 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:52.435  INFO 22928 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:52.435  WARN 22928 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:36:52.436  INFO 22928 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:52.437  INFO 22928 --- [http-nio-8080-exec-10] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:52.438 DEBUG 22928 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:52.440 DEBUG 22928 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:52.443 DEBUG 22928 --- [http-nio-8080-exec-10] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:52.444 DEBUG 22928 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:52.444 DEBUG 22928 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:52.447 DEBUG 22928 --- [http-nio-8080-exec-10] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:52.741  WARN 22928 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/337t3bt54bd
+2023-11-18 18:36:53.268  INFO 22928 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:53.268  WARN 22928 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:36:53.269  INFO 22928 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:53.270  INFO 22928 --- [http-nio-8080-exec-9] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:53.271 DEBUG 22928 --- [http-nio-8080-exec-9] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:53.272 DEBUG 22928 --- [http-nio-8080-exec-9] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:53.274 DEBUG 22928 --- [http-nio-8080-exec-9] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:53.274 DEBUG 22928 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:53.274 DEBUG 22928 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:53.278 DEBUG 22928 --- [http-nio-8080-exec-9] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:53.553  WARN 22928 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/5xc1gcrstas
+2023-11-18 18:36:55.138  INFO 22928 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:55.139  INFO 22928 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:55.140  INFO 22928 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 启用禁用员工账号：1，2
+2023-11-18 18:36:55.140 DEBUG 22928 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.update     : ==>  Preparing: update employee SET status = ? where id = ?
+2023-11-18 18:36:55.140 DEBUG 22928 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.update     : ==> Parameters: 1(Integer), 2(Long)
+2023-11-18 18:36:55.145 DEBUG 22928 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.update     : <==    Updates: 1
+2023-11-18 18:36:55.154  INFO 22928 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:55.155  INFO 22928 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:55.156  INFO 22928 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:55.157 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:55.157 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:55.159 DEBUG 22928 --- [http-nio-8080-exec-4] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:55.159 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:55.159 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:55.160 DEBUG 22928 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:56.623  INFO 22928 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MiwiZXhwIjoxNzAwMzEwOTk5fQ.T9poL1drhrdPR_2k_0W_bSfH-ZtKba5p0n7Anv7CycI
+2023-11-18 18:36:56.625  INFO 22928 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 18:36:56.625  INFO 22928 --- [http-nio-8080-exec-6] c.s.controller.admin.EmployeeController  : 员工分页查询，参数为：
+2023-11-18 18:36:56.626 DEBUG 22928 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==>  Preparing: SELECT count(0) FROM employee
+2023-11-18 18:36:56.627 DEBUG 22928 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : ==> Parameters: 
+2023-11-18 18:36:56.627  WARN 22928 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 18:36:56.629 DEBUG 22928 --- [http-nio-8080-exec-6] c.s.m.EmployeeMapper.pageQuery_COUNT     : <==      Total: 1
+2023-11-18 18:36:56.630 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==>  Preparing: select * from employee order by create_time desc LIMIT ?
+2023-11-18 18:36:56.630 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : ==> Parameters: 10(Integer)
+2023-11-18 18:36:56.632 DEBUG 22928 --- [http-nio-8080-exec-6] com.sky.mapper.EmployeeMapper.pageQuery  : <==      Total: 5
+2023-11-18 18:36:56.946  WARN 22928 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/10356otabps
+2023-11-18 18:37:26.961  INFO 22928 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 18:37:26.966  INFO 22928 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
