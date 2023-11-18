@@ -1,0 +1,368 @@
+2023-11-18 15:53:40.573  INFO 8224 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 8224 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 15:53:40.583  INFO 8224 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 15:53:43.115  INFO 8224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 15:53:43.119  INFO 8224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 15:53:43.164  INFO 8224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-11-18 15:53:44.276  INFO 8224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 15:53:44.278  INFO 8224 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 15:53:44.278  INFO 8224 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 15:53:44.278  INFO 8224 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 15:53:44.300  INFO 8224 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 15:53:44.317  INFO 8224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 15:53:44.317  INFO 8224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 15:53:44.515  INFO 8224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 15:53:44.516  INFO 8224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3840 ms
+2023-11-18 15:53:44.732  INFO 8224 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 15:53:44.923  INFO 8224 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 15:53:45.472  INFO 8224 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 15:53:45.576  INFO 8224 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 15:53:45.640  INFO 8224 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 15:53:46.587  INFO 8224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 15:53:46.795  INFO 8224 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 6.925 seconds (JVM running for 8.318)
+2023-11-18 15:53:46.798  INFO 8224 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 15:54:04.123  INFO 8224 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 15:54:04.124  INFO 8224 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 15:54:04.125  INFO 8224 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 15:54:04.748  WARN 8224 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2023-11-18 15:55:24.780  INFO 8224 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:null
+2023-11-18 15:57:04.808  INFO 8224 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 15:57:05.000 DEBUG 8224 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 15:57:05.039 DEBUG 8224 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 15:57:05.108 DEBUG 8224 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 15:59:05.890  INFO 8224 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 15:59:05.902  INFO 8224 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 15:59:05.905  INFO 8224 --- [http-nio-8080-exec-7] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=zhangsan, name=张三, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 15:59:05.940 ERROR 8224 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 120839
+2023-11-18 15:59:05.947 DEBUG 8224 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 15:59:05.952 DEBUG 8224 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 张三(String), zhangsan(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T15:59:05.912182600(LocalDateTime), 2023-11-18T15:59:05.912182600(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 15:59:05.972 DEBUG 8224 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.insert     : <==    Updates: 1
+2023-11-18 15:59:33.960  INFO 8224 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 15:59:33.962  INFO 8224 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 15:59:39.205  INFO 24976 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 24976 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 15:59:39.207  INFO 24976 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 15:59:40.155  INFO 24976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 15:59:40.158  INFO 24976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 15:59:40.191  INFO 24976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-11-18 15:59:40.874  INFO 24976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 15:59:40.876  INFO 24976 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 15:59:40.877  INFO 24976 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 15:59:40.877  INFO 24976 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 15:59:40.883  INFO 24976 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 15:59:40.891  INFO 24976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 15:59:40.891  INFO 24976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 15:59:41.024  INFO 24976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 15:59:41.025  INFO 24976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1766 ms
+2023-11-18 15:59:41.216  INFO 24976 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 15:59:41.340  INFO 24976 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 15:59:41.692  INFO 24976 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 15:59:41.779  INFO 24976 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 15:59:41.832  INFO 24976 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 15:59:42.607  INFO 24976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 15:59:42.798  INFO 24976 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 4.157 seconds (JVM running for 5.532)
+2023-11-18 15:59:42.800  INFO 24976 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 15:59:50.451  INFO 24976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 15:59:50.452  INFO 24976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 15:59:50.453  INFO 24976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 15:59:50.468  INFO 24976 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 15:59:50.522  INFO 24976 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:00:01.097  INFO 24976 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=zhangsan, name=张三, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 16:00:39.155 DEBUG 24976 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:00:39.466 DEBUG 24976 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 张三(String), zhangsan(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:00:21.434373100(LocalDateTime), 2023-11-18T16:00:28.130576200(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 16:01:03.881 ERROR 24976 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'
+### The error may exist in com/sky/mapper/EmployeeMapper.java (best guess)
+### The error may involve com.sky.mapper.EmployeeMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'
+; Duplicate entry 'zhangsan' for key 'employee.idx_username'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.2.1.jar:1.2.1]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.7.jar:3.5.7]
+	at jdk.proxy3/jdk.proxy3.$Proxy102.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.7.jar:3.5.7]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64) ~[mybatis-3.5.7.jar:3.5.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy100.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181) ~[mybatis-3.5.7.jar:3.5.7]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy78.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.7.jar:3.5.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy79.insert(Unknown Source) ~[na:na]
+	at com.sky.service.impl.EmployeeServiceImpl.save(EmployeeServiceImpl.java:87) ~[classes/:na]
+	at com.sky.controller.admin.EmployeeController.save(EmployeeController.java:86) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-11-18 16:01:15.594  INFO 24976 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 16:01:15.600  INFO 24976 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 16:03:38.915  INFO 24600 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 24600 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 16:03:38.918  INFO 24600 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 16:03:39.764  INFO 24600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 16:03:39.767  INFO 24600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 16:03:39.803  INFO 24600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2023-11-18 16:03:40.505  INFO 24600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 16:03:40.506  INFO 24600 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 16:03:40.506  INFO 24600 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 16:03:40.507  INFO 24600 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 16:03:40.511  INFO 24600 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 16:03:40.523  INFO 24600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 16:03:40.524  INFO 24600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 16:03:40.660  INFO 24600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 16:03:40.660  INFO 24600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2023-11-18 16:03:40.796  INFO 24600 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 16:03:40.942  INFO 24600 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 16:03:41.302  INFO 24600 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 16:03:41.364  INFO 24600 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 16:03:41.398  INFO 24600 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 16:03:42.026  INFO 24600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 16:03:42.205  INFO 24600 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.786 seconds (JVM running for 4.705)
+2023-11-18 16:03:42.207  INFO 24600 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 16:03:49.648  INFO 24600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 16:03:49.648  INFO 24600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 16:03:49.650  INFO 24600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-18 16:03:49.725  INFO 24600 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-18 16:03:49.926 DEBUG 24600 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-18 16:03:49.952 DEBUG 24600 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-18 16:03:49.984 DEBUG 24600 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-18 16:03:50.230  WARN 24600 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-18 16:03:50.230  WARN 24600 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/order/conditionSearch
+2023-11-18 16:03:50.250  WARN 24600 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewOrders
+2023-11-18 16:03:50.250  WARN 24600 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/businessData
+2023-11-18 16:03:50.259  WARN 24600 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewDishes
+2023-11-18 16:03:50.259  WARN 24600 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewSetmeals
+2023-11-18 16:03:50.433  WARN 24600 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/xfkpasct6j
+2023-11-18 16:03:54.791  WARN 24600 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 16:03:56.743  WARN 24600 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/dish/page
+2023-11-18 16:03:56.748  WARN 24600 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/list
+2023-11-18 16:03:57.923  WARN 24600 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/employee/page
+2023-11-18 16:04:37.074  INFO 24600 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxODI5fQ.yK7QlxwYSH1zV_yCrfvMHA4J3O-7qJdeULrxQhv2tRc
+2023-11-18 16:04:37.094  INFO 24600 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:04:37.096  INFO 24600 --- [http-nio-8080-exec-2] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=lisi, name=李四, phone=17212331213, sex=1, idNumber=411528200109098907)
+2023-11-18 16:04:37.104 DEBUG 24600 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:04:37.107 DEBUG 24600 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 李四(String), lisi(String), e10adc3949ba59abbe56e057f20f883e(String), 17212331213(String), 1(String), 411528200109098907(String), 2023-11-18T16:04:37.102932400(LocalDateTime), 2023-11-18T16:04:37.102932400(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 16:04:37.127 DEBUG 24600 --- [http-nio-8080-exec-2] com.sky.mapper.EmployeeMapper.insert     : <==    Updates: 1
+2023-11-18 16:04:37.673  WARN 24600 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/employee/page
+2023-11-18 16:04:43.530  WARN 24600 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/category/page
+2023-11-18 16:04:43.751  WARN 24600 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/employee/page
+2023-11-18 16:14:38.186  INFO 24600 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 16:14:38.188  INFO 24600 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:14:38.189  INFO 24600 --- [http-nio-8080-exec-7] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=zhangsan, name=张三, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 16:14:38.202 ERROR 24600 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 601065
+2023-11-18 16:14:38.209 DEBUG 24600 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:14:38.210 DEBUG 24600 --- [http-nio-8080-exec-7] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 张三(String), zhangsan(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:14:38.189132300(LocalDateTime), 2023-11-18T16:14:38.189132300(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 16:14:38.278 ERROR 24600 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'
+### The error may exist in com/sky/mapper/EmployeeMapper.java (best guess)
+### The error may involve com.sky.mapper.EmployeeMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'
+; Duplicate entry 'zhangsan' for key 'employee.idx_username'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zhangsan' for key 'employee.idx_username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.2.1.jar:1.2.1]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.7.jar:3.5.7]
+	at jdk.proxy3/jdk.proxy3.$Proxy101.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.7.jar:3.5.7]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64) ~[mybatis-3.5.7.jar:3.5.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy99.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181) ~[mybatis-3.5.7.jar:3.5.7]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy78.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.7.jar:3.5.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy79.insert(Unknown Source) ~[na:na]
+	at com.sky.service.impl.EmployeeServiceImpl.save(EmployeeServiceImpl.java:87) ~[classes/:na]
+	at com.sky.controller.admin.EmployeeController.save(EmployeeController.java:86) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-11-18 16:21:37.152  INFO 24600 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 16:21:37.155  INFO 24600 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 16:21:42.271  INFO 6200 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 6200 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 16:21:42.275  INFO 6200 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 16:21:43.219  INFO 6200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 16:21:43.222  INFO 6200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 16:21:43.251  INFO 6200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-11-18 16:21:43.931  INFO 6200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 16:21:43.932  INFO 6200 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 16:21:43.932  INFO 6200 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 16:21:43.932  INFO 6200 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 16:21:43.939  INFO 6200 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 16:21:43.952  INFO 6200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 16:21:43.952  INFO 6200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 16:21:44.115  INFO 6200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 16:21:44.116  INFO 6200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1798 ms
+2023-11-18 16:21:44.262  INFO 6200 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 16:21:44.387  INFO 6200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 16:21:44.748  INFO 6200 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 16:21:44.842  INFO 6200 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 16:21:44.896  INFO 6200 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 16:21:45.716  INFO 6200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 16:21:45.970  INFO 6200 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 4.159 seconds (JVM running for 4.879)
+2023-11-18 16:21:45.973  INFO 6200 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 16:21:48.907  INFO 6200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 16:21:48.907  INFO 6200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 16:21:48.908  INFO 6200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 16:21:48.923  INFO 6200 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 16:21:48.975  INFO 6200 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:21:49.027  INFO 6200 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=zhangsan, name=张三, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 16:21:49.206 DEBUG 6200 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:21:49.237 DEBUG 6200 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 张三(String), zhangsan(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:21:49.038605500(LocalDateTime), 2023-11-18T16:21:49.038605500(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 16:30:52.392  INFO 6200 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 16:30:52.393  INFO 6200 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:30:52.394  INFO 6200 --- [http-nio-8080-exec-3] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=zhangsan, name=张三, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 16:30:52.410 ERROR 6200 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 543141
+2023-11-18 16:30:52.416 DEBUG 6200 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:30:52.418 DEBUG 6200 --- [http-nio-8080-exec-3] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 张三(String), zhangsan(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:30:52.394843(LocalDateTime), 2023-11-18T16:30:52.394843(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 16:31:04.988  INFO 6200 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 16:31:04.989  INFO 6200 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:31:04.990  INFO 6200 --- [http-nio-8080-exec-4] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=zhangsann, name=张三, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 16:31:04.991 DEBUG 6200 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:31:04.991 DEBUG 6200 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 张三(String), zhangsann(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:31:04.990427300(LocalDateTime), 2023-11-18T16:31:04.990427300(LocalDateTime), 10(Long), 10(Long), 1(Integer)
+2023-11-18 16:31:05.006 DEBUG 6200 --- [http-nio-8080-exec-4] com.sky.mapper.EmployeeMapper.insert     : <==    Updates: 1
+2023-11-18 16:31:22.454  INFO 6200 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-18 16:31:22.455  INFO 6200 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-18 16:31:27.274  INFO 26408 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 26408 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-18 16:31:27.277  INFO 26408 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-18 16:31:28.112  INFO 26408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-18 16:31:28.115  INFO 26408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-18 16:31:28.142  INFO 26408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-11-18 16:31:28.817  INFO 26408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18 16:31:28.818  INFO 26408 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-18 16:31:28.818  INFO 26408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-18 16:31:28.819  INFO 26408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-18 16:31:28.825  INFO 26408 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-18 16:31:28.835  INFO 26408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 16:31:28.835  INFO 26408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-18 16:31:28.977  INFO 26408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 16:31:28.978  INFO 26408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1655 ms
+2023-11-18 16:31:29.139  INFO 26408 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-18 16:31:29.259  INFO 26408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-18 16:31:29.572  INFO 26408 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-18 16:31:29.648  INFO 26408 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-18 16:31:29.687  INFO 26408 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-18 16:31:30.351  INFO 26408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18 16:31:30.558  INFO 26408 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.76 seconds (JVM running for 4.478)
+2023-11-18 16:31:30.560  INFO 26408 --- [main] com.sky.SkyApplication                   : server started
+2023-11-18 16:31:50.114  INFO 26408 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 16:31:50.114  INFO 26408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 16:31:50.115  INFO 26408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 16:31:50.130  INFO 26408 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwMzAxNDI1fQ.mvgpp5VjVT_BNYRnyt5RvznuNoAiQb8XbDohinJM_Rs
+2023-11-18 16:31:50.184  INFO 26408 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-18 16:31:50.241  INFO 26408 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 新增员工EmployeeDTO(id=null, username=赵六, name=赵六, phone=12345678900, sex=男, idNumber=4112222222222)
+2023-11-18 16:31:50.451 DEBUG 26408 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==>  Preparing: insert into employee(name, username, password, phone, sex, id_number, create_time, update_time, create_user, update_user,status) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+2023-11-18 16:31:50.484 DEBUG 26408 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : ==> Parameters: 赵六(String), 赵六(String), e10adc3949ba59abbe56e057f20f883e(String), 12345678900(String), 男(String), 4112222222222(String), 2023-11-18T16:31:50.250721800(LocalDateTime), 2023-11-18T16:31:50.250721800(LocalDateTime), 1(Long), 1(Long), 1(Integer)
+2023-11-18 16:31:50.496 DEBUG 26408 --- [http-nio-8080-exec-1] com.sky.mapper.EmployeeMapper.insert     : <==    Updates: 1

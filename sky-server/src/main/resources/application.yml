@@ -28,6 +28,12 @@ logging:
         mapper: debug
         service: info
         controller: info
+  file:
+    name: server.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
+      max-file-size: 10MB
 
 sky:
   jwt:
