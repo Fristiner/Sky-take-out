@@ -22,7 +22,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -68,7 +67,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employee;
     }
 
-    // 新增员工方法
+    /**
+     * 新增员工方法
+     *
+     * @param employeeDTO
+     */
+
     @Override
     public void save(EmployeeDTO employeeDTO) {
         // 第一个方法
@@ -84,14 +88,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         String password = DigestUtils.md5DigestAsHex(PasswordConstant.DEFAULT_PASSWORD.getBytes());
         employee.setPassword(password);
         // 创建时间  设置当前记录的
-        employee.setCreateTime(LocalDateTime.now());
-        employee.setUpdateTime(LocalDateTime.now());
+//        employee.setCreateTime(LocalDateTime.now());
+//        employee.setUpdateTime(LocalDateTime.now());
 
         // 设置当前记录创建人id 和修改人id
         // 根据token进行解析
-        Long empID = BaseContext.getCurrentId();
-        employee.setCreateUser(empID);
-        employee.setUpdateUser(empID);
+//        Long empID = BaseContext.getCurrentId();
+//        employee.setCreateUser(empID);
+//        employee.setUpdateUser(empID);
         employeeMapper.insert(employee);
 
     }
@@ -153,8 +157,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void update(EmployeeDTO employeeDTO) {
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
-        employee.setUpdateTime(LocalDateTime.now());
-        employee.setUpdateUser(BaseContext.getCurrentId());
+//        employee.setUpdateTime(LocalDateTime.now());
+//        employee.setUpdateUser(BaseContext.getCurrentId());
         employeeMapper.update(employee);
     }
 
@@ -176,6 +180,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         String newPassword = DigestUtils.md5DigestAsHex(passwordEditDTO.getNewPassword().getBytes());
         employee.setPassword(newPassword);
         employeeMapper.update(employee);
+        //  修改时间，修改人的id
         return StatusConstant.ENABLE;
     }
 
