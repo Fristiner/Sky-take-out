@@ -362,3 +362,100 @@
 2023-11-21 18:03:08.100  INFO 19372 --- [main] com.sky.SkyApplication                   : server started
 2023-11-21 18:03:12.152  INFO 19372 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2023-11-21 18:03:12.153  INFO 19372 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-21 18:03:15.249  INFO 34084 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 34084 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-21 18:03:15.251  INFO 34084 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-21 18:03:16.008  INFO 34084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-21 18:03:16.011  INFO 34084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-21 18:03:16.043  INFO 34084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-11-21 18:03:16.837  INFO 34084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-21 18:03:16.838  INFO 34084 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-21 18:03:16.839  INFO 34084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-21 18:03:16.839  INFO 34084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-21 18:03:16.844  INFO 34084 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-21 18:03:16.853  INFO 34084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-21 18:03:16.853  INFO 34084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-21 18:03:16.971  INFO 34084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-21 18:03:16.971  INFO 34084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2023-11-21 18:03:17.102  INFO 34084 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-21 18:03:17.229  INFO 34084 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-21 18:03:17.443  INFO 34084 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-11-21 18:03:17.674  INFO 34084 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-21 18:03:17.751  INFO 34084 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-21 18:03:17.789  INFO 34084 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-21 18:03:17.794  INFO 34084 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-21 18:03:18.479  INFO 34084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 18:03:18.739  INFO 34084 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.94 seconds (JVM running for 4.792)
+2023-11-21 18:03:18.741  INFO 34084 --- [main] com.sky.SkyApplication                   : server started
+2023-11-21 18:03:22.135  INFO 34084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 18:03:22.135  INFO 34084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-21 18:03:22.137  INFO 34084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-21 18:03:22.153  INFO 34084 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:03:22.155  WARN 34084 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/dish/page
+2023-11-21 18:03:22.223  INFO 34084 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:03:22.456 DEBUG 34084 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:03:22.488 DEBUG 34084 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-21 18:03:22.526 DEBUG 34084 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-21 18:03:22.894  INFO 34084 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:03:22.895  WARN 34084 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/setmeal/page
+2023-11-21 18:03:22.897  INFO 34084 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:03:22.898 DEBUG 34084 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:03:22.899 DEBUG 34084 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-21 18:03:22.903 DEBUG 34084 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-21 18:03:23.888  INFO 34084 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:03:23.888  WARN 34084 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/dish/page
+2023-11-21 18:03:23.889  INFO 34084 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:03:23.891 DEBUG 34084 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:03:23.891 DEBUG 34084 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-21 18:03:23.895 DEBUG 34084 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-21 18:03:25.223  INFO 34084 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:03:25.226  INFO 34084 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:03:25.227 DEBUG 34084 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:03:25.247 DEBUG 34084 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-21 18:03:25.251 DEBUG 34084 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-21 18:04:00.942  INFO 34084 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:04:00.944  INFO 34084 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:04:00.945  INFO 34084 --- [http-nio-8080-exec-8] c.sky.controller.admin.CommonController  : 文件上传,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6d88e558
+2023-11-21 18:04:02.604  INFO 34084 --- [http-nio-8080-exec-8] com.sky.utils.AliOssUtil                 : 文件上传到:https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3cf1c37e-4269-4cfb-9f84-5a1215c98b75.png
+2023-11-21 18:04:02.605  INFO 34084 --- [http-nio-8080-exec-8] c.sky.controller.admin.CommonController  : 上传的文件名称为,https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3cf1c37e-4269-4cfb-9f84-5a1215c98b75.png
+2023-11-21 18:04:07.919  INFO 34084 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:04:07.920  INFO 34084 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:04:07.951  INFO 34084 --- [http-nio-8080-exec-9] com.sky.controller.admin.DishController  : 新增菜品,DishDTO(id=null, name=test菜品, categoryId=16, price=11, image=https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3cf1c37e-4269-4cfb-9f84-5a1215c98b75.png, description=水煮鱼, status=0, flavors=[DishFlavor(id=null, dishId=null, name=甜味, value=["全糖"]), DishFlavor(id=null, dishId=null, name=温度, value=["多冰"]), DishFlavor(id=null, dishId=null, name=忌口, value=["不要香菜","不要辣"])])
+2023-11-21 18:04:07.984  INFO 34084 --- [http-nio-8080-exec-9] com.sky.aspect.AutoFillAspect            : 开始进行公共字段的填充
+2023-11-21 18:04:07.990 DEBUG 34084 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.insert         : ==>  Preparing: insert into dish (name, category_id, price, image, description, create_time, update_time, create_user,update_user, status) VALUES(?,?,?,?,?,?,?,?,?,?)
+2023-11-21 18:04:07.996 DEBUG 34084 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.insert         : ==> Parameters: test菜品(String), 16(Long), 11(BigDecimal), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3cf1c37e-4269-4cfb-9f84-5a1215c98b75.png(String), 水煮鱼(String), 2023-11-21T18:04:07.985502700(LocalDateTime), 2023-11-21T18:04:07.985502700(LocalDateTime), 1(Long), 1(Long), 0(Integer)
+2023-11-21 18:04:08.019 DEBUG 34084 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.insert         : <==    Updates: 1
+2023-11-21 18:04:08.026 DEBUG 34084 --- [http-nio-8080-exec-9] c.s.mapper.DishFlavorMapper.insertBatch  : ==>  Preparing: insert into dish_flavor(dish_id,name,value) VALUES (?,?,?) , (?,?,?) , (?,?,?)
+2023-11-21 18:04:08.027 DEBUG 34084 --- [http-nio-8080-exec-9] c.s.mapper.DishFlavorMapper.insertBatch  : ==> Parameters: 70(Long), 甜味(String), ["全糖"](String), 70(Long), 温度(String), ["多冰"](String), 70(Long), 忌口(String), ["不要香菜","不要辣"](String)
+2023-11-21 18:04:08.033 DEBUG 34084 --- [http-nio-8080-exec-9] c.s.mapper.DishFlavorMapper.insertBatch  : <==    Updates: 3
+2023-11-21 18:04:08.590  WARN 34084 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/dish/page
+2023-11-21 18:04:08.590  INFO 34084 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:04:08.591  INFO 34084 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:04:08.592 DEBUG 34084 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:04:08.593 DEBUG 34084 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-21 18:04:08.595 DEBUG 34084 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-21 18:05:39.927  INFO 34084 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:05:39.928  INFO 34084 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:05:39.945 ERROR 34084 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 91341
+2023-11-21 18:05:39.959 DEBUG 34084 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:05:39.960 DEBUG 34084 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-21 18:05:39.966 DEBUG 34084 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-21 18:05:50.284  INFO 34084 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:05:50.287  INFO 34084 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:05:50.287  INFO 34084 --- [http-nio-8080-exec-3] c.sky.controller.admin.CommonController  : 文件上传,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@38210344
+2023-11-21 18:05:50.611  INFO 34084 --- [http-nio-8080-exec-3] com.sky.utils.AliOssUtil                 : 文件上传到:https://mtc-take-out.oss-cn-beijing.aliyuncs.com/af2d5a34-765e-423b-82a0-5a6e33d88a5f.png
+2023-11-21 18:05:50.612  INFO 34084 --- [http-nio-8080-exec-3] c.sky.controller.admin.CommonController  : 上传的文件名称为,https://mtc-take-out.oss-cn-beijing.aliyuncs.com/af2d5a34-765e-423b-82a0-5a6e33d88a5f.png
+2023-11-21 18:05:54.478  INFO 34084 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:05:54.479  INFO 34084 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:05:54.480  INFO 34084 --- [http-nio-8080-exec-4] com.sky.controller.admin.DishController  : 新增菜品,DishDTO(id=null, name=阿斯顿, categoryId=21, price=17, image=https://mtc-take-out.oss-cn-beijing.aliyuncs.com/af2d5a34-765e-423b-82a0-5a6e33d88a5f.png, description=啊大苏打撒旦的 , status=0, flavors=[])
+2023-11-21 18:05:54.482  INFO 34084 --- [http-nio-8080-exec-4] com.sky.aspect.AutoFillAspect            : 开始进行公共字段的填充
+2023-11-21 18:05:54.483 DEBUG 34084 --- [http-nio-8080-exec-4] com.sky.mapper.DishMapper.insert         : ==>  Preparing: insert into dish (name, category_id, price, image, description, create_time, update_time, create_user,update_user, status) VALUES(?,?,?,?,?,?,?,?,?,?)
+2023-11-21 18:05:54.483 DEBUG 34084 --- [http-nio-8080-exec-4] com.sky.mapper.DishMapper.insert         : ==> Parameters: 阿斯顿(String), 21(Long), 17(BigDecimal), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/af2d5a34-765e-423b-82a0-5a6e33d88a5f.png(String), 啊大苏打撒旦的 (String), 2023-11-21T18:05:54.482834800(LocalDateTime), 2023-11-21T18:05:54.482834800(LocalDateTime), 1(Long), 1(Long), 0(Integer)
+2023-11-21 18:05:54.485 DEBUG 34084 --- [http-nio-8080-exec-4] com.sky.mapper.DishMapper.insert         : <==    Updates: 1
+2023-11-21 18:05:55.037  WARN 34084 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/dish/page
+2023-11-21 18:05:55.037  INFO 34084 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNTY3ODA2fQ.q4AUeHHPDBpmFY212Cj0KSuNIJsQicYwob_9or3Lc9Y
+2023-11-21 18:05:55.038  INFO 34084 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-21 18:05:55.039 DEBUG 34084 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-21 18:05:55.039 DEBUG 34084 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-21 18:05:55.042 DEBUG 34084 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-21 18:08:21.179  INFO 34084 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-21 18:08:21.183  INFO 34084 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
