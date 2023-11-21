@@ -107,9 +107,6 @@ public class CategoryController {
     @ApiOperation("根据类型查询分类")
     public Result<List<Category>> selectByType(Integer type) {
         // 1.对数据进行校验
-        if (type != 0 || type != 1) {
-            return Result.error("传输的类型错误");
-        }
         // 2.开始处理
 
         List<Category> list = categoryService.selectByType(type);
