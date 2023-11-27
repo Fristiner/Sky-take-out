@@ -11,3 +11,8 @@ sky:
     access-key-id: LTAI5tJwTE1itg2srDShqwLa
     access-key-secret: jvmNfZVXECqwd4mEHNRIQzOXRJRPXy
     bucket-name: mtc-take-out
+  redis:
+    port: 16379
+    host: localhost
+    password: 123456
+    database: 10

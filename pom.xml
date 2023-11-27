@@ -38,7 +38,11 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.spring}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>3.1.5</version>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -50,6 +54,7 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson}</version>
             </dependency>
+
 
             <dependency>
                 <groupId>commons-lang</groupId>

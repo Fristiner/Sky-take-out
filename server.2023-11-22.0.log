@@ -1,0 +1,615 @@
+2023-11-22 12:04:30.567  INFO 14332 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 14332 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-22 12:04:30.573  INFO 14332 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-22 12:04:32.029  INFO 14332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 12:04:32.032  INFO 14332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 12:04:32.066  INFO 14332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-11-22 12:04:32.916  INFO 14332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 12:04:32.917  INFO 14332 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-22 12:04:32.917  INFO 14332 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-22 12:04:32.917  INFO 14332 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-22 12:04:32.934  INFO 14332 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-22 12:04:32.946  INFO 14332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 12:04:32.947  INFO 14332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-22 12:04:33.060  INFO 14332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 12:04:33.060  INFO 14332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2445 ms
+2023-11-22 12:04:33.219  INFO 14332 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-22 12:04:33.364  INFO 14332 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-22 12:04:33.685  INFO 14332 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-11-22 12:04:33.920  INFO 14332 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-22 12:04:34.002  INFO 14332 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-22 12:04:34.039  INFO 14332 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-22 12:04:34.045  INFO 14332 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-22 12:04:34.821  INFO 14332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 12:04:35.156  INFO 14332 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 5.016 seconds (JVM running for 6.207)
+2023-11-22 12:04:35.159  INFO 14332 --- [main] com.sky.SkyApplication                   : server started
+2023-11-22 12:04:35.162  INFO 14332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 12:04:35.162  INFO 14332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-22 12:04:35.164  INFO 14332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-22 12:04:35.225  INFO 14332 --- [http-nio-8080-exec-1] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-22 12:04:35.390 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-22 12:04:35.416 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-22 12:04:35.444 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-22 12:04:35.644  WARN 14332 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/order/conditionSearch
+2023-11-22 12:04:35.667  WARN 14332 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-22 12:04:35.675  WARN 14332 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/businessData
+2023-11-22 12:04:35.684  WARN 14332 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewOrders
+2023-11-22 12:04:35.696  WARN 14332 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewDishes
+2023-11-22 12:04:35.704  WARN 14332 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/workspace/overviewSetmeals
+2023-11-22 12:04:35.898  WARN 14332 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/66djnlcdg8a
+2023-11-22 12:04:37.644  INFO 14332 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:37.644  INFO 14332 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:37.657  INFO 14332 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:37.657  INFO 14332 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:37.662  INFO 14332 --- [http-nio-8080-exec-10] com.sky.controller.admin.DishController  : 菜品分页查询,DishPageQueryDTO(page=1, pageSize=10, name=null, categoryId=null, status=null)
+2023-11-22 12:04:37.677 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:04:37.678 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:04:37.682 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:04:37.718 DEBUG 14332 --- [http-nio-8080-exec-10] c.sky.mapper.DishMapper.pageQuery_COUNT  : ==>  Preparing: SELECT count(0) FROM dish d LEFT OUTER JOIN category c ON d.category_id = c.id
+2023-11-22 12:04:37.719 DEBUG 14332 --- [http-nio-8080-exec-10] c.sky.mapper.DishMapper.pageQuery_COUNT  : ==> Parameters: 
+2023-11-22 12:04:37.721 DEBUG 14332 --- [http-nio-8080-exec-10] c.sky.mapper.DishMapper.pageQuery_COUNT  : <==      Total: 1
+2023-11-22 12:04:37.723 DEBUG 14332 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.pageQuery      : ==>  Preparing: select d.*,c.name as category_name from dish d left outer join category c on d.category_id = c.id order by d.create_time desc LIMIT ?
+2023-11-22 12:04:37.723 DEBUG 14332 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.pageQuery      : ==> Parameters: 10(Integer)
+2023-11-22 12:04:37.728 DEBUG 14332 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.pageQuery      : <==      Total: 10
+2023-11-22 12:04:39.444  INFO 14332 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:39.444  INFO 14332 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:39.445  INFO 14332 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:39.445  INFO 14332 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:39.446 DEBUG 14332 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:04:39.446 DEBUG 14332 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:04:39.448 DEBUG 14332 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:04:39.451 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:04:39.451 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:04:39.454 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:04:39.455 DEBUG 14332 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:04:39.455 DEBUG 14332 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:04:39.458 DEBUG 14332 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 12:04:41.886  INFO 14332 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:41.887  INFO 14332 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:41.889 DEBUG 14332 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:04:41.889 DEBUG 14332 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:04:41.891 DEBUG 14332 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:04:48.000  INFO 14332 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:48.002  INFO 14332 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:48.002 DEBUG 14332 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:04:48.003 DEBUG 14332 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:04:48.005 DEBUG 14332 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:04:48.025  INFO 14332 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:48.026  INFO 14332 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:48.029 DEBUG 14332 --- [http-nio-8080-exec-5] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:04:48.031 DEBUG 14332 --- [http-nio-8080-exec-5] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:04:48.033 DEBUG 14332 --- [http-nio-8080-exec-5] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:04:49.195  INFO 14332 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:49.195  INFO 14332 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:49.196 DEBUG 14332 --- [http-nio-8080-exec-6] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:04:49.196 DEBUG 14332 --- [http-nio-8080-exec-6] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 18(Long)
+2023-11-22 12:04:49.199 DEBUG 14332 --- [http-nio-8080-exec-6] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 4
+2023-11-22 12:04:53.484  INFO 14332 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:53.485  INFO 14332 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:53.486 DEBUG 14332 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:04:53.487 DEBUG 14332 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:04:53.489 DEBUG 14332 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:04:53.499  INFO 14332 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:04:53.500  INFO 14332 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:04:53.501 DEBUG 14332 --- [http-nio-8080-exec-8] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:04:53.501 DEBUG 14332 --- [http-nio-8080-exec-8] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:04:53.503 DEBUG 14332 --- [http-nio-8080-exec-8] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:05:01.398  INFO 14332 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:01.400  INFO 14332 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:01.400 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:01.402 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 17(Long)
+2023-11-22 12:05:01.402 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:05:01.918  INFO 14332 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:01.918  INFO 14332 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:01.918 DEBUG 14332 --- [http-nio-8080-exec-10] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:01.918 DEBUG 14332 --- [http-nio-8080-exec-10] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 18(Long)
+2023-11-22 12:05:01.925 DEBUG 14332 --- [http-nio-8080-exec-10] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 4
+2023-11-22 12:05:02.515  INFO 14332 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:02.515  INFO 14332 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:02.515 DEBUG 14332 --- [http-nio-8080-exec-2] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:02.515 DEBUG 14332 --- [http-nio-8080-exec-2] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 20(Long)
+2023-11-22 12:05:02.515 DEBUG 14332 --- [http-nio-8080-exec-2] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:05:13.374  INFO 14332 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:13.375  INFO 14332 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:13.376 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:13.376 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:05:13.378 DEBUG 14332 --- [http-nio-8080-exec-1] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:05:13.908  INFO 14332 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:13.908  INFO 14332 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:13.908 DEBUG 14332 --- [http-nio-8080-exec-3] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:13.908 DEBUG 14332 --- [http-nio-8080-exec-3] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 17(Long)
+2023-11-22 12:05:13.908 DEBUG 14332 --- [http-nio-8080-exec-3] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:05:16.722  INFO 14332 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:16.723  INFO 14332 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:16.724 DEBUG 14332 --- [http-nio-8080-exec-4] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:16.724 DEBUG 14332 --- [http-nio-8080-exec-4] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 19(Long)
+2023-11-22 12:05:16.727 DEBUG 14332 --- [http-nio-8080-exec-4] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 4
+2023-11-22 12:05:17.021  INFO 14332 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:17.022  INFO 14332 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:17.023 DEBUG 14332 --- [http-nio-8080-exec-5] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:05:17.023 DEBUG 14332 --- [http-nio-8080-exec-5] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 18(Long)
+2023-11-22 12:05:17.025 DEBUG 14332 --- [http-nio-8080-exec-5] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 4
+2023-11-22 12:05:24.100  INFO 14332 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:24.100  INFO 14332 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:24.100  INFO 14332 --- [http-nio-8080-exec-6] c.sky.controller.admin.CommonController  : 文件上传,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@669c81a6
+2023-11-22 12:05:24.708  INFO 14332 --- [http-nio-8080-exec-6] com.sky.utils.AliOssUtil                 : 文件上传到:https://mtc-take-out.oss-cn-beijing.aliyuncs.com/e842b615-f340-4dd8-8c7f-f25963b26d02.png
+2023-11-22 12:05:24.708  INFO 14332 --- [http-nio-8080-exec-6] c.sky.controller.admin.CommonController  : 上传的文件名称为,https://mtc-take-out.oss-cn-beijing.aliyuncs.com/e842b615-f340-4dd8-8c7f-f25963b26d02.png
+2023-11-22 12:05:29.583  INFO 14332 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:29.583  INFO 14332 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:29.583  INFO 14332 --- [http-nio-8080-exec-7] c.s.controller.admin.SetmealController   : 新增套餐，SetmealDTO(id=null, categoryId=15, name=阿斯顿阿斯达, price=111, status=0, description=很好的没事, image=https://mtc-take-out.oss-cn-beijing.aliyuncs.com/e842b615-f340-4dd8-8c7f-f25963b26d02.png, setmealDishes=[SetmealDish(id=null, setmealId=null, dishId=59, name=东坡肘子, price=138, copies=1), SetmealDish(id=null, setmealId=null, dishId=53, name=蜀味水煮草鱼, price=38, copies=1), SetmealDish(id=null, setmealId=null, dishId=52, name=经典酸菜鮰鱼, price=66, copies=1), SetmealDish(id=null, setmealId=null, dishId=51, name=老坛酸菜鱼, price=56, copies=1)])
+2023-11-22 12:05:29.608  INFO 14332 --- [http-nio-8080-exec-7] com.sky.aspect.AutoFillAspect            : 开始进行公共字段的填充
+2023-11-22 12:05:29.617 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealMapper.insert      : ==>  Preparing: insert into setmeal (category_id, name, price, description, image, create_time, update_time, create_user, update_user) VALUES (?,?,?,?,?,?,?,?,?)
+2023-11-22 12:05:29.619 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealMapper.insert      : ==> Parameters: 15(Long), 阿斯顿阿斯达(String), 111(BigDecimal), 很好的没事(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/e842b615-f340-4dd8-8c7f-f25963b26d02.png(String), 2023-11-22T12:05:29.608675600(LocalDateTime), 2023-11-22T12:05:29.608675600(LocalDateTime), 1(Long), 1(Long)
+2023-11-22 12:05:29.626 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealMapper.insert      : <==    Updates: 1
+2023-11-22 12:05:29.626 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:05:29.626 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: null, 37(Long), 东坡肘子(String), 138(BigDecimal), 1(Integer)
+2023-11-22 12:05:29.635 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:05:29.636 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:05:29.636 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: null, 37(Long), 蜀味水煮草鱼(String), 38(BigDecimal), 1(Integer)
+2023-11-22 12:05:29.636 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:05:29.636 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:05:29.636 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: null, 37(Long), 经典酸菜鮰鱼(String), 66(BigDecimal), 1(Integer)
+2023-11-22 12:05:29.643 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:05:29.643 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:05:29.643 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: null, 37(Long), 老坛酸菜鱼(String), 56(BigDecimal), 1(Integer)
+2023-11-22 12:05:29.643 DEBUG 14332 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:05:30.179  INFO 14332 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:30.179  INFO 14332 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:05:30.181  INFO 14332 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:30.182  INFO 14332 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:05:30.183 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:05:30.183 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-8] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-8] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-8] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-8] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-8] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:05:30.184 DEBUG 14332 --- [http-nio-8080-exec-8] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 4
+2023-11-22 12:06:05.806  INFO 14332 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-22 12:06:05.810  INFO 14332 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-22 12:06:10.916  INFO 31860 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 31860 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-22 12:06:10.919  INFO 31860 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-22 12:06:11.667  INFO 31860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 12:06:11.669  INFO 31860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 12:06:11.694  INFO 31860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-11-22 12:06:12.426  INFO 31860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 12:06:12.427  INFO 31860 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-22 12:06:12.427  INFO 31860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-22 12:06:12.427  INFO 31860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-22 12:06:12.431  INFO 31860 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-22 12:06:12.442  INFO 31860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 12:06:12.442  INFO 31860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-22 12:06:12.557  INFO 31860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 12:06:12.557  INFO 31860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
+2023-11-22 12:06:12.693  INFO 31860 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-22 12:06:12.779  INFO 31860 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-22 12:06:12.979  INFO 31860 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-11-22 12:06:13.215  INFO 31860 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-22 12:06:13.284  INFO 31860 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-22 12:06:13.318  INFO 31860 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-22 12:06:13.322  INFO 31860 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-22 12:06:14.072  INFO 31860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 12:06:14.343  INFO 31860 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.783 seconds (JVM running for 4.409)
+2023-11-22 12:06:14.346  INFO 31860 --- [main] com.sky.SkyApplication                   : server started
+2023-11-22 12:06:18.138  INFO 31860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 12:06:18.138  INFO 31860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-22 12:06:18.139  INFO 31860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-22 12:06:18.152  WARN 31860 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2023-11-22 12:06:19.027  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:19.064  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:19.210 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:06:19.227 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:06:19.249 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:06:24.335  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:24.336  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:24.337 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:06:24.338 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:06:24.341 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:06:24.352  INFO 31860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:24.353  INFO 31860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:24.359 DEBUG 31860 --- [http-nio-8080-exec-4] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:06:24.361 DEBUG 31860 --- [http-nio-8080-exec-4] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:06:24.364 DEBUG 31860 --- [http-nio-8080-exec-4] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:06:30.053  INFO 31860 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:30.054  INFO 31860 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:30.055  INFO 31860 --- [http-nio-8080-exec-5] c.sky.controller.admin.CommonController  : 文件上传,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4f50ee1d
+2023-11-22 12:06:30.497  INFO 31860 --- [http-nio-8080-exec-5] com.sky.utils.AliOssUtil                 : 文件上传到:https://mtc-take-out.oss-cn-beijing.aliyuncs.com/bda576b9-ca46-465d-9e4c-10d79b02cc27.png
+2023-11-22 12:06:30.497  INFO 31860 --- [http-nio-8080-exec-5] c.sky.controller.admin.CommonController  : 上传的文件名称为,https://mtc-take-out.oss-cn-beijing.aliyuncs.com/bda576b9-ca46-465d-9e4c-10d79b02cc27.png
+2023-11-22 12:06:35.487  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:35.488  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:35.509  INFO 31860 --- [http-nio-8080-exec-6] c.s.controller.admin.SetmealController   : 新增套餐，SetmealDTO(id=null, categoryId=13, name=阿三大苏打飒飒的, price=111, status=0, description=, image=https://mtc-take-out.oss-cn-beijing.aliyuncs.com/bda576b9-ca46-465d-9e4c-10d79b02cc27.png, setmealDishes=[SetmealDish(id=null, setmealId=null, dishId=66, name=江团鱼2斤, price=119, copies=1), SetmealDish(id=null, setmealId=null, dishId=67, name=鮰鱼2斤, price=72, copies=2)])
+2023-11-22 12:06:35.521  INFO 31860 --- [http-nio-8080-exec-6] com.sky.aspect.AutoFillAspect            : 开始进行公共字段的填充
+2023-11-22 12:06:35.523 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.insert      : ==>  Preparing: insert into setmeal (category_id, name, price, description, image, create_time, update_time, create_user, update_user) VALUES (?,?,?,?,?,?,?,?,?)
+2023-11-22 12:06:35.526 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.insert      : ==> Parameters: 13(Long), 阿三大苏打飒飒的(String), 111(BigDecimal), (String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/bda576b9-ca46-465d-9e4c-10d79b02cc27.png(String), 2023-11-22T12:06:35.522094800(LocalDateTime), 2023-11-22T12:06:35.522094800(LocalDateTime), 1(Long), 1(Long)
+2023-11-22 12:06:35.534 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.insert      : <==    Updates: 1
+2023-11-22 12:06:35.537 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:06:35.537 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 38(Long), 66(Long), 江团鱼2斤(String), 119(BigDecimal), 1(Integer)
+2023-11-22 12:06:35.540 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:06:35.542 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:06:35.542 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 38(Long), 67(Long), 鮰鱼2斤(String), 72(BigDecimal), 2(Integer)
+2023-11-22 12:06:35.545 DEBUG 31860 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:06:36.078  INFO 31860 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:36.078  INFO 31860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:06:36.079  INFO 31860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:36.079  INFO 31860 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:06:36.080 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:06:36.080 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:06:36.082 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:06:36.116 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:06:36.118 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:06:36.120 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:06:36.122 DEBUG 31860 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:06:36.122 DEBUG 31860 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:06:36.125 DEBUG 31860 --- [http-nio-8080-exec-7] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 5
+2023-11-22 12:07:29.742  INFO 31860 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:29.743  INFO 31860 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:29.744 DEBUG 31860 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:07:29.744 DEBUG 31860 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:07:29.746 DEBUG 31860 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:07:31.277  INFO 31860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:31.277  INFO 31860 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:31.278  INFO 31860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:31.278  INFO 31860 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:31.278 DEBUG 31860 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:07:31.279 DEBUG 31860 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:07:31.280 DEBUG 31860 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:07:31.281 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:07:31.281 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:07:31.283 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:07:31.285 DEBUG 31860 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:07:31.285 DEBUG 31860 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:07:31.286 DEBUG 31860 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 1
+2023-11-22 12:07:31.938  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:31.938  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:31.939  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:31.939  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:31.940 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:07:31.940 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:07:31.940 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:07:31.940 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:07:31.942 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:07:31.942 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:07:31.942 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:07:31.943 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:07:31.945 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 1
+2023-11-22 12:07:31.949  WARN 31860 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-22 12:07:32.230  WARN 31860 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/593sm8513l2
+2023-11-22 12:07:33.633  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:33.634  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:33.634 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:07:33.635 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:07:33.636 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:07:41.808  INFO 31860 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:41.809  INFO 31860 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:41.810 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:07:41.810 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:07:41.813 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:07:41.823  INFO 31860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:41.823  INFO 31860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:41.824 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:07:41.825 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:07:41.828 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:07:48.326  INFO 31860 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:48.327  INFO 31860 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:48.327  INFO 31860 --- [http-nio-8080-exec-9] c.sky.controller.admin.CommonController  : 文件上传,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@170ef102
+2023-11-22 12:07:48.609  INFO 31860 --- [http-nio-8080-exec-9] com.sky.utils.AliOssUtil                 : 文件上传到:https://mtc-take-out.oss-cn-beijing.aliyuncs.com/dc3d6474-4d3c-4e56-933f-fe1eacee4f94.png
+2023-11-22 12:07:48.609  INFO 31860 --- [http-nio-8080-exec-9] c.sky.controller.admin.CommonController  : 上传的文件名称为,https://mtc-take-out.oss-cn-beijing.aliyuncs.com/dc3d6474-4d3c-4e56-933f-fe1eacee4f94.png
+2023-11-22 12:07:53.257  INFO 31860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:53.259  INFO 31860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:53.260  INFO 31860 --- [http-nio-8080-exec-1] c.s.controller.admin.SetmealController   : 新增套餐，SetmealDTO(id=null, categoryId=15, name=鱼肉想过, price=14, status=0, description=啊啊啊啊啊时代的自行车自行车, image=https://mtc-take-out.oss-cn-beijing.aliyuncs.com/dc3d6474-4d3c-4e56-933f-fe1eacee4f94.png, setmealDishes=[SetmealDish(id=null, setmealId=null, dishId=66, name=江团鱼2斤, price=119, copies=1), SetmealDish(id=null, setmealId=null, dishId=67, name=鮰鱼2斤, price=72, copies=1)])
+2023-11-22 12:07:53.260  INFO 31860 --- [http-nio-8080-exec-1] com.sky.aspect.AutoFillAspect            : 开始进行公共字段的填充
+2023-11-22 12:07:53.260 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.insert      : ==>  Preparing: insert into setmeal (category_id, name, price, description, image, create_time, update_time, create_user, update_user) VALUES (?,?,?,?,?,?,?,?,?)
+2023-11-22 12:07:53.260 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.insert      : ==> Parameters: 15(Long), 鱼肉想过(String), 14(BigDecimal), 啊啊啊啊啊时代的自行车自行车(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/dc3d6474-4d3c-4e56-933f-fe1eacee4f94.png(String), 2023-11-22T12:07:53.260905500(LocalDateTime), 2023-11-22T12:07:53.260905500(LocalDateTime), 1(Long), 1(Long)
+2023-11-22 12:07:53.275 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.insert      : <==    Updates: 1
+2023-11-22 12:07:53.275 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:07:53.276 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 39(Long), 66(Long), 江团鱼2斤(String), 119(BigDecimal), 1(Integer)
+2023-11-22 12:07:53.276 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:07:53.276 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:07:53.276 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 39(Long), 67(Long), 鮰鱼2斤(String), 72(BigDecimal), 1(Integer)
+2023-11-22 12:07:53.282 DEBUG 31860 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:07:53.820  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:53.820  INFO 31860 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:07:53.820  INFO 31860 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:53.820  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:07:53.824 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:07:53.825 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:07:53.825 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:07:53.825 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:07:53.827 DEBUG 31860 --- [http-nio-8080-exec-3] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:07:53.827 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:07:53.828 DEBUG 31860 --- [http-nio-8080-exec-3] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:07:53.828 DEBUG 31860 --- [http-nio-8080-exec-3] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:07:53.829 DEBUG 31860 --- [http-nio-8080-exec-3] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 2
+2023-11-22 12:08:01.370  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:01.370  WARN 31860 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/setmeal/39
+2023-11-22 12:08:01.372  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:01.373 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:08:01.374 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:08:01.376 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:08:03.807  INFO 31860 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:03.808  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:03.808  INFO 31860 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:03.808  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:03.808 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:08:03.808 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:08:03.808 DEBUG 31860 --- [http-nio-8080-exec-5] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:08:03.808 DEBUG 31860 --- [http-nio-8080-exec-5] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:08:03.811 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:08:03.811 DEBUG 31860 --- [http-nio-8080-exec-5] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:08:03.811 DEBUG 31860 --- [http-nio-8080-exec-5] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:08:03.811 DEBUG 31860 --- [http-nio-8080-exec-5] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:08:03.814 DEBUG 31860 --- [http-nio-8080-exec-5] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 2
+2023-11-22 12:08:05.361  INFO 31860 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:05.361  INFO 31860 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:05.361 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:08:05.361 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:08:05.361 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:08:11.111  INFO 31860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:11.112  INFO 31860 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:11.112 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:08:11.113 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:08:11.113 DEBUG 31860 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:08:11.125  INFO 31860 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:11.126  INFO 31860 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:11.128 DEBUG 31860 --- [http-nio-8080-exec-9] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:08:11.128 DEBUG 31860 --- [http-nio-8080-exec-9] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:08:11.128 DEBUG 31860 --- [http-nio-8080-exec-9] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:08:12.071  INFO 31860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:12.071  INFO 31860 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:12.071 DEBUG 31860 --- [http-nio-8080-exec-1] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:08:12.071 DEBUG 31860 --- [http-nio-8080-exec-1] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 19(Long)
+2023-11-22 12:08:12.071 DEBUG 31860 --- [http-nio-8080-exec-1] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 4
+2023-11-22 12:08:13.076  INFO 31860 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:13.076  INFO 31860 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:13.079 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:08:13.079 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 20(Long)
+2023-11-22 12:08:13.081 DEBUG 31860 --- [http-nio-8080-exec-10] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:08:22.421  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:22.422  INFO 31860 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:22.423  INFO 31860 --- [http-nio-8080-exec-3] c.sky.controller.admin.CommonController  : 文件上传,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@49faac46
+2023-11-22 12:08:22.696  INFO 31860 --- [http-nio-8080-exec-3] com.sky.utils.AliOssUtil                 : 文件上传到:https://mtc-take-out.oss-cn-beijing.aliyuncs.com/fd7a0c50-c5f9-4b0b-b7eb-58b5278e25ab.png
+2023-11-22 12:08:22.696  INFO 31860 --- [http-nio-8080-exec-3] c.sky.controller.admin.CommonController  : 上传的文件名称为,https://mtc-take-out.oss-cn-beijing.aliyuncs.com/fd7a0c50-c5f9-4b0b-b7eb-58b5278e25ab.png
+2023-11-22 12:08:26.536  INFO 31860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:26.536  INFO 31860 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:26.536  INFO 31860 --- [http-nio-8080-exec-4] c.s.controller.admin.SetmealController   : 新增套餐，SetmealDTO(id=null, categoryId=25, name=大师傅士大夫但是, price=14, status=0, description=阿三大苏打实打实的撒肯定就阿克苏了解到可拉斯基的可拉斯基打开链接 , image=https://mtc-take-out.oss-cn-beijing.aliyuncs.com/fd7a0c50-c5f9-4b0b-b7eb-58b5278e25ab.png, setmealDishes=[SetmealDish(id=null, setmealId=null, dishId=52, name=经典酸菜鮰鱼, price=66, copies=2), SetmealDish(id=null, setmealId=null, dishId=53, name=蜀味水煮草鱼, price=38, copies=3), SetmealDish(id=null, setmealId=null, dishId=57, name=炝炒圆白菜, price=18, copies=3), SetmealDish(id=null, setmealId=null, dishId=56, name=清炒西兰花, price=18, copies=3), SetmealDish(id=null, setmealId=null, dishId=66, name=江团鱼2斤, price=119, copies=2)])
+2023-11-22 12:08:26.536  INFO 31860 --- [http-nio-8080-exec-4] com.sky.aspect.AutoFillAspect            : 开始进行公共字段的填充
+2023-11-22 12:08:26.536 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealMapper.insert      : ==>  Preparing: insert into setmeal (category_id, name, price, description, image, create_time, update_time, create_user, update_user) VALUES (?,?,?,?,?,?,?,?,?)
+2023-11-22 12:08:26.536 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealMapper.insert      : ==> Parameters: 25(Long), 大师傅士大夫但是(String), 14(BigDecimal), 阿三大苏打实打实的撒肯定就阿克苏了解到可拉斯基的可拉斯基打开链接 (String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/fd7a0c50-c5f9-4b0b-b7eb-58b5278e25ab.png(String), 2023-11-22T12:08:26.536759800(LocalDateTime), 2023-11-22T12:08:26.536759800(LocalDateTime), 1(Long), 1(Long)
+2023-11-22 12:08:26.545 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealMapper.insert      : <==    Updates: 1
+2023-11-22 12:08:26.545 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:08:26.545 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 40(Long), 52(Long), 经典酸菜鮰鱼(String), 66(BigDecimal), 2(Integer)
+2023-11-22 12:08:26.545 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:08:26.550 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:08:26.550 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 40(Long), 53(Long), 蜀味水煮草鱼(String), 38(BigDecimal), 3(Integer)
+2023-11-22 12:08:26.552 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:08:26.552 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:08:26.552 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 40(Long), 57(Long), 炝炒圆白菜(String), 18(BigDecimal), 3(Integer)
+2023-11-22 12:08:26.552 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:08:26.559 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:08:26.559 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 40(Long), 56(Long), 清炒西兰花(String), 18(BigDecimal), 3(Integer)
+2023-11-22 12:08:26.562 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:08:26.562 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==>  Preparing: insert into setmeal_dish (setmeal_id, dish_id, name, price, copies) VALUES (?,?,?,?,?)
+2023-11-22 12:08:26.562 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : ==> Parameters: 40(Long), 66(Long), 江团鱼2斤(String), 119(BigDecimal), 2(Integer)
+2023-11-22 12:08:26.562 DEBUG 31860 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealDishMapper.insert  : <==    Updates: 1
+2023-11-22 12:08:27.107  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:27.107  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:08:27.107  INFO 31860 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:27.107  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:08:27.109 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:08:27.110 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 12:09:34.384  WARN 31860 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2023-11-22 12:10:27.836  INFO 31860 --- [http-nio-8080-exec-8] c.s.controller.admin.EmployeeController  : 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2023-11-22 12:10:27.849 ERROR 31860 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 120730
+2023-11-22 12:10:27.850 ERROR 31860 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 120739
+2023-11-22 12:10:27.854 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.EmployeeMapper.getByUsername  : ==>  Preparing: select * from employee where username = ?
+2023-11-22 12:10:27.854 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.EmployeeMapper.getByUsername  : ==> Parameters: admin(String)
+2023-11-22 12:10:27.856 DEBUG 31860 --- [http-nio-8080-exec-8] c.s.mapper.EmployeeMapper.getByUsername  : <==      Total: 1
+2023-11-22 12:11:01.739  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzNDI3fQ.ArrIHItSDYC_KTZYsLvaYSGUUK7Sq734t3n8TpWdxnw
+2023-11-22 12:11:01.739  INFO 31860 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:11:01.742 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:11:01.742 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:11:01.746 DEBUG 31860 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:11:01.746 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:11:01.746 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:11:01.747 DEBUG 31860 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 12:29:06.212  INFO 31860 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-22 12:29:06.214  INFO 31860 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-22 12:29:11.480  INFO 17652 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 17652 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-22 12:29:11.483  INFO 17652 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-22 12:29:12.215  INFO 17652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 12:29:12.217  INFO 17652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 12:29:12.240  INFO 17652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-11-22 12:29:12.864  INFO 17652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 12:29:12.865  INFO 17652 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-22 12:29:12.865  INFO 17652 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-22 12:29:12.865  INFO 17652 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-22 12:29:12.869  INFO 17652 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-22 12:29:12.877  INFO 17652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 12:29:12.877  INFO 17652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-22 12:29:12.976  INFO 17652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 12:29:12.976  INFO 17652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1455 ms
+2023-11-22 12:29:13.078  INFO 17652 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-22 12:29:13.244  INFO 17652 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-22 12:29:13.520  INFO 17652 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-11-22 12:29:13.757  INFO 17652 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-22 12:29:13.824  INFO 17652 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-22 12:29:13.859  INFO 17652 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-22 12:29:13.864  INFO 17652 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-22 12:29:14.540  INFO 17652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 12:29:14.840  INFO 17652 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.736 seconds (JVM running for 4.315)
+2023-11-22 12:29:14.842  INFO 17652 --- [main] com.sky.SkyApplication                   : server started
+2023-11-22 12:29:16.740  INFO 17652 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 12:29:16.740  INFO 17652 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-22 12:29:16.744  INFO 17652 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-11-22 12:29:16.761  INFO 17652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:16.761  INFO 17652 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:16.763  WARN 17652 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-22 12:29:16.815  INFO 17652 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:16.815  INFO 17652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:16.967  WARN 17652 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/ent3ww4ta7n
+2023-11-22 12:29:17.002 DEBUG 17652 --- [http-nio-8080-exec-5] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:29:17.028 DEBUG 17652 --- [http-nio-8080-exec-5] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:29:17.037 DEBUG 17652 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:29:17.037 DEBUG 17652 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:29:17.052 DEBUG 17652 --- [http-nio-8080-exec-2] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:29:17.056 DEBUG 17652 --- [http-nio-8080-exec-5] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:29:17.056 DEBUG 17652 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:29:17.058 DEBUG 17652 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:29:17.061 DEBUG 17652 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 12:29:18.725  INFO 17652 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:18.726  INFO 17652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:18.726  INFO 17652 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:18.726  INFO 17652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:18.728 DEBUG 17652 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:29:18.728 DEBUG 17652 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:29:18.728 DEBUG 17652 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-11-22 12:29:18.728 DEBUG 17652 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 40(Long)
+2023-11-22 12:29:18.728 DEBUG 17652 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:29:18.734 DEBUG 17652 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-11-22 12:29:18.743 DEBUG 17652 --- [http-nio-8080-exec-6] c.s.mapper.SetmealDishMapper.selectById  : ==>  Preparing: select * from setmeal_dish where dish_id = ?;
+2023-11-22 12:29:18.746 DEBUG 17652 --- [http-nio-8080-exec-6] c.s.mapper.SetmealDishMapper.selectById  : ==> Parameters: 40(Long)
+2023-11-22 12:29:18.746 DEBUG 17652 --- [http-nio-8080-exec-6] c.s.mapper.SetmealDishMapper.selectById  : <==      Total: 0
+2023-11-22 12:29:20.323  INFO 17652 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:20.323  INFO 17652 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:20.323 DEBUG 17652 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:29:20.323 DEBUG 17652 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 1(Integer)
+2023-11-22 12:29:20.329 DEBUG 17652 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 8
+2023-11-22 12:29:20.338  INFO 17652 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:20.338  INFO 17652 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:20.345 DEBUG 17652 --- [http-nio-8080-exec-8] c.s.m.DishMapper.selectByCategoryId      : ==>  Preparing: select * from dish where category_id = ?
+2023-11-22 12:29:20.345 DEBUG 17652 --- [http-nio-8080-exec-8] c.s.m.DishMapper.selectByCategoryId      : ==> Parameters: 16(Long)
+2023-11-22 12:29:20.353 DEBUG 17652 --- [http-nio-8080-exec-8] c.s.m.DishMapper.selectByCategoryId      : <==      Total: 3
+2023-11-22 12:29:25.386  INFO 17652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:25.388  INFO 17652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:25.388  INFO 17652 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:25.389  INFO 17652 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:25.390 DEBUG 17652 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:29:25.390 DEBUG 17652 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:29:25.390 DEBUG 17652 --- [http-nio-8080-exec-9] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:29:25.390 DEBUG 17652 --- [http-nio-8080-exec-9] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:29:25.392 DEBUG 17652 --- [http-nio-8080-exec-9] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:29:25.392 DEBUG 17652 --- [http-nio-8080-exec-10] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:29:25.392 DEBUG 17652 --- [http-nio-8080-exec-9] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:29:25.394 DEBUG 17652 --- [http-nio-8080-exec-9] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:29:25.395 DEBUG 17652 --- [http-nio-8080-exec-9] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 12:29:28.175  INFO 17652 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:28.174  INFO 17652 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:29:28.175  INFO 17652 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:28.175  INFO 17652 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:28.176 DEBUG 17652 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:29:28.176 DEBUG 17652 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-11-22 12:29:28.177 DEBUG 17652 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:29:28.177 DEBUG 17652 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 39(Long)
+2023-11-22 12:29:28.179 DEBUG 17652 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:29:28.179 DEBUG 17652 --- [http-nio-8080-exec-4] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-11-22 12:29:28.179 DEBUG 17652 --- [http-nio-8080-exec-4] c.s.mapper.SetmealDishMapper.selectById  : ==>  Preparing: select * from setmeal_dish where dish_id = ?;
+2023-11-22 12:29:28.180 DEBUG 17652 --- [http-nio-8080-exec-4] c.s.mapper.SetmealDishMapper.selectById  : ==> Parameters: 39(Long)
+2023-11-22 12:29:28.180 DEBUG 17652 --- [http-nio-8080-exec-4] c.s.mapper.SetmealDishMapper.selectById  : <==      Total: 0
+2023-11-22 12:29:57.700  INFO 17652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzNDI3fQ.ArrIHItSDYC_KTZYsLvaYSGUUK7Sq734t3n8TpWdxnw
+2023-11-22 12:29:57.701  INFO 17652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:29:57.702 DEBUG 17652 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-11-22 12:29:57.702 DEBUG 17652 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 40(Long)
+2023-11-22 12:29:57.704 DEBUG 17652 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-11-22 12:29:57.705 DEBUG 17652 --- [http-nio-8080-exec-6] c.s.mapper.SetmealDishMapper.selectById  : ==>  Preparing: select * from setmeal_dish where dish_id = ?;
+2023-11-22 12:29:57.705 DEBUG 17652 --- [http-nio-8080-exec-6] c.s.mapper.SetmealDishMapper.selectById  : ==> Parameters: 40(Long)
+2023-11-22 12:29:57.706 DEBUG 17652 --- [http-nio-8080-exec-6] c.s.mapper.SetmealDishMapper.selectById  : <==      Total: 0
+2023-11-22 12:31:07.064  INFO 17652 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-22 12:31:07.069  INFO 17652 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-22 12:31:10.465  INFO 7432 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 7432 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-11-22 12:31:10.467  INFO 7432 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-11-22 12:31:11.080  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 12:31:11.082  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 12:31:11.103  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-11-22 12:31:11.684  INFO 7432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 12:31:11.685  INFO 7432 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-11-22 12:31:11.685  INFO 7432 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-11-22 12:31:11.685  INFO 7432 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-11-22 12:31:11.689  INFO 7432 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-11-22 12:31:11.696  INFO 7432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 12:31:11.697  INFO 7432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-11-22 12:31:11.793  INFO 7432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 12:31:11.794  INFO 7432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1291 ms
+2023-11-22 12:31:11.896  INFO 7432 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-22 12:31:11.996  INFO 7432 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-22 12:31:12.203  INFO 7432 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-11-22 12:31:12.480  INFO 7432 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-11-22 12:31:12.553  INFO 7432 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-11-22 12:31:12.585  INFO 7432 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-11-22 12:31:12.589  INFO 7432 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-11-22 12:31:13.232  INFO 7432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 12:31:13.593  INFO 7432 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.491 seconds (JVM running for 4.038)
+2023-11-22 12:31:13.596  INFO 7432 --- [main] com.sky.SkyApplication                   : server started
+2023-11-22 12:31:20.020  INFO 7432 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 12:31:20.020  INFO 7432 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-22 12:31:20.021  INFO 7432 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-22 12:31:20.033  INFO 7432 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzNDI3fQ.ArrIHItSDYC_KTZYsLvaYSGUUK7Sq734t3n8TpWdxnw
+2023-11-22 12:31:20.074  INFO 7432 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:20.206 DEBUG 7432 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-11-22 12:31:20.223 DEBUG 7432 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 40(Long)
+2023-11-22 12:31:20.252 DEBUG 7432 --- [http-nio-8080-exec-2] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-11-22 12:31:20.261 DEBUG 7432 --- [http-nio-8080-exec-2] c.s.mapper.SetmealDishMapper.selectById  : ==>  Preparing: select * from setmeal_dish where setmeal_id = ?;
+2023-11-22 12:31:20.261 DEBUG 7432 --- [http-nio-8080-exec-2] c.s.mapper.SetmealDishMapper.selectById  : ==> Parameters: 40(Long)
+2023-11-22 12:31:20.265 DEBUG 7432 --- [http-nio-8080-exec-2] c.s.mapper.SetmealDishMapper.selectById  : <==      Total: 5
+2023-11-22 12:31:25.471  INFO 7432 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:25.473  INFO 7432 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:25.480  INFO 7432 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:25.482  INFO 7432 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:25.483 DEBUG 7432 --- [http-nio-8080-exec-5] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-11-22 12:31:25.484 DEBUG 7432 --- [http-nio-8080-exec-5] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 39(Long)
+2023-11-22 12:31:25.485 DEBUG 7432 --- [http-nio-8080-exec-5] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-11-22 12:31:25.487  WARN 7432 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/shop/status
+2023-11-22 12:31:25.487 DEBUG 7432 --- [http-nio-8080-exec-5] c.s.mapper.SetmealDishMapper.selectById  : ==>  Preparing: select * from setmeal_dish where setmeal_id = ?;
+2023-11-22 12:31:25.488 DEBUG 7432 --- [http-nio-8080-exec-5] c.s.mapper.SetmealDishMapper.selectById  : ==> Parameters: 39(Long)
+2023-11-22 12:31:25.491 DEBUG 7432 --- [http-nio-8080-exec-5] c.s.mapper.SetmealDishMapper.selectById  : <==      Total: 2
+2023-11-22 12:31:25.506 DEBUG 7432 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:31:25.508 DEBUG 7432 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:31:25.512 DEBUG 7432 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:31:25.744  WARN 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /ws/hup6zvws8xg
+2023-11-22 12:31:41.419  INFO 7432 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:41.419  INFO 7432 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:41.420  INFO 7432 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:41.420  INFO 7432 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:41.421 DEBUG 7432 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:31:41.421 DEBUG 7432 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:31:41.421 DEBUG 7432 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:31:41.486 DEBUG 7432 --- [http-nio-8080-exec-6] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:31:41.486 DEBUG 7432 --- [http-nio-8080-exec-6] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:31:41.491 DEBUG 7432 --- [http-nio-8080-exec-6] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:31:41.493 DEBUG 7432 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:31:41.493 DEBUG 7432 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:31:41.495 DEBUG 7432 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 12:31:43.965  INFO 7432 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:43.965  INFO 7432 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:43.965  INFO 7432 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:43.965  INFO 7432 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:43.965 DEBUG 7432 --- [http-nio-8080-exec-8] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-11-22 12:31:43.965 DEBUG 7432 --- [http-nio-8080-exec-8] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 39(Long)
+2023-11-22 12:31:43.970 DEBUG 7432 --- [http-nio-8080-exec-8] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-11-22 12:31:43.972 DEBUG 7432 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:31:43.972 DEBUG 7432 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:31:43.974 DEBUG 7432 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:31:43.975 DEBUG 7432 --- [http-nio-8080-exec-8] c.s.mapper.SetmealDishMapper.selectById  : ==>  Preparing: select * from setmeal_dish where setmeal_id = ?;
+2023-11-22 12:31:43.975 DEBUG 7432 --- [http-nio-8080-exec-8] c.s.mapper.SetmealDishMapper.selectById  : ==> Parameters: 39(Long)
+2023-11-22 12:31:43.976 DEBUG 7432 --- [http-nio-8080-exec-8] c.s.mapper.SetmealDishMapper.selectById  : <==      Total: 2
+2023-11-22 12:31:51.602  INFO 7432 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:51.602  INFO 7432 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAwNjMzMDc1fQ.2DCG2gegA5HnfMxW_0eeFyijnDx-YC0G1uo6WMSOSLk
+2023-11-22 12:31:51.602  INFO 7432 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:51.602  INFO 7432 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-11-22 12:31:51.602 DEBUG 7432 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 and type = ? order by sort asc,create_time desc
+2023-11-22 12:31:51.602 DEBUG 7432 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 2(Integer)
+2023-11-22 12:31:51.607 DEBUG 7432 --- [http-nio-8080-exec-10] c.s.m.SetmealMapper.pageQuery_COUNT      : ==>  Preparing: SELECT count(0) FROM setmeal
+2023-11-22 12:31:51.607 DEBUG 7432 --- [http-nio-8080-exec-10] c.s.m.SetmealMapper.pageQuery_COUNT      : ==> Parameters: 
+2023-11-22 12:31:51.607 DEBUG 7432 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 3
+2023-11-22 12:31:51.609 DEBUG 7432 --- [http-nio-8080-exec-10] c.s.m.SetmealMapper.pageQuery_COUNT      : <==      Total: 1
+2023-11-22 12:31:51.610 DEBUG 7432 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.pageQuery   : ==>  Preparing: select * from setmeal order by create_time desc LIMIT ?
+2023-11-22 12:31:51.610 DEBUG 7432 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.pageQuery   : ==> Parameters: 10(Integer)
+2023-11-22 12:31:51.610 DEBUG 7432 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.pageQuery   : <==      Total: 3
+2023-11-22 13:36:21.985  INFO 7432 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-22 13:36:21.986  INFO 7432 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

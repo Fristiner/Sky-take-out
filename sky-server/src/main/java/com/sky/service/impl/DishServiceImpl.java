@@ -166,5 +166,27 @@ public class DishServiceImpl implements DishService {
 
     }
 
+    /**
+     * 起售停售功能
+     *
+     * @param id
+     * @param status
+     */
+    @Override
+    public void StartOrStop(Long id, Integer status) {
+        //1.根据id来查找
+        Dish dishMapperById = dishMapper.getById(id);
+
+        dishMapperById.setStatus(status);
+        //2.update
+        dishMapper.update(dishMapperById);
+    }
+
+    @Override
+    public List<Dish> selectList(Long categoryId) {
+        // 根据categoryId来进行查询
+        return dishMapper.selectByCategoryId(categoryId);
+    }
+
 
 }

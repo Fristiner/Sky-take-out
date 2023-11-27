@@ -30,6 +30,12 @@ public class CommonController {
     @Autowired
     private AliOssUtil aliOssUtil;
 
+    /**
+     * 文件上传
+     *
+     * @param file
+     * @return
+     */
 
     @PostMapping("/upload")
     @ApiOperation("文件上传")
@@ -55,7 +61,7 @@ public class CommonController {
             log.error("文件上传失败，{}", e);
 //            throw new RuntimeException(e);
         }
-        
+
         return Result.error(MessageConstant.UPLOAD_FAILED);
     }
 

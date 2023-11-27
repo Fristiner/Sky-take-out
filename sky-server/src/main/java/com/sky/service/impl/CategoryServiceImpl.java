@@ -107,7 +107,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void deleteById(Long id) {
-        // TODO：实现删除功能
+        // 实现删除功能
         //  如果当前分类下面有菜品不能删除
         //  如果当前分类下面有套餐，不能删除
 
@@ -155,7 +155,7 @@ public class CategoryServiceImpl implements CategoryService {
         //3.更新数据
         categoryMapper.update(category);
 
-        // TODO：实现对数据添加没成功的判断
+//         实现对数据添加没成功的判断
         // org.apache.ibatis.reflection.ReflectionException:
         // There is no getter for property named 'create_time' in 'class com.sky.entity.Category'
     }

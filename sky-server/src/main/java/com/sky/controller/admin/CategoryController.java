@@ -24,7 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin/category")
 @Slf4j
-@Api(tags = "套餐管理相关接口")
+@Api(tags = "分类管理相关接口")
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
@@ -97,7 +97,6 @@ public class CategoryController {
     @ApiOperation("修改分类")
     public Result<String> update(@RequestBody CategoryDTO categoryDTO) {
         log.info("修改分类");
-        // TODO：去完成这部分
         categoryService.Update(categoryDTO);
         return Result.success();
     }
