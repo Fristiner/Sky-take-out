@@ -173,4 +173,12 @@ public class CategoryServiceImpl implements CategoryService {
 
         return categories;
     }
+
+    @Override
+    public List<Category> userList(String type) {
+        //
+        List<Category> categories = categoryMapper.userList(type);
+
+        return categories;
+    }
 }

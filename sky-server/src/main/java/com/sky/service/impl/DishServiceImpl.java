@@ -9,6 +9,7 @@ import com.sky.dto.DishPageQueryDTO;
 import com.sky.entity.Dish;
 import com.sky.entity.DishFlavor;
 import com.sky.exception.DeletionNotAllowedException;
+import com.sky.mapper.CategoryMapper;
 import com.sky.mapper.DishFlavorMapper;
 import com.sky.mapper.DishMapper;
 import com.sky.mapper.SetmealDishMapper;
@@ -21,6 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /* *
@@ -45,6 +47,8 @@ public class DishServiceImpl implements DishService {
     @Autowired
     private DishFlavorMapper dishFlavorMapper;
 
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * 新增菜品和口味数据
@@ -186,6 +190,42 @@ public class DishServiceImpl implements DishService {
     public List<Dish> selectList(Long categoryId) {
         // 根据categoryId来进行查询
         return dishMapper.selectByCategoryId(categoryId);
+    }
+
+    /**
+     * 根据catagoryid来进行查询
+     *
+     * @param categoryId
+     * @return
+     */
+    @Override
+    public List<DishVO> userList(String categoryId) {
+
+        // TODO：未完成 BeanUtils
+        // 查出菜品  还有查出菜品相关口味
+        List<Dish> dishList = dishMapper.userList(categoryId);
+        List<DishVO> dishVOList = new ArrayList<>();
+        BeanUtils.copyProperties(dishList, dishVOList);
+//        for (DishVO dishVO : dishVOList) {
+//            // 每个都要查出对应的口味
+//            List<DishFlavor> dishFlavors = dishFlavorMapper.selectFlavorWithId(dishVO.getId());
+//            dishVO.setFlavors(dishFlavors);
+//            // 返回categoryName
+//            String name = categoryMapper.selectNameById(dishVO.getCategoryId());
+//            dishVO.setCategoryName(name);
+//        }
+        for (Dish dish : dishList) {
+            //
+            DishVO dishVO = new DishVO();
+            BeanUtils.copyProperties(dish, dishVO);
+            List<DishFlavor> dishFlavors = dishFlavorMapper.selectFlavorWithId(dishVO.getId());
+            dishVO.setFlavors(dishFlavors);
+            // 返回categoryName
+            String name = categoryMapper.selectNameById(dishVO.getCategoryId());
+            dishVO.setCategoryName(name);
+            dishVOList.add(dishVO);
+        }
+        return dishVOList;
     }
 
 

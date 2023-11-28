@@ -41,4 +41,6 @@ public interface DishService {
     void StartOrStop(Long id, Integer status);
 
     List<Dish> selectList(Long categoryId);
+
+    List<DishVO> userList(String categoryId);
 }
