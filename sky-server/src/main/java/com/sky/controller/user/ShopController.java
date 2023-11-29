@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Objects;
-
 @RestController("userShopController")
 @Slf4j
 @RequestMapping("/user/shop")
@@ -31,7 +29,8 @@ public class ShopController {
     @GetMapping("/status")
     @ApiOperation("获取店铺营业状态")
     public Result<Integer> getStatus() {
-        Integer status = Integer.valueOf(Objects.requireNonNull(redisTemplate.opsForValue().get("SHOP_STATUS")));
+//        Integer status = Integer.valueOf(redisTemplate.opsForValue().get("SHOP_STATUS"));
+        Integer status = Integer.valueOf(redisTemplate.opsForValue().get("SHOP_STATUS"));
 
         log.info("获取当前店铺的营业状态为：{}", status == 1 ? "营业中" : "打烊中");
 

@@ -50,4 +50,12 @@
         </if>
         order by sort asc,create_time desc
     </select>
+    <select id="userList" resultType="com.sky.entity.Category">
+        select * from category
+        <where>
+            <if test="type != null">type = #{type} and</if>
+            status = '1'
+        </where>
+
+    </select>
 </mapper>

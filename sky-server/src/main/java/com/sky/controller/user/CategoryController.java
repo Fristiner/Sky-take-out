@@ -30,7 +30,7 @@ public class CategoryController {
 
     @GetMapping("/list")
     @ApiOperation("条件查询接口")
-    public Result<List<Category>> list(String type) {
+    public Result<List<Category>> list(Integer type) {
         List<Category> list = categoryService.userList(type);
         return Result.success(list);
     }

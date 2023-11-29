@@ -175,9 +175,9 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<Category> userList(String type) {
+    public List<Category> userList(Integer type) {
         //
-        List<Category> categories = categoryMapper.userList(type);
+        List<Category> categories = categoryMapper.selectByType(type);
 
         return categories;
     }

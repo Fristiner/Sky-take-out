@@ -37,5 +37,5 @@ public interface CategoryService {
 
     List<Category> selectByType(Integer type);
 
-    List<Category> userList(String type);
+    List<Category> userList(Integer type);
 }

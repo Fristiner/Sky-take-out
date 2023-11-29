@@ -41,8 +41,8 @@ public interface CategoryMapper {
 
     List<Category> selectByType(Integer type);
 
-    @Select("select * from category where type = #{type} and status = '1'")
-    List<Category> userList(String type);
+    //    @Select("select * from category where type = #{type} and status = '1'")
+    List<Category> userList(Integer type);
 
     @Select("select name from category where id = #{categoryId}")
     String selectNameById(Long categoryId);
