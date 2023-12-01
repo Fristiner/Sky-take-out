@@ -50,7 +50,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
             cart.setNumber(cart.getNumber() + 1);
             // update
             shoppingCartMapper.updateNumberById(cart);
-            // TODO：还需要重新计算金额 前端计算
+
         } else {
             // 如果不存在，需要添加一条购物车数据
             // 判断添加的是菜品还是套餐
@@ -103,7 +103,16 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         Long userId = BaseContext.getCurrentId();
 
         shoppingCartMapper.deleteByUserId(userId);
-        
 
+
+    }
+
+    @Override
+    public void delete(ShoppingCartDTO shoppingCartDTO) {
+        ShoppingCart shoppingCart = new ShoppingCart();
+        BeanUtils.copyProperties(shoppingCartDTO, shoppingCart);
+        Long userId = BaseContext.getCurrentId();
+        shoppingCart.setUserId(userId);
+        shoppingCartMapper.delete(shoppingCart);
     }
 }

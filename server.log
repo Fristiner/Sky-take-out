@@ -173,3 +173,712 @@
 2023-12-01 11:36:56.384  WARN 20332 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for DELETE /user/shoppingCart/clean
 2023-12-01 11:41:22.647  INFO 20332 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2023-12-01 11:41:22.651  INFO 20332 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 11:41:28.703  INFO 34552 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 34552 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 11:41:28.707  INFO 34552 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 11:41:29.619  INFO 34552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 11:41:29.621  INFO 34552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 11:41:29.660  INFO 34552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2023-12-01 11:41:30.777  INFO 34552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 11:41:30.778  INFO 34552 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 11:41:30.779  INFO 34552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 11:41:30.779  INFO 34552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 11:41:30.785  INFO 34552 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 11:41:30.799  INFO 34552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 11:41:30.800  INFO 34552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 11:41:30.930  INFO 34552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 11:41:30.931  INFO 34552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2174 ms
+2023-12-01 11:41:31.118  INFO 34552 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 11:41:31.278  INFO 34552 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 11:41:31.586  INFO 34552 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 11:41:32.165  INFO 34552 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 11:41:32.270  INFO 34552 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 11:41:32.324  INFO 34552 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 11:41:32.331  INFO 34552 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 11:41:32.860  INFO 34552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 11:41:33.379  INFO 34552 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 5.131 seconds (JVM running for 5.88)
+2023-12-01 11:41:33.383  INFO 34552 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 11:41:39.238  INFO 34552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 11:41:39.238  INFO 34552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 11:41:39.239  INFO 34552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-01 11:41:39.251  INFO 34552 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:39.291  INFO 34552 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:39.427 DEBUG 34552 --- [http-nio-8080-exec-1] c.s.m.ShoppingCartMapper.deleteByUserId  : ==>  Preparing: delete from shopping_cart where user_id = ?
+2023-12-01 11:41:39.447 DEBUG 34552 --- [http-nio-8080-exec-1] c.s.m.ShoppingCartMapper.deleteByUserId  : ==> Parameters: 4(Long)
+2023-12-01 11:41:39.457 DEBUG 34552 --- [http-nio-8080-exec-1] c.s.m.ShoppingCartMapper.deleteByUserId  : <==    Updates: 4
+2023-12-01 11:41:39.509  INFO 34552 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:39.510  INFO 34552 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:39.514  INFO 34552 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:39.516  INFO 34552 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:39.532 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:41:39.532 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:41:39.555 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 11:41:47.255  INFO 34552 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:47.256  INFO 34552 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:49.954  INFO 34552 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:49.956  INFO 34552 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:49.983  INFO 34552 --- [http-nio-8080-exec-5] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=51, setmealId=null, dishFlavor=不要葱,不辣)
+2023-12-01 11:41:49.991 DEBUG 34552 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 11:41:49.993 DEBUG 34552 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 51(Long), 不要葱,不辣(String)
+2023-12-01 11:41:49.995 DEBUG 34552 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 11:41:49.998 DEBUG 34552 --- [http-nio-8080-exec-5] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 11:41:49.999 DEBUG 34552 --- [http-nio-8080-exec-5] com.sky.mapper.DishMapper.getById        : ==> Parameters: 51(Long)
+2023-12-01 11:41:50.006 DEBUG 34552 --- [http-nio-8080-exec-5] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 11:41:50.007 DEBUG 34552 --- [http-nio-8080-exec-5] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 11:41:50.010 DEBUG 34552 --- [http-nio-8080-exec-5] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 老坛酸菜鱼(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/4a9cefba-6a74-467e-9fde-6e687ea725d7.png(String), 4(Long), 51(Long), null, 不要葱,不辣(String), 56.00(BigDecimal), null
+2023-12-01 11:41:50.023 DEBUG 34552 --- [http-nio-8080-exec-5] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 11:41:50.041  INFO 34552 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:50.043  INFO 34552 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:50.044 DEBUG 34552 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:41:50.045 DEBUG 34552 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:41:50.047 DEBUG 34552 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-01 11:41:50.050  INFO 34552 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:50.051  INFO 34552 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:51.157  INFO 34552 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:51.159  INFO 34552 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:51.160  INFO 34552 --- [http-nio-8080-exec-8] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=52, setmealId=null, dishFlavor=不要葱,不辣)
+2023-12-01 11:41:51.160 DEBUG 34552 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 11:41:51.161 DEBUG 34552 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 52(Long), 不要葱,不辣(String)
+2023-12-01 11:41:51.162 DEBUG 34552 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 11:41:51.163 DEBUG 34552 --- [http-nio-8080-exec-8] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 11:41:51.163 DEBUG 34552 --- [http-nio-8080-exec-8] com.sky.mapper.DishMapper.getById        : ==> Parameters: 52(Long)
+2023-12-01 11:41:51.165 DEBUG 34552 --- [http-nio-8080-exec-8] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 11:41:51.166 DEBUG 34552 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 11:41:51.167 DEBUG 34552 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 经典酸菜鮰鱼(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/5260ff39-986c-4a97-8850-2ec8c7583efc.png(String), 4(Long), 52(Long), null, 不要葱,不辣(String), 66.00(BigDecimal), null
+2023-12-01 11:41:51.173 DEBUG 34552 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 11:41:51.188  INFO 34552 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:51.190  INFO 34552 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:51.191 DEBUG 34552 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:41:51.191 DEBUG 34552 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:41:51.194 DEBUG 34552 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 2
+2023-12-01 11:41:51.195  INFO 34552 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:51.197  INFO 34552 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:52.838  INFO 34552 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:52.840  INFO 34552 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:52.841  INFO 34552 --- [http-nio-8080-exec-1] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=53, setmealId=null, dishFlavor=不要葱,重辣)
+2023-12-01 11:41:52.842 DEBUG 34552 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 11:41:52.842 DEBUG 34552 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 53(Long), 不要葱,重辣(String)
+2023-12-01 11:41:52.843 DEBUG 34552 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 11:41:52.844 DEBUG 34552 --- [http-nio-8080-exec-1] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 11:41:52.845 DEBUG 34552 --- [http-nio-8080-exec-1] com.sky.mapper.DishMapper.getById        : ==> Parameters: 53(Long)
+2023-12-01 11:41:52.847 DEBUG 34552 --- [http-nio-8080-exec-1] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 11:41:52.847 DEBUG 34552 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 11:41:52.848 DEBUG 34552 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 蜀味水煮草鱼(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a6953d5a-4c18-4b30-9319-4926ee77261f.png(String), 4(Long), 53(Long), null, 不要葱,重辣(String), 38.00(BigDecimal), null
+2023-12-01 11:41:52.860 DEBUG 34552 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 11:41:52.876  INFO 34552 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:52.877  INFO 34552 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:52.878 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:41:52.879 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:41:52.881  INFO 34552 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:41:52.881 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 11:41:52.882  INFO 34552 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:41:56.016  WARN 34552 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /user/addressBook/list
+2023-12-01 11:41:56.041  WARN 34552 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /user/addressBook/default
+2023-12-01 11:42:01.408  WARN 34552 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /user/addressBook/list
+2023-12-01 11:43:26.280  INFO 34552 --- [http-nio-8080-exec-9] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-01 11:43:29.794  INFO 34552 --- [http-nio-8080-exec-10] com.sky.controller.user.UserController   : 微信用户登录，0a3MZs200FXN6R1eEh200NmBXh2MZs2t
+2023-12-01 11:43:30.349 ERROR 34552 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 97457
+2023-12-01 11:43:30.356 DEBUG 34552 --- [http-nio-8080-exec-10] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-01 11:43:30.357 DEBUG 34552 --- [http-nio-8080-exec-10] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-01 11:43:30.360 DEBUG 34552 --- [http-nio-8080-exec-10] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-01 11:43:30.409  INFO 34552 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDk0MTAsInVzZXJJZCI6NH0.ApcShDPoNbq4uczItipKgiAXN5yD0kZkXmVZRAk7cik
+2023-12-01 11:43:30.411  INFO 34552 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:43:30.413 DEBUG 34552 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 11:43:30.414 DEBUG 34552 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 11:43:30.419  INFO 34552 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDk0MTAsInVzZXJJZCI6NH0.ApcShDPoNbq4uczItipKgiAXN5yD0kZkXmVZRAk7cik
+2023-12-01 11:43:30.419 DEBUG 34552 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 11:43:30.421  INFO 34552 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:43:30.422 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:43:30.422 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:43:30.426 DEBUG 34552 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 11:43:30.513  INFO 34552 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDk0MTAsInVzZXJJZCI6NH0.ApcShDPoNbq4uczItipKgiAXN5yD0kZkXmVZRAk7cik
+2023-12-01 11:43:30.514  INFO 34552 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:43:43.713  WARN 34552 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /user/addressBook/list
+2023-12-01 11:43:43.746  WARN 34552 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /user/addressBook/default
+2023-12-01 11:52:41.814  INFO 34552 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:16379
+2023-12-01 11:52:41.829  WARN 34552 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection closed prematurely
+
+io.lettuce.core.RedisConnectionException: Connection closed prematurely
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:86) ~[lettuce-core-6.1.9.RELEASE.jar:6.1.9.RELEASE]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:241) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:69) ~[lettuce-core-6.1.9.RELEASE.jar:6.1.9.RELEASE]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:241) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1405) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:248) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:901) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:813) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 11:52:50.912  INFO 34552 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:52:50.915  WARN 34552 --- [lettuce-nioEventLoop-4-14] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:52:59.114  INFO 34552 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:52:59.117  WARN 34552 --- [lettuce-nioEventLoop-4-15] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:53:15.511  INFO 34552 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:53:15.514  WARN 34552 --- [lettuce-nioEventLoop-4-16] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:53:45.612  INFO 34552 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:53:45.614  WARN 34552 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:54:15.711  INFO 34552 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:54:15.713  WARN 34552 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:54:45.811  INFO 34552 --- [lettuce-eventExecutorLoop-1-9] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:54:45.814  WARN 34552 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:55:15.912  INFO 34552 --- [lettuce-eventExecutorLoop-1-11] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:55:15.914  WARN 34552 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:55:46.013  INFO 34552 --- [lettuce-eventExecutorLoop-1-13] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:55:46.015  WARN 34552 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:56:16.110  INFO 34552 --- [lettuce-eventExecutorLoop-1-15] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:56:16.112  WARN 34552 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:56:46.213  INFO 34552 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:56:46.215  WARN 34552 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:57:16.312  INFO 34552 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:57:16.314  WARN 34552 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:57:46.414  INFO 34552 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:57:46.416  WARN 34552 --- [lettuce-nioEventLoop-4-9] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:58:16.510  INFO 34552 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:58:16.511  WARN 34552 --- [lettuce-nioEventLoop-4-10] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:58:46.614  INFO 34552 --- [lettuce-eventExecutorLoop-1-9] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:58:46.616  WARN 34552 --- [lettuce-nioEventLoop-4-11] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:59:16.714  INFO 34552 --- [lettuce-eventExecutorLoop-1-11] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:16379
+2023-12-01 11:59:16.729  WARN 34552 --- [lettuce-nioEventLoop-4-12] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:16379]: Connection refused: no further information: localhost/127.0.0.1:16379
+2023-12-01 11:59:21.728  INFO 34552 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 11:59:21.730  INFO 34552 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 11:59:27.510  INFO 2668 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 2668 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 11:59:27.512  INFO 2668 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 11:59:28.176  INFO 2668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 11:59:28.178  INFO 2668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 11:59:28.200  INFO 2668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-12-01 11:59:28.796  INFO 2668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 11:59:28.796  INFO 2668 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 11:59:28.797  INFO 2668 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 11:59:28.797  INFO 2668 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 11:59:28.801  INFO 2668 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 11:59:28.809  INFO 2668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 11:59:28.810  INFO 2668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 11:59:28.899  INFO 2668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 11:59:28.900  INFO 2668 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1349 ms
+2023-12-01 11:59:28.997  INFO 2668 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 11:59:29.102  INFO 2668 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 11:59:29.321  INFO 2668 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 11:59:29.734  INFO 2668 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 11:59:29.802  INFO 2668 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 11:59:29.837  INFO 2668 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 11:59:29.841  INFO 2668 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 11:59:30.276  INFO 2668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 11:59:30.583  INFO 2668 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.434 seconds (JVM running for 3.998)
+2023-12-01 11:59:30.585  INFO 2668 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 11:59:37.359  INFO 2668 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 11:59:37.359  INFO 2668 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 11:59:37.361  INFO 2668 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-01 11:59:37.753 ERROR 2668 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 11:59:40.445  INFO 2668 --- [http-nio-8080-exec-5] com.sky.controller.user.UserController   : 微信用户登录，0a3KGP000hcb9R1KS3400Alhcd4KGP0C
+2023-12-01 11:59:41.139 DEBUG 2668 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-01 11:59:41.163 DEBUG 2668 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-01 11:59:41.187 DEBUG 2668 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-01 11:59:41.230  INFO 2668 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 11:59:41.233  INFO 2668 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 11:59:41.245  INFO 2668 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:59:41.245  INFO 2668 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:59:41.262 DEBUG 2668 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 11:59:41.263 DEBUG 2668 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 11:59:41.267 DEBUG 2668 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:59:41.268 DEBUG 2668 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 11:59:41.269 DEBUG 2668 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:59:41.271 DEBUG 2668 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 11:59:41.285  INFO 2668 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 11:59:41.287  INFO 2668 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:59:41.292 ERROR 2668 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 11:59:43.037  INFO 2668 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 11:59:43.038  INFO 2668 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:59:43.043 ERROR 2668 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 11:59:44.590  INFO 2668 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 11:59:44.591  INFO 2668 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:59:44.596 ERROR 2668 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 11:59:45.260  INFO 2668 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 11:59:45.261  INFO 2668 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:59:45.265 ERROR 2668 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 12:00:00.300  INFO 2668 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 12:00:00.304  INFO 2668 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 12:00:02.604  INFO 13180 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 13180 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 12:00:02.605  INFO 13180 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 12:00:03.238  INFO 13180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 12:00:03.241  INFO 13180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 12:00:03.263  INFO 13180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-12-01 12:00:03.879  INFO 13180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 12:00:03.880  INFO 13180 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 12:00:03.880  INFO 13180 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 12:00:03.880  INFO 13180 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 12:00:03.884  INFO 13180 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 12:00:03.891  INFO 13180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 12:00:03.892  INFO 13180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 12:00:03.983  INFO 13180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 12:00:03.983  INFO 13180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1338 ms
+2023-12-01 12:00:04.096  INFO 13180 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 12:00:04.214  INFO 13180 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 12:00:04.432  INFO 13180 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 12:00:04.880  INFO 13180 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 12:00:04.951  INFO 13180 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 12:00:04.983  INFO 13180 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 12:00:04.988  INFO 13180 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 12:00:05.390  INFO 13180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 12:00:05.730  INFO 13180 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.506 seconds (JVM running for 4.144)
+2023-12-01 12:00:05.731  INFO 13180 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 12:00:10.133  INFO 13180 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 12:00:10.133  INFO 13180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 12:00:10.134  INFO 13180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-01 12:00:10.146  INFO 13180 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 12:00:10.190  INFO 13180 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:00:10.545 ERROR 13180 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 12:00:10.786  INFO 13180 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTAzODEsInVzZXJJZCI6NH0.JOdf9iX-0bP5XXQqWDKalfa6jDe6FftasWg-dCHDzpE
+2023-12-01 12:00:10.788  INFO 13180 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:00:10.793 ERROR 13180 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 12:00:13.436 ERROR 13180 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 12:00:22.965  INFO 13180 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 12:00:22.967  INFO 13180 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 12:00:25.283  INFO 6892 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 6892 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 12:00:25.286  INFO 6892 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 12:00:25.938  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 12:00:25.940  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 12:00:25.965  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-12-01 12:00:26.584  INFO 6892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 12:00:26.585  INFO 6892 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 12:00:26.585  INFO 6892 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 12:00:26.585  INFO 6892 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 12:00:26.590  INFO 6892 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 12:00:26.597  INFO 6892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 12:00:26.597  INFO 6892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 12:00:26.691  INFO 6892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 12:00:26.691  INFO 6892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1363 ms
+2023-12-01 12:00:26.797  INFO 6892 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 12:00:26.898  INFO 6892 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 12:00:27.116  INFO 6892 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 12:00:27.529  INFO 6892 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 12:00:27.605  INFO 6892 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 12:00:27.636  INFO 6892 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 12:00:27.641  INFO 6892 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 12:00:28.048  INFO 6892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 12:00:28.341  INFO 6892 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 3.413 seconds (JVM running for 4.098)
+2023-12-01 12:00:28.343  INFO 6892 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 12:00:34.379  INFO 6892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 12:00:34.380  INFO 6892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 12:00:34.381  INFO 6892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-01 12:00:34.434  INFO 6892 --- [http-nio-8080-exec-1] com.sky.controller.user.UserController   : 微信用户登录，0d38KP000xeb9R1gj8300cU1cb28KP0j
+2023-12-01 12:00:35.054 DEBUG 6892 --- [http-nio-8080-exec-1] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-01 12:00:35.071 DEBUG 6892 --- [http-nio-8080-exec-1] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-01 12:00:35.088 DEBUG 6892 --- [http-nio-8080-exec-1] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-01 12:00:35.141  INFO 6892 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0MzUsInVzZXJJZCI6NH0.v3XDiWgL4RmxmJDmgVMOYeNv7cwsBbrO7h3K_oBr7sU
+2023-12-01 12:00:35.147  INFO 6892 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0MzUsInVzZXJJZCI6NH0.v3XDiWgL4RmxmJDmgVMOYeNv7cwsBbrO7h3K_oBr7sU
+2023-12-01 12:00:35.154  INFO 6892 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:00:35.154  INFO 6892 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:00:35.168 DEBUG 6892 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 12:00:35.168 DEBUG 6892 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 12:00:35.172 DEBUG 6892 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:00:35.173 DEBUG 6892 --- [http-nio-8080-exec-2] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 12:00:35.174 DEBUG 6892 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:00:35.176 DEBUG 6892 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 12:00:35.191  INFO 6892 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0MzUsInVzZXJJZCI6NH0.v3XDiWgL4RmxmJDmgVMOYeNv7cwsBbrO7h3K_oBr7sU
+2023-12-01 12:00:35.192  INFO 6892 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:00:35.503 ERROR 6892 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:16379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-12-01 12:01:07.491  INFO 6892 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 12:01:07.497  INFO 6892 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 12:01:10.094  INFO 31172 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 31172 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 12:01:10.098  INFO 31172 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 12:01:10.943  INFO 31172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 12:01:10.945  INFO 31172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 12:01:10.972  INFO 31172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-12-01 12:01:11.735  INFO 31172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 12:01:11.736  INFO 31172 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 12:01:11.736  INFO 31172 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 12:01:11.736  INFO 31172 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 12:01:11.742  INFO 31172 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 12:01:11.753  INFO 31172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 12:01:11.753  INFO 31172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 12:01:11.866  INFO 31172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 12:01:11.866  INFO 31172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1732 ms
+2023-12-01 12:01:11.991  INFO 31172 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 12:01:12.109  INFO 31172 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 12:01:12.392  INFO 31172 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 12:01:12.876  INFO 31172 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 12:01:12.987  INFO 31172 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 12:01:13.030  INFO 31172 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 12:01:13.035  INFO 31172 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 12:01:13.558  INFO 31172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 12:01:13.901  INFO 31172 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 4.188 seconds (JVM running for 4.911)
+2023-12-01 12:01:13.902  INFO 31172 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 12:01:17.633  INFO 31172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 12:01:17.634  INFO 31172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 12:01:17.635  INFO 31172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-01 12:01:18.155  INFO 31172 --- [http-nio-8080-exec-1] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-01 12:01:23.840  INFO 31172 --- [http-nio-8080-exec-3] com.sky.controller.user.UserController   : 微信用户登录，0e3eKy000Tjs9R1eyv000WcmFM2eKy0i
+2023-12-01 12:01:24.546 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-01 12:01:24.561 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-01 12:01:24.580 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-01 12:01:24.614  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:01:24.619  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:01:24.629  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:01:24.629  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:01:24.646 DEBUG 31172 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 12:01:24.646 DEBUG 31172 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 12:01:24.649 DEBUG 31172 --- [http-nio-8080-exec-4] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 12:01:24.650 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:01:24.652 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:01:24.654 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 12:01:24.668  INFO 31172 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:01:24.669  INFO 31172 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:01:28.172  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:01:28.173  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:01:28.181 DEBUG 31172 --- [http-nio-8080-exec-7] c.sky.mapper.ShoppingCartMapper.delete   : ==>  Preparing: delete from shopping_cart WHERE dish_id = ? and dish_flavor = ? and user_id = ?
+2023-12-01 12:01:28.182 DEBUG 31172 --- [http-nio-8080-exec-7] c.sky.mapper.ShoppingCartMapper.delete   : ==> Parameters: 51(Long), 不要葱,不辣(String), 4(Long)
+2023-12-01 12:01:28.186 DEBUG 31172 --- [http-nio-8080-exec-7] c.sky.mapper.ShoppingCartMapper.delete   : <==    Updates: 1
+2023-12-01 12:01:28.201  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:01:28.202  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:01:28.203 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:01:28.203 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:01:28.205 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 2
+2023-12-01 12:01:28.206  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:01:28.207  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:00.635  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:00.636  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:00.637 DEBUG 31172 --- [http-nio-8080-exec-2] c.sky.mapper.ShoppingCartMapper.delete   : ==>  Preparing: delete from shopping_cart WHERE dish_id = ? and dish_flavor = ? and user_id = ?
+2023-12-01 12:02:00.637 DEBUG 31172 --- [http-nio-8080-exec-2] c.sky.mapper.ShoppingCartMapper.delete   : ==> Parameters: 52(Long), 不要葱,不辣(String), 4(Long)
+2023-12-01 12:02:00.641 DEBUG 31172 --- [http-nio-8080-exec-2] c.sky.mapper.ShoppingCartMapper.delete   : <==    Updates: 1
+2023-12-01 12:02:00.656  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:00.657  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:00.658 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:00.658 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:00.659  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:00.659 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-01 12:02:00.659  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:01.878  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:01.879  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:01.881 DEBUG 31172 --- [http-nio-8080-exec-7] c.sky.mapper.ShoppingCartMapper.delete   : ==>  Preparing: delete from shopping_cart WHERE dish_id = ? and dish_flavor = ? and user_id = ?
+2023-12-01 12:02:01.881 DEBUG 31172 --- [http-nio-8080-exec-7] c.sky.mapper.ShoppingCartMapper.delete   : ==> Parameters: 53(Long), 不要葱,重辣(String), 4(Long)
+2023-12-01 12:02:01.894 DEBUG 31172 --- [http-nio-8080-exec-7] c.sky.mapper.ShoppingCartMapper.delete   : <==    Updates: 1
+2023-12-01 12:02:01.909  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:01.909  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:01.910 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:01.910 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:01.912 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:01.917  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:01.918  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:05.159  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:05.161  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:05.161  INFO 31172 --- [http-nio-8080-exec-1] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=66, setmealId=null, dishFlavor=重辣)
+2023-12-01 12:02:05.162 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 12:02:05.163 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 66(Long), 重辣(String)
+2023-12-01 12:02:05.164 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:05.165 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 12:02:05.166 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.DishMapper.getById        : ==> Parameters: 66(Long)
+2023-12-01 12:02:05.169 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 12:02:05.170 DEBUG 31172 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 12:02:05.179 DEBUG 31172 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 江团鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a101a1e9-8f8b-47b2-afa4-1abd47ea0a87.png(String), 4(Long), 66(Long), null, 重辣(String), 119.00(BigDecimal), null
+2023-12-01 12:02:05.183 DEBUG 31172 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 12:02:05.196  INFO 31172 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:05.198  INFO 31172 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:05.199 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:05.199 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:05.199  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:05.200  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:05.201 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-01 12:02:06.828  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:06.830  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:06.830  INFO 31172 --- [http-nio-8080-exec-3] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=66, setmealId=null, dishFlavor=中辣)
+2023-12-01 12:02:06.831 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 12:02:06.831 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 66(Long), 中辣(String)
+2023-12-01 12:02:06.832 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:06.833 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 12:02:06.833 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.DishMapper.getById        : ==> Parameters: 66(Long)
+2023-12-01 12:02:06.834 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 12:02:06.835 DEBUG 31172 --- [http-nio-8080-exec-3] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 12:02:06.835 DEBUG 31172 --- [http-nio-8080-exec-3] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 江团鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a101a1e9-8f8b-47b2-afa4-1abd47ea0a87.png(String), 4(Long), 66(Long), null, 中辣(String), 119.00(BigDecimal), null
+2023-12-01 12:02:06.847 DEBUG 31172 --- [http-nio-8080-exec-3] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 12:02:06.859  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:06.861  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:06.862 DEBUG 31172 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:06.862 DEBUG 31172 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:06.862  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:06.863  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:06.864 DEBUG 31172 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 2
+2023-12-01 12:02:17.710  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:17.712  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:17.713 DEBUG 31172 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.delete   : ==>  Preparing: delete from shopping_cart WHERE dish_id = ? and dish_flavor = ? and user_id = ?
+2023-12-01 12:02:17.714 DEBUG 31172 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.delete   : ==> Parameters: 66(Long), 中辣(String), 4(Long)
+2023-12-01 12:02:17.718 DEBUG 31172 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.delete   : <==    Updates: 1
+2023-12-01 12:02:17.734  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:17.736  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:17.736 DEBUG 31172 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:17.737 DEBUG 31172 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:17.737  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:17.737  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:17.738 DEBUG 31172 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-01 12:02:24.220  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:24.221  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:24.223 DEBUG 31172 --- [http-nio-8080-exec-3] c.sky.mapper.ShoppingCartMapper.delete   : ==>  Preparing: delete from shopping_cart WHERE dish_id = ? and dish_flavor = ? and user_id = ?
+2023-12-01 12:02:24.223 DEBUG 31172 --- [http-nio-8080-exec-3] c.sky.mapper.ShoppingCartMapper.delete   : ==> Parameters: 66(Long), 重辣(String), 4(Long)
+2023-12-01 12:02:24.227 DEBUG 31172 --- [http-nio-8080-exec-3] c.sky.mapper.ShoppingCartMapper.delete   : <==    Updates: 1
+2023-12-01 12:02:24.241  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:24.242  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:24.243 DEBUG 31172 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:24.244 DEBUG 31172 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:24.244  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:24.244 DEBUG 31172 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:24.246  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:34.392  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:34.393  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:34.394  INFO 31172 --- [http-nio-8080-exec-8] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=65, setmealId=null, dishFlavor=重辣)
+2023-12-01 12:02:34.394 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 12:02:34.394 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 65(Long), 重辣(String)
+2023-12-01 12:02:34.395 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:34.396 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 12:02:34.396 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.DishMapper.getById        : ==> Parameters: 65(Long)
+2023-12-01 12:02:34.398 DEBUG 31172 --- [http-nio-8080-exec-8] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 12:02:34.398 DEBUG 31172 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 12:02:34.399 DEBUG 31172 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 草鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/b544d3ba-a1ae-4d20-a860-81cb5dec9e03.png(String), 4(Long), 65(Long), null, 重辣(String), 68.00(BigDecimal), null
+2023-12-01 12:02:34.403 DEBUG 31172 --- [http-nio-8080-exec-8] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 12:02:34.417  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:34.418  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:34.419 DEBUG 31172 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:34.419 DEBUG 31172 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:34.422 DEBUG 31172 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-01 12:02:34.423  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:34.424  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:36.416  INFO 31172 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:36.417  INFO 31172 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:36.417  INFO 31172 --- [http-nio-8080-exec-10] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=66, setmealId=null, dishFlavor=中辣)
+2023-12-01 12:02:36.418 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 12:02:36.418 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 66(Long), 中辣(String)
+2023-12-01 12:02:36.419 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:36.420 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 12:02:36.420 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.getById        : ==> Parameters: 66(Long)
+2023-12-01 12:02:36.421 DEBUG 31172 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 12:02:36.422 DEBUG 31172 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 12:02:36.422 DEBUG 31172 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 江团鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a101a1e9-8f8b-47b2-afa4-1abd47ea0a87.png(String), 4(Long), 66(Long), null, 中辣(String), 119.00(BigDecimal), null
+2023-12-01 12:02:36.425 DEBUG 31172 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 12:02:36.439  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:36.440  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:36.441 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:36.441 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:36.443  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:36.443 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 2
+2023-12-01 12:02:36.443  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:37.071  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:37.072  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:37.595  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:37.596  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:38.245  INFO 31172 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:38.246  INFO 31172 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:38.285 DEBUG 31172 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.userList    : ==>  Preparing: select * from setmeal where category_id = ? and status = '1'
+2023-12-01 12:02:38.285 DEBUG 31172 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.userList    : ==> Parameters: 13(String)
+2023-12-01 12:02:38.288 DEBUG 31172 --- [http-nio-8080-exec-6] com.sky.mapper.SetmealMapper.userList    : <==      Total: 0
+2023-12-01 12:02:38.811  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:38.812  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:39.361  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:39.362  INFO 31172 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:39.986  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:39.987  INFO 31172 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:42.936  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:42.937  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:42.938  INFO 31172 --- [http-nio-8080-exec-2] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=69, setmealId=null, dishFlavor=热饮,不要葱,半糖,中辣)
+2023-12-01 12:02:42.938 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 12:02:42.939 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 69(Long), 热饮,不要葱,半糖,中辣(String)
+2023-12-01 12:02:42.941 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:42.942 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 12:02:42.942 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.DishMapper.getById        : ==> Parameters: 69(Long)
+2023-12-01 12:02:42.943 DEBUG 31172 --- [http-nio-8080-exec-2] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 12:02:42.943 DEBUG 31172 --- [http-nio-8080-exec-2] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 12:02:42.944 DEBUG 31172 --- [http-nio-8080-exec-2] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 平菇豆腐汤(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3a1e845c-d7b0-42c8-a198-080223ab11d9.png(String), 4(Long), 69(Long), null, 热饮,不要葱,半糖,中辣(String), 6.00(BigDecimal), null
+2023-12-01 12:02:42.948 DEBUG 31172 --- [http-nio-8080-exec-2] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 12:02:42.962  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:42.963  INFO 31172 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:42.964 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:42.964 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:42.966 DEBUG 31172 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 12:02:42.966  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:42.967  INFO 31172 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:46.804  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:46.805  INFO 31172 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:46.805  INFO 31172 --- [http-nio-8080-exec-5] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=69, setmealId=null, dishFlavor=不要葱,少冰,重辣,多糖)
+2023-12-01 12:02:46.806 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-01 12:02:46.806 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 69(Long), 不要葱,少冰,重辣,多糖(String)
+2023-12-01 12:02:46.807 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 12:02:46.808 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-01 12:02:46.808 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.DishMapper.getById        : ==> Parameters: 69(Long)
+2023-12-01 12:02:46.810 DEBUG 31172 --- [http-nio-8080-exec-5] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-01 12:02:46.810 DEBUG 31172 --- [http-nio-8080-exec-5] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-01 12:02:46.810 DEBUG 31172 --- [http-nio-8080-exec-5] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 平菇豆腐汤(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3a1e845c-d7b0-42c8-a198-080223ab11d9.png(String), 4(Long), 69(Long), null, 不要葱,少冰,重辣,多糖(String), 6.00(BigDecimal), null
+2023-12-01 12:02:46.822 DEBUG 31172 --- [http-nio-8080-exec-5] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-01 12:02:46.835  INFO 31172 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:46.836  INFO 31172 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:46.837 DEBUG 31172 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:46.837 DEBUG 31172 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:46.839 DEBUG 31172 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 4
+2023-12-01 12:02:46.847  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:46.849  INFO 31172 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:56.349  INFO 31172 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:56.350  INFO 31172 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:56.351 DEBUG 31172 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.delete   : ==>  Preparing: delete from shopping_cart WHERE dish_id = ? and dish_flavor = ? and user_id = ?
+2023-12-01 12:02:56.351 DEBUG 31172 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.delete   : ==> Parameters: 69(Long), 不要葱,少冰,重辣,多糖(String), 4(Long)
+2023-12-01 12:02:56.355 DEBUG 31172 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.delete   : <==    Updates: 1
+2023-12-01 12:02:56.369  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:56.370  INFO 31172 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:02:56.371 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 12:02:56.372 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 12:02:56.373 DEBUG 31172 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 12:02:56.375  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA0ODQsInVzZXJJZCI6NH0.WbzrJX_z-iswKic9Yv_GJzUqAZ84j3kuZDiqZWDCKTk
+2023-12-01 12:02:56.376  INFO 31172 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 12:03:27.491  INFO 31172 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 12:03:27.498  INFO 31172 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
