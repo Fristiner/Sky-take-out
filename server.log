@@ -1117,3 +1117,91 @@ java.net.ConnectException: Connection refused: no further information
 2023-12-01 12:17:02.086  INFO 11836 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
 2023-12-01 15:16:20.685  INFO 11836 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2023-12-01 15:16:20.690  INFO 11836 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 15:16:36.764  INFO 19836 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 19836 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 15:16:36.767  INFO 19836 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 15:16:38.909  INFO 19836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 15:16:38.914  INFO 19836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 15:16:38.962  INFO 19836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2023-12-01 15:16:40.054  INFO 19836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 15:16:40.055  INFO 19836 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 15:16:40.055  INFO 19836 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 15:16:40.055  INFO 19836 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 15:16:40.065  INFO 19836 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 15:16:40.077  INFO 19836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 15:16:40.078  INFO 19836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 15:16:40.200  INFO 19836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 15:16:40.200  INFO 19836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3379 ms
+2023-12-01 15:16:40.373  INFO 19836 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 15:16:40.525  INFO 19836 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 15:16:40.981  INFO 19836 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 15:16:41.689  INFO 19836 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 15:16:41.804  INFO 19836 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 15:16:41.869  INFO 19836 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 15:16:41.877  INFO 19836 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 15:16:42.489  INFO 19836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 15:16:42.976  INFO 19836 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 6.717 seconds (JVM running for 8.087)
+2023-12-01 15:16:42.979  INFO 19836 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 15:16:49.919  INFO 19836 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 15:16:49.919  INFO 19836 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 15:16:49.921  INFO 19836 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-01 15:16:49.942  INFO 19836 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA5NTUsInVzZXJJZCI6NH0.bzrfPrI3aIdKssX42456eIOmMe1Ou5GBFm-Q3cKn9nE
+2023-12-01 15:16:49.942  INFO 19836 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA5NTUsInVzZXJJZCI6NH0.bzrfPrI3aIdKssX42456eIOmMe1Ou5GBFm-Q3cKn9nE
+2023-12-01 15:16:54.213  INFO 19836 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MTA5NTUsInVzZXJJZCI6NH0.bzrfPrI3aIdKssX42456eIOmMe1Ou5GBFm-Q3cKn9nE
+2023-12-01 15:16:58.778  INFO 19836 --- [http-nio-8080-exec-4] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-01 15:17:01.791  INFO 19836 --- [http-nio-8080-exec-5] com.sky.controller.user.UserController   : 微信用户登录，0a3et80w3EubO1364l3w3mp0bv1et80r
+2023-12-01 15:17:02.709 DEBUG 19836 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-01 15:17:02.737 DEBUG 19836 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-01 15:17:02.768 DEBUG 19836 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-01 15:17:02.810  INFO 19836 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:02.810  INFO 19836 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:02.812  INFO 19836 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:02.812  INFO 19836 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:02.833 DEBUG 19836 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 15:17:02.834 DEBUG 19836 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 15:17:02.840 DEBUG 19836 --- [http-nio-8080-exec-7] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 15:17:02.840 DEBUG 19836 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 15:17:02.842 DEBUG 19836 --- [http-nio-8080-exec-7] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 15:17:02.846 DEBUG 19836 --- [http-nio-8080-exec-7] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 15:17:02.864  INFO 19836 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:02.865  INFO 19836 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:05.362  INFO 19836 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:05.363  INFO 19836 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:05.368 DEBUG 19836 --- [http-nio-8080-exec-9] com.sky.mapper.AddressBookMapper.list    : ==>  Preparing: select * from address_book WHERE user_id = ?
+2023-12-01 15:17:05.368 DEBUG 19836 --- [http-nio-8080-exec-9] com.sky.mapper.AddressBookMapper.list    : ==> Parameters: 4(Long)
+2023-12-01 15:17:05.374 DEBUG 19836 --- [http-nio-8080-exec-9] com.sky.mapper.AddressBookMapper.list    : <==      Total: 2
+2023-12-01 15:17:05.383  INFO 19836 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:05.384  INFO 19836 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:05.385 DEBUG 19836 --- [http-nio-8080-exec-10] com.sky.mapper.AddressBookMapper.list    : ==>  Preparing: select * from address_book WHERE user_id = ? and is_default = ?
+2023-12-01 15:17:05.386 DEBUG 19836 --- [http-nio-8080-exec-10] com.sky.mapper.AddressBookMapper.list    : ==> Parameters: 4(Long), 1(Integer)
+2023-12-01 15:17:05.388 DEBUG 19836 --- [http-nio-8080-exec-10] com.sky.mapper.AddressBookMapper.list    : <==      Total: 1
+2023-12-01 15:17:07.455  INFO 19836 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:07.456  INFO 19836 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:07.462  INFO 19836 --- [http-nio-8080-exec-2] com.sky.controller.user.OrderController  : 用户下单，参数为：OrdersSubmitDTO(addressBookId=3, payMethod=1, remark=, estimatedDeliveryTime=2023-12-01T16:17, deliveryStatus=0, tablewareNumber=0, tablewareStatus=0, packAmount=3, amount=202)
+2023-12-01 15:17:07.476 DEBUG 19836 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-01 15:17:07.477 DEBUG 19836 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-01 15:17:07.480 DEBUG 19836 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-01 15:17:07.481 DEBUG 19836 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 15:17:07.481 DEBUG 19836 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 15:17:07.483 DEBUG 19836 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-01 15:17:07.490 DEBUG 19836 --- [http-nio-8080-exec-2] com.sky.mapper.OrderMapper.insert        : ==>  Preparing: insert into orders(number, status, user_id, address_book_id, order_time, checkout_time, pay_method, pay_status, amount, remark, phone, address, user_name, consignee, cancel_reason, rejection_reason, cancel_time, estimated_delivery_time, delivery_status, delivery_time, pack_amount, tableware_number, tableware_status) VALUES (?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?)
+2023-12-01 15:17:07.493 DEBUG 19836 --- [http-nio-8080-exec-2] com.sky.mapper.OrderMapper.insert        : ==> Parameters: 1701415027489(String), 1(Integer), 4(Long), 3(Long), 2023-12-01T15:17:07.489601600(LocalDateTime), null, 1(Integer), 0(Integer), 202(BigDecimal), (String), 18537616099(String), null, null, 张贤(String), null, null, null, 2023-12-01T16:17(LocalDateTime), 0(Integer), null, 3(Integer), 0(Integer), 0(Integer)
+2023-12-01 15:17:07.525 DEBUG 19836 --- [http-nio-8080-exec-2] com.sky.mapper.OrderMapper.insert        : <==    Updates: 1
+2023-12-01 15:17:07.535 DEBUG 19836 --- [http-nio-8080-exec-2] c.s.m.OrderDetailMapper.insertBatch      : ==>  Preparing: insert into order_detail(name, image, order_id, dish_id, setmeal_id, dish_flavor, amount) VALUES (?,?,?,?,?,?,?) , (?,?,?,?,?,?,?) , (?,?,?,?,?,?,?)
+2023-12-01 15:17:07.537 DEBUG 19836 --- [http-nio-8080-exec-2] c.s.m.OrderDetailMapper.insertBatch      : ==> Parameters: 草鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/b544d3ba-a1ae-4d20-a860-81cb5dec9e03.png(String), 4(Long), 65(Long), null, 重辣(String), 68.00(BigDecimal), 江团鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a101a1e9-8f8b-47b2-afa4-1abd47ea0a87.png(String), 4(Long), 66(Long), null, 中辣(String), 119.00(BigDecimal), 平菇豆腐汤(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/3a1e845c-d7b0-42c8-a198-080223ab11d9.png(String), 4(Long), 69(Long), null, 热饮,不要葱,半糖,中辣(String), 6.00(BigDecimal)
+2023-12-01 15:17:07.539 DEBUG 19836 --- [http-nio-8080-exec-2] c.s.m.OrderDetailMapper.insertBatch      : <==    Updates: 3
+2023-12-01 15:17:07.540 DEBUG 19836 --- [http-nio-8080-exec-2] c.s.m.ShoppingCartMapper.deleteByUserId  : ==>  Preparing: delete from shopping_cart where user_id = ?
+2023-12-01 15:17:07.540 DEBUG 19836 --- [http-nio-8080-exec-2] c.s.m.ShoppingCartMapper.deleteByUserId  : ==> Parameters: 4(Long)
+2023-12-01 15:17:07.541 DEBUG 19836 --- [http-nio-8080-exec-2] c.s.m.ShoppingCartMapper.deleteByUserId  : <==    Updates: 3
+2023-12-01 15:17:09.082  WARN 19836 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for PUT /user/order/payment
+2023-12-01 15:17:29.912  INFO 19836 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:29.914  INFO 19836 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:29.915 DEBUG 19836 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 15:17:29.915 DEBUG 19836 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 15:17:29.917 DEBUG 19836 --- [http-nio-8080-exec-3] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 15:17:29.917  INFO 19836 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:29.918  INFO 19836 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 15:17:29.919 DEBUG 19836 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 15:17:29.920 DEBUG 19836 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 15:17:29.920 DEBUG 19836 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-01 15:17:29.944  INFO 19836 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MjIyMjIsInVzZXJJZCI6NH0.LpWscOQJKS8UHkEZVrveQCM1MN-eZo6n-3dnhKUxhNc
+2023-12-01 15:17:29.945  INFO 19836 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4

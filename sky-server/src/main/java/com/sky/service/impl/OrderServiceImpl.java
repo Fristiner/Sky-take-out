@@ -42,7 +42,6 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private AddressBookMapper addressBookMapper;
-    ;
 
     @Autowired
     private ShoppingCartMapper shoppingCartMapper;
