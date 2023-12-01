@@ -123,3 +123,53 @@
 2023-12-01 10:39:20.880 DEBUG 34952 --- [http-nio-8080-exec-2] c.s.m.S.selectByIdWithDishItem           : <==      Total: 2
 2023-12-01 11:36:18.834  INFO 34952 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2023-12-01 11:36:18.835  INFO 34952 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-01 11:36:26.213  INFO 20332 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.1 on LAPTOP-GT0GK7LB with PID 20332 (D:\JavaWebNote\skyProject\skyOut\sky-take-out\sky-server\target\classes started by ma in D:\JavaWebNote\skyProject\skyOut\sky-take-out)
+2023-12-01 11:36:26.218  INFO 20332 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-01 11:36:27.205  INFO 20332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-01 11:36:27.208  INFO 20332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-01 11:36:27.237  INFO 20332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-12-01 11:36:28.134  INFO 20332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-01 11:36:28.135  INFO 20332 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-12-01 11:36:28.135  INFO 20332 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-01 11:36:28.135  INFO 20332 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-01 11:36:28.142  INFO 20332 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-12-01 11:36:28.154  INFO 20332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 11:36:28.154  INFO 20332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 11:36:28.284  INFO 20332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 11:36:28.285  INFO 20332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2017 ms
+2023-12-01 11:36:28.503  INFO 20332 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-01 11:36:28.650  INFO 20332 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-01 11:36:28.987  INFO 20332 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-01 11:36:29.563  INFO 20332 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-01 11:36:29.660  INFO 20332 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-01 11:36:29.706  INFO 20332 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-01 11:36:29.712  INFO 20332 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-01 11:36:30.301  INFO 20332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 11:36:30.775  INFO 20332 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 5.048 seconds (JVM running for 5.832)
+2023-12-01 11:36:30.777  INFO 20332 --- [main] com.sky.SkyApplication                   : server started
+2023-12-01 11:36:33.570  INFO 20332 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 11:36:33.571  INFO 20332 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 11:36:33.575  INFO 20332 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-01 11:36:34.271  INFO 20332 --- [http-nio-8080-exec-2] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-01 11:36:41.152  INFO 20332 --- [http-nio-8080-exec-4] com.sky.controller.user.UserController   : 微信用户登录，0c3Lex000kOI8R1hfn200ECHxB0Lex01
+2023-12-01 11:36:41.814 DEBUG 20332 --- [http-nio-8080-exec-4] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-01 11:36:41.831 DEBUG 20332 --- [http-nio-8080-exec-4] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-01 11:36:41.852 DEBUG 20332 --- [http-nio-8080-exec-4] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-01 11:36:41.888  INFO 20332 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:36:41.890  INFO 20332 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:36:41.901  INFO 20332 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:36:41.901  INFO 20332 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:36:41.915 DEBUG 20332 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-01 11:36:41.916 DEBUG 20332 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-01 11:36:41.920 DEBUG 20332 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-01 11:36:41.920 DEBUG 20332 --- [http-nio-8080-exec-1] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 11
+2023-12-01 11:36:41.921 DEBUG 20332 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-01 11:36:41.926 DEBUG 20332 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 4
+2023-12-01 11:36:41.963  INFO 20332 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDE0MDkwMDEsInVzZXJJZCI6NH0.TyKpinuX-G5adleTw0r8lGoFGLhc2DOeCdyDTURhVF0
+2023-12-01 11:36:41.964  INFO 20332 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-01 11:36:46.221  WARN 20332 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for POST /user/shoppingCart/sub
+2023-12-01 11:36:48.713  WARN 20332 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for POST /user/shoppingCart/sub
+2023-12-01 11:36:49.068  WARN 20332 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for POST /user/shoppingCart/sub
+2023-12-01 11:36:56.384  WARN 20332 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for DELETE /user/shoppingCart/clean
+2023-12-01 11:41:22.647  INFO 20332 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 11:41:22.651  INFO 20332 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
