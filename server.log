@@ -121,3 +121,5 @@
 2023-12-01 10:39:20.848 DEBUG 34952 --- [http-nio-8080-exec-2] c.s.m.S.selectByIdWithDishItem           : ==>  Preparing: select sd.name, sd.copies, d.image, d.description from setmeal_dish sd left join dish d on sd.dish_id = d.id where sd.setmeal_id = ?
 2023-12-01 10:39:20.849 DEBUG 34952 --- [http-nio-8080-exec-2] c.s.m.S.selectByIdWithDishItem           : ==> Parameters: 39(String)
 2023-12-01 10:39:20.880 DEBUG 34952 --- [http-nio-8080-exec-2] c.s.m.S.selectByIdWithDishItem           : <==      Total: 2
+2023-12-01 11:36:18.834  INFO 34952 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-01 11:36:18.835  INFO 34952 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
