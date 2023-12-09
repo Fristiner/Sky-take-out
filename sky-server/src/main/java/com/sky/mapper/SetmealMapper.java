@@ -6,8 +6,10 @@ import com.sky.dto.SetmealPageQueryDTO;
 import com.sky.entity.Setmeal;
 import com.sky.enumeration.OperationType;
 import com.sky.vo.DishItemVO;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -66,4 +68,20 @@ public interface SetmealMapper {
             "from setmeal_dish sd left join dish d on sd.dish_id = d.id " +
             "where sd.setmeal_id = #{setmealId}")
     List<DishItemVO> selectByIdWithDishItem(String id);
+
+//    @Delete("delete from setmeal where id in (1,2,3)")
+
+    void deleteByIds(List<Long> ids);
+
+    /**
+     * 设置套餐的起售停售
+     * @param id
+     * @param status
+     */
+
+    @Update("update setmeal set status = #{status} where id = #{id};")
+    void StartOrStop(String id, Integer status);
+
+
+    void update(Setmeal setmeal);
 }

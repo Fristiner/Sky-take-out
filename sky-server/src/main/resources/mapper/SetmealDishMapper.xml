@@ -3,6 +3,30 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sky.mapper.SetmealDishMapper">
+    <update id="update">
+        update setmeal_dish
+        <set>
+            <if test="dishId != null">
+                dish_id = #{dishId}
+            </if>
+            <if test="name != null">
+                name = #{name}
+            </if>
+            <if test="price != null">
+                price = #{price}
+            </if>
+            <if test="copies != null">
+                copies = #{copies}
+            </if>
+        </set>
+        where setmeal_id = #{setmealId}
+    </update>
+    <delete id="deleteByIds">
+        delete from setmeal_dish where setmeal_id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
 
 
     <select id="getSetmealIdsByDishIds" resultType="java.lang.Long">

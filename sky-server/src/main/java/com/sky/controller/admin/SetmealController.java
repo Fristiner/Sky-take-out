@@ -46,7 +46,7 @@ public class SetmealController {
      * @param setmealDTO
      * @return
      */
-    @CacheEvict(cacheNames = "setmealCache", key = "#setmealDTO.categoryId")
+//    @CacheEvict(cacheNames = "setmealCache", key = "#setmealDTO.categoryId")
     @PostMapping()
     @ApiOperation("新增套餐")
     public Result save(@RequestBody SetmealDTO setmealDTO) {
@@ -75,7 +75,28 @@ public class SetmealController {
     @CacheEvict(cacheNames = "setmealCache", allEntries = true)
     public Result delete(@RequestParam List<Long> ids) {
         // TODO: 批量删除套餐
+        setmealService.delete(ids);
         return Result.success();
     }
+
+    @PostMapping("/status/{status}")
+    @ApiOperation("套餐的起售停售")
+    public Result StartOrStop(@PathVariable(value = "status") Integer status,Long id){
+        // 1. 1表示起售 0 表示停售
+        // 根据id来处理
+        setmealService.StartOrStop(id,status);
+        return Result.success();
+    }
+
+
+    @PutMapping()
+    @ApiOperation("修改套餐接口")
+    public Result update(@RequestBody SetmealDTO setmealDTO){
+        // 修改套餐接口
+        setmealService.update(setmealDTO);
+        return Result.success();
+    }
+
+
 
 }

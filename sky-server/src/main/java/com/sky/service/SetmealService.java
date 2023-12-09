@@ -39,4 +39,13 @@ public interface SetmealService {
 
 
     List<DishItemVO> selectByIDWithDishItem(String id);
+
+
+    void delete(List<Long> ids);
+
+
+    void StartOrStop(Long id, Integer status);
+
+
+    void update(SetmealDTO setmealDTO);
 }
