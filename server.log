@@ -2056,3 +2056,1173 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
 	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
 
+2023-12-11 15:44:50.792  INFO 2756 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:44:50.793  INFO 2756 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:44:50.794  INFO 2756 --- [http-nio-8080-exec-8] com.sky.controller.admin.ShopController  : 设置营业状态为：营业中
+2023-12-11 15:44:50.818  INFO 2756 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:44:50.819  INFO 2756 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:44:50.820  INFO 2756 --- [http-nio-8080-exec-10] com.sky.controller.admin.ShopController  : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:45:00.007  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:45:00.007460800
+2023-12-11 15:45:00.009 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:45:00.010 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:30:00.008463300(LocalDateTime)
+2023-12-11 15:45:00.015 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:45:43.612  INFO 2756 --- [http-nio-8080-exec-1] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:45:47.123  INFO 2756 --- [http-nio-8080-exec-5] com.sky.controller.user.UserController   : 微信用户登录，0b3gVU000dLmcR1NBD200Ijl3u1gVU0K
+2023-12-11 15:45:47.817 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-11 15:45:47.817 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-11 15:45:47.824 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-11 15:45:47.844  INFO 2756 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:47.845  INFO 2756 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:47.848 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-11 15:45:47.848  INFO 2756 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:47.848 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-11 15:45:47.849  INFO 2756 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:47.853 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 10
+2023-12-11 15:45:47.854 DEBUG 2756 --- [http-nio-8080-exec-7] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:45:47.855 DEBUG 2756 --- [http-nio-8080-exec-7] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:45:47.857 DEBUG 2756 --- [http-nio-8080-exec-7] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:45:47.871  INFO 2756 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:47.872  INFO 2756 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:51.033  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:51.034  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:51.036  INFO 2756 --- [http-nio-8080-exec-9] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=65, setmealId=null, dishFlavor=重辣)
+2023-12-11 15:45:51.039 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-11 15:45:51.040 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 65(Long), 重辣(String)
+2023-12-11 15:45:51.042 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:45:51.044 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-11 15:45:51.044 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.getById        : ==> Parameters: 65(Long)
+2023-12-11 15:45:51.046 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-11 15:45:51.047 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-11 15:45:51.049 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 草鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/b544d3ba-a1ae-4d20-a860-81cb5dec9e03.png(String), 4(Long), 65(Long), null, 重辣(String), 68.00(BigDecimal), null
+2023-12-11 15:45:51.059 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-11 15:45:51.072  INFO 2756 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:51.073  INFO 2756 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:51.074 DEBUG 2756 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:45:51.075 DEBUG 2756 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:45:51.076 DEBUG 2756 --- [http-nio-8080-exec-3] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-11 15:45:51.076  INFO 2756 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:51.077  INFO 2756 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:54.204  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:54.205  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:54.213 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.AddressBookMapper.list    : ==>  Preparing: select * from address_book WHERE user_id = ?
+2023-12-11 15:45:54.213 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.AddressBookMapper.list    : ==> Parameters: 4(Long)
+2023-12-11 15:45:54.216 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.AddressBookMapper.list    : <==      Total: 2
+2023-12-11 15:45:54.222  INFO 2756 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:54.223  INFO 2756 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:54.224 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.AddressBookMapper.list    : ==>  Preparing: select * from address_book WHERE user_id = ? and is_default = ?
+2023-12-11 15:45:54.224 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.AddressBookMapper.list    : ==> Parameters: 4(Long), 1(Integer)
+2023-12-11 15:45:54.225 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.AddressBookMapper.list    : <==      Total: 1
+2023-12-11 15:45:55.370  INFO 2756 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:55.371  INFO 2756 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:55.377  INFO 2756 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 用户下单，参数为：OrdersSubmitDTO(addressBookId=3, payMethod=1, remark=, estimatedDeliveryTime=2023-12-11T16:45, deliveryStatus=0, tablewareNumber=0, tablewareStatus=0, packAmount=1, amount=75)
+2023-12-11 15:45:55.385 DEBUG 2756 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:45:55.385 DEBUG 2756 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:45:55.386 DEBUG 2756 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:45:55.387 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:45:55.388 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:45:55.389 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-11 15:45:55.394 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.insert       : ==>  Preparing: insert into orders(number, status, user_id, address_book_id, order_time, checkout_time, pay_method, pay_status, amount, remark, phone, address, user_name, consignee, cancel_reason, rejection_reason, cancel_time, estimated_delivery_time, delivery_status, delivery_time, pack_amount, tableware_number, tableware_status) VALUES (?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?)
+2023-12-11 15:45:55.396 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.insert       : ==> Parameters: 1702280755393(String), 1(Integer), 4(Long), 3(Long), 2023-12-11T15:45:55.393344400(LocalDateTime), null, 1(Integer), 0(Integer), 75(BigDecimal), (String), 18537616099(String), null, null, 梨花(String), null, null, null, 2023-12-11T16:45(LocalDateTime), 0(Integer), null, 1(Integer), 0(Integer), 0(Integer)
+2023-12-11 15:45:55.398 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.insert       : <==    Updates: 1
+2023-12-11 15:45:55.404 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.OrdersDetailMapper.insertBatch     : ==>  Preparing: insert into order_detail(name, image, order_id, dish_id, setmeal_id, dish_flavor, amount) VALUES (?,?,?,?,?,?,?)
+2023-12-11 15:45:55.405 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.OrdersDetailMapper.insertBatch     : ==> Parameters: 草鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/b544d3ba-a1ae-4d20-a860-81cb5dec9e03.png(String), 20(Long), 65(Long), null, 重辣(String), 68.00(BigDecimal)
+2023-12-11 15:45:55.407 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.OrdersDetailMapper.insertBatch     : <==    Updates: 1
+2023-12-11 15:45:55.407 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.ShoppingCartMapper.deleteByUserId  : ==>  Preparing: delete from shopping_cart where user_id = ?
+2023-12-11 15:45:55.407 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.ShoppingCartMapper.deleteByUserId  : ==> Parameters: 4(Long)
+2023-12-11 15:45:55.408 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.ShoppingCartMapper.deleteByUserId  : <==    Updates: 1
+2023-12-11 15:45:56.582  INFO 2756 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:45:56.583  INFO 2756 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:45:56.584  INFO 2756 --- [http-nio-8080-exec-5] c.sky.controller.user.OrdersController   : 订单支付：OrdersPaymentDTO(orderNumber=1702280755393, payMethod=1)
+2023-12-11 15:45:56.584 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getById        : ==>  Preparing: select * from user where id = ?
+2023-12-11 15:45:56.584 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getById        : ==> Parameters: 4(Long)
+2023-12-11 15:45:56.585 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.UserMapper.getById        : <==      Total: 1
+2023-12-11 15:45:56.596  INFO 2756 --- [http-nio-8080-exec-5] c.sky.controller.user.OrdersController   : 生成预支付交易单：OrderPaymentVO(nonceStr=null, paySign=null, timeStamp=null, signType=null, packageStr=null)
+2023-12-11 15:45:56.597 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.getByNumber  : ==>  Preparing: select * from orders where number = ?
+2023-12-11 15:45:56.597 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.getByNumber  : ==> Parameters: 1702280755393(String)
+2023-12-11 15:45:56.599 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.getByNumber  : <==      Total: 1
+2023-12-11 15:45:56.601 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.update       : ==>  Preparing: update orders SET pay_status=?, checkout_time=?, status = ? where id = ?
+2023-12-11 15:45:56.602 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.update       : ==> Parameters: 1(Integer), 2023-12-11T15:45:56.600572600(LocalDateTime), 2(Integer), 20(Long)
+2023-12-11 15:45:56.609 DEBUG 2756 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.update       : <==    Updates: 1
+2023-12-11 15:45:56.619  INFO 2756 --- [http-nio-8080-exec-5] c.sky.controller.user.OrdersController   : 模拟交易成功，1702280755393
+2023-12-11 15:46:00.011  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:46:00.011313400
+2023-12-11 15:46:00.012 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:46:00.013 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:31:00.012317800(LocalDateTime)
+2023-12-11 15:46:00.015 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:46:03.321  INFO 2756 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:03.322  INFO 2756 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:03.322  INFO 2756 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:03.322  INFO 2756 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:03.323  INFO 2756 --- [http-nio-8080-exec-9] c.sky.controller.admin.OrdersController  : 查询订单详情，订单id为20
+2023-12-11 15:46:03.323  INFO 2756 --- [http-nio-8080-exec-3] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:46:03.323 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:46:03.323 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 20(Long)
+2023-12-11 15:46:03.323 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 15:46:03.324 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 15:46:03.325 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:46:03.326 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:46:03.327 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:46:03.328 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:46:03.332 DEBUG 2756 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.332 DEBUG 2756 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:46:03.332 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:46:03.333 DEBUG 2756 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:03.335 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 15:46:03.335 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 15:46:03.339 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 15:46:03.340 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.340  INFO 2756 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:03.340 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:46:03.341  INFO 2756 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:03.342 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:03.342  INFO 2756 --- [http-nio-8080-exec-8] com.sky.controller.admin.ShopController  : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:46:03.343 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.343 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:46:03.345 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:46:03.346 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.346 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:46:03.347 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:03.347 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.347 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:46:03.348 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:03.348 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.348 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:46:03.349 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:03.350 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.350 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:46:03.352 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:46:03.352 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.352 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:46:03.354 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:03.354 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.355 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:46:03.356 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:03.357 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.358 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:46:03.359 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:03.360 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:03.360 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 11(Long)
+2023-12-11 15:46:03.361 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:03.441  INFO 2756 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:03.442  INFO 2756 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:03.442  INFO 2756 --- [http-nio-8080-exec-10] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:46:03.443 DEBUG 2756 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:46:03.443 DEBUG 2756 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:46:03.445 DEBUG 2756 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:46:06.053  INFO 2756 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:06.053  INFO 2756 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:06.055  INFO 2756 --- [http-nio-8080-exec-4] c.sky.controller.admin.OrdersController  : 接单，订单id为：OrdersConfirmDTO(id=20, status=null)
+2023-12-11 15:46:06.055 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.OrdersMapper.updateDeliveryStatus  : ==>  Preparing: update orders set status = 3 where id = ?
+2023-12-11 15:46:06.056 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.OrdersMapper.updateDeliveryStatus  : ==> Parameters: 20(Long)
+2023-12-11 15:46:06.063 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.OrdersMapper.updateDeliveryStatus  : <==    Updates: 1
+2023-12-11 15:46:06.074  INFO 2756 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:06.075  INFO 2756 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:06.075  INFO 2756 --- [http-nio-8080-exec-5] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:46:06.076 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 15:46:06.076 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 15:46:06.077 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:46:06.078 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 15:46:06.078 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 15:46:06.081 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 15:46:06.081 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.081 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:46:06.082 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:06.083 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.083 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:46:06.083 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:46:06.084 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.084 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:46:06.084 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:06.085 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.085 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:46:06.085 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:06.086 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.086 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:46:06.086 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:06.086 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.086 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:46:06.087 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:46:06.087 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.087 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:46:06.088 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:06.088 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.088 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:46:06.089 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:06.090 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.090 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:46:06.090 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:06.091 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:06.091 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 11(Long)
+2023-12-11 15:46:06.091 DEBUG 2756 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:06.104  INFO 2756 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:06.105  INFO 2756 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:06.105  INFO 2756 --- [http-nio-8080-exec-6] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:46:06.105 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:46:06.105 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:46:06.106 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:46:07.182  INFO 2756 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:07.183  INFO 2756 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:07.183  INFO 2756 --- [http-nio-8080-exec-7] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:46:07.184 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2023-12-11 15:46:07.185 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 3(Integer)
+2023-12-11 15:46:07.185 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:46:07.186 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders WHERE status = ? order by order_time desc LIMIT ?
+2023-12-11 15:46:07.186 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 3(Integer), 10(Integer)
+2023-12-11 15:46:07.187 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 1
+2023-12-11 15:46:07.187 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:07.187 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:46:07.188 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:07.200  INFO 2756 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:07.201  INFO 2756 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:07.201  INFO 2756 --- [http-nio-8080-exec-2] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:46:07.201 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:46:07.201 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:46:07.202 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:46:22.576  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:22.576  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:22.577 DEBUG 2756 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-11 15:46:22.577 DEBUG 2756 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-11 15:46:22.579 DEBUG 2756 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 10
+2023-12-11 15:46:22.581  INFO 2756 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:22.582  INFO 2756 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:22.583 DEBUG 2756 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:46:22.583 DEBUG 2756 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:46:22.584 DEBUG 2756 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:46:22.593  INFO 2756 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:22.594  INFO 2756 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:25.408  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:25.409  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:25.410  INFO 2756 --- [http-nio-8080-exec-10] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=66, setmealId=null, dishFlavor=重辣)
+2023-12-11 15:46:25.411 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-11 15:46:25.411 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 66(Long), 重辣(String)
+2023-12-11 15:46:25.412 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:46:25.413 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-11 15:46:25.413 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.getById        : ==> Parameters: 66(Long)
+2023-12-11 15:46:25.416 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-11 15:46:25.416 DEBUG 2756 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-11 15:46:25.416 DEBUG 2756 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 江团鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a101a1e9-8f8b-47b2-afa4-1abd47ea0a87.png(String), 4(Long), 66(Long), null, 重辣(String), 119.00(BigDecimal), null
+2023-12-11 15:46:25.439 DEBUG 2756 --- [http-nio-8080-exec-10] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-11 15:46:25.450  INFO 2756 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:25.451  INFO 2756 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:25.452 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:46:25.452 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:46:25.454  INFO 2756 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:25.454 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 1
+2023-12-11 15:46:25.455  INFO 2756 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:25.922  INFO 2756 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:25.922  INFO 2756 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:26.188  INFO 2756 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:26.189  INFO 2756 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:27.864  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:27.865  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:27.866  INFO 2756 --- [http-nio-8080-exec-9] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=52, setmealId=null, dishFlavor=不要葱,重辣)
+2023-12-11 15:46:27.866 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and dish_id = ? and dish_flavor = ?
+2023-12-11 15:46:27.867 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 52(Long), 不要葱,重辣(String)
+2023-12-11 15:46:27.868 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:46:27.868 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.getById        : ==>  Preparing: select * from dish where id = ?
+2023-12-11 15:46:27.868 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.getById        : ==> Parameters: 52(Long)
+2023-12-11 15:46:27.869 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.DishMapper.getById        : <==      Total: 1
+2023-12-11 15:46:27.869 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-11 15:46:27.870 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 经典酸菜鮰鱼(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/5260ff39-986c-4a97-8850-2ec8c7583efc.png(String), 4(Long), 52(Long), null, 不要葱,重辣(String), 66.00(BigDecimal), null
+2023-12-11 15:46:27.891 DEBUG 2756 --- [http-nio-8080-exec-9] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-11 15:46:27.903  INFO 2756 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:27.904  INFO 2756 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:27.905 DEBUG 2756 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:46:27.905 DEBUG 2756 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:46:27.907 DEBUG 2756 --- [http-nio-8080-exec-8] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 2
+2023-12-11 15:46:27.908  INFO 2756 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:27.908  INFO 2756 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:28.518  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:28.519  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:28.622 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.userList    : ==>  Preparing: select * from setmeal where category_id = ? and status = '1'
+2023-12-11 15:46:28.623 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.userList    : ==> Parameters: 15(String)
+2023-12-11 15:46:28.680 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.SetmealMapper.userList    : <==      Total: 1
+2023-12-11 15:46:29.623  INFO 2756 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:29.624  INFO 2756 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:29.626  INFO 2756 --- [http-nio-8080-exec-1] c.s.c.user.ShoppingCartController        : 添加购物车，商品信息为：ShoppingCartDTO(dishId=null, setmealId=33, dishFlavor=null)
+2023-12-11 15:46:29.627 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ? and setmeal_id = ?
+2023-12-11 15:46:29.627 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long), 33(Long)
+2023-12-11 15:46:29.628 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:46:29.629 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.selectById  : ==>  Preparing: select * from setmeal where id = ?
+2023-12-11 15:46:29.629 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.selectById  : ==> Parameters: 33(Long)
+2023-12-11 15:46:29.630 DEBUG 2756 --- [http-nio-8080-exec-1] com.sky.mapper.SetmealMapper.selectById  : <==      Total: 1
+2023-12-11 15:46:29.630 DEBUG 2756 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : ==>  Preparing: insert into shopping_cart (name, image, user_id, dish_id, setmeal_id, dish_flavor, amount, create_time) VALUES (?,?,?,?,?,?,?,?)
+2023-12-11 15:46:29.630 DEBUG 2756 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : ==> Parameters: 啊啊啊啊啊啊啊(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/6810a2de-aa42-488e-b676-115145fd8e4b.png(String), 4(Long), null, 33(Long), null, 144.00(BigDecimal), null
+2023-12-11 15:46:29.636 DEBUG 2756 --- [http-nio-8080-exec-1] c.sky.mapper.ShoppingCartMapper.insert   : <==    Updates: 1
+2023-12-11 15:46:29.648  INFO 2756 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:29.649  INFO 2756 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:29.650 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:46:29.651 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:46:29.652  INFO 2756 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:29.653 DEBUG 2756 --- [http-nio-8080-exec-4] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-11 15:46:29.653  INFO 2756 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:30.771  INFO 2756 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:30.772  INFO 2756 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:30.773 DEBUG 2756 --- [http-nio-8080-exec-6] com.sky.mapper.AddressBookMapper.list    : ==>  Preparing: select * from address_book WHERE user_id = ?
+2023-12-11 15:46:30.773 DEBUG 2756 --- [http-nio-8080-exec-6] com.sky.mapper.AddressBookMapper.list    : ==> Parameters: 4(Long)
+2023-12-11 15:46:30.774 DEBUG 2756 --- [http-nio-8080-exec-6] com.sky.mapper.AddressBookMapper.list    : <==      Total: 2
+2023-12-11 15:46:30.788  INFO 2756 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:30.789  INFO 2756 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:30.790 DEBUG 2756 --- [http-nio-8080-exec-7] com.sky.mapper.AddressBookMapper.list    : ==>  Preparing: select * from address_book WHERE user_id = ? and is_default = ?
+2023-12-11 15:46:30.790 DEBUG 2756 --- [http-nio-8080-exec-7] com.sky.mapper.AddressBookMapper.list    : ==> Parameters: 4(Long), 1(Integer)
+2023-12-11 15:46:30.791 DEBUG 2756 --- [http-nio-8080-exec-7] com.sky.mapper.AddressBookMapper.list    : <==      Total: 1
+2023-12-11 15:46:33.932  INFO 2756 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:33.933  INFO 2756 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:33.934  INFO 2756 --- [http-nio-8080-exec-2] c.sky.controller.user.OrdersController   : 用户下单，参数为：OrdersSubmitDTO(addressBookId=3, payMethod=1, remark=, estimatedDeliveryTime=2023-12-11T16:46, deliveryStatus=0, tablewareNumber=0, tablewareStatus=0, packAmount=3, amount=338)
+2023-12-11 15:46:33.934 DEBUG 2756 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:46:33.935 DEBUG 2756 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:46:33.936 DEBUG 2756 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:46:33.936 DEBUG 2756 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:46:33.936 DEBUG 2756 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:46:33.948 DEBUG 2756 --- [http-nio-8080-exec-2] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 3
+2023-12-11 15:46:33.949 DEBUG 2756 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.insert       : ==>  Preparing: insert into orders(number, status, user_id, address_book_id, order_time, checkout_time, pay_method, pay_status, amount, remark, phone, address, user_name, consignee, cancel_reason, rejection_reason, cancel_time, estimated_delivery_time, delivery_status, delivery_time, pack_amount, tableware_number, tableware_status) VALUES (?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?)
+2023-12-11 15:46:33.950 DEBUG 2756 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.insert       : ==> Parameters: 1702280793949(String), 1(Integer), 4(Long), 3(Long), 2023-12-11T15:46:33.949358500(LocalDateTime), null, 1(Integer), 0(Integer), 338(BigDecimal), (String), 18537616099(String), null, null, 梨花(String), null, null, null, 2023-12-11T16:46(LocalDateTime), 0(Integer), null, 3(Integer), 0(Integer), 0(Integer)
+2023-12-11 15:46:33.951 DEBUG 2756 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.insert       : <==    Updates: 1
+2023-12-11 15:46:33.952 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.OrdersDetailMapper.insertBatch     : ==>  Preparing: insert into order_detail(name, image, order_id, dish_id, setmeal_id, dish_flavor, amount) VALUES (?,?,?,?,?,?,?) , (?,?,?,?,?,?,?) , (?,?,?,?,?,?,?)
+2023-12-11 15:46:33.952 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.OrdersDetailMapper.insertBatch     : ==> Parameters: 江团鱼2斤(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/a101a1e9-8f8b-47b2-afa4-1abd47ea0a87.png(String), 21(Long), 66(Long), null, 重辣(String), 119.00(BigDecimal), 经典酸菜鮰鱼(String), https://sky-itcast.oss-cn-beijing.aliyuncs.com/5260ff39-986c-4a97-8850-2ec8c7583efc.png(String), 21(Long), 52(Long), null, 不要葱,重辣(String), 66.00(BigDecimal), 啊啊啊啊啊啊啊(String), https://mtc-take-out.oss-cn-beijing.aliyuncs.com/6810a2de-aa42-488e-b676-115145fd8e4b.png(String), 21(Long), null, 33(Long), null, 144.00(BigDecimal)
+2023-12-11 15:46:33.953 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.OrdersDetailMapper.insertBatch     : <==    Updates: 3
+2023-12-11 15:46:33.953 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.ShoppingCartMapper.deleteByUserId  : ==>  Preparing: delete from shopping_cart where user_id = ?
+2023-12-11 15:46:33.954 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.ShoppingCartMapper.deleteByUserId  : ==> Parameters: 4(Long)
+2023-12-11 15:46:33.954 DEBUG 2756 --- [http-nio-8080-exec-2] c.s.m.ShoppingCartMapper.deleteByUserId  : <==    Updates: 3
+2023-12-11 15:46:35.183  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:35.184  INFO 2756 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:35.185  INFO 2756 --- [http-nio-8080-exec-9] c.sky.controller.user.OrdersController   : 订单支付：OrdersPaymentDTO(orderNumber=1702280793949, payMethod=1)
+2023-12-11 15:46:35.185 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.UserMapper.getById        : ==>  Preparing: select * from user where id = ?
+2023-12-11 15:46:35.185 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.UserMapper.getById        : ==> Parameters: 4(Long)
+2023-12-11 15:46:35.186 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.UserMapper.getById        : <==      Total: 1
+2023-12-11 15:46:35.187  INFO 2756 --- [http-nio-8080-exec-9] c.sky.controller.user.OrdersController   : 生成预支付交易单：OrderPaymentVO(nonceStr=null, paySign=null, timeStamp=null, signType=null, packageStr=null)
+2023-12-11 15:46:35.187 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.getByNumber  : ==>  Preparing: select * from orders where number = ?
+2023-12-11 15:46:35.187 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.getByNumber  : ==> Parameters: 1702280793949(String)
+2023-12-11 15:46:35.188 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.getByNumber  : <==      Total: 1
+2023-12-11 15:46:35.188 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.update       : ==>  Preparing: update orders SET pay_status=?, checkout_time=?, status = ? where id = ?
+2023-12-11 15:46:35.189 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.update       : ==> Parameters: 1(Integer), 2023-12-11T15:46:35.188165700(LocalDateTime), 2(Integer), 21(Long)
+2023-12-11 15:46:35.229 DEBUG 2756 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.update       : <==    Updates: 1
+2023-12-11 15:46:35.229  INFO 2756 --- [http-nio-8080-exec-9] c.sky.controller.user.OrdersController   : 模拟交易成功，1702280793949
+2023-12-11 15:46:38.457  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODc5NDcsInVzZXJJZCI6NH0.h9k8AqnGWUMVyTIFKq1tpj5ZGqwoOV01vCQLOI97P1I
+2023-12-11 15:46:38.458  INFO 2756 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:46:38.458  INFO 2756 --- [http-nio-8080-exec-10] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:46:38.459 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:46:38.459 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:46:38.460 DEBUG 2756 --- [http-nio-8080-exec-10] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:46:38.460 DEBUG 2756 --- [http-nio-8080-exec-10] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:46:38.460 DEBUG 2756 --- [http-nio-8080-exec-10] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:46:38.461 DEBUG 2756 --- [http-nio-8080-exec-10] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:46:38.461 DEBUG 2756 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:38.461 DEBUG 2756 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:46:38.462 DEBUG 2756 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:44.109  INFO 2756 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:44.109  INFO 2756 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:44.109  INFO 2756 --- [http-nio-8080-exec-4] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:44.109  INFO 2756 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:44.110  INFO 2756 --- [http-nio-8080-exec-4] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:46:44.110 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 15:46:44.111 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 15:46:44.111  INFO 2756 --- [http-nio-8080-exec-5] com.sky.controller.admin.ShopController  : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:46:44.116 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:46:44.116 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 15:46:44.116 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 15:46:44.117  INFO 2756 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:44.117  INFO 2756 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:44.117  INFO 2756 --- [http-nio-8080-exec-6] c.sky.controller.admin.OrdersController  : 查询订单详情，订单id为21
+2023-12-11 15:46:44.118 DEBUG 2756 --- [http-nio-8080-exec-6] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:46:44.118 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 15:46:44.118 DEBUG 2756 --- [http-nio-8080-exec-6] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:46:44.118 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.118 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:46:44.119 DEBUG 2756 --- [http-nio-8080-exec-6] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:46:44.119 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:44.119 DEBUG 2756 --- [http-nio-8080-exec-6] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:46:44.119 DEBUG 2756 --- [http-nio-8080-exec-6] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-6] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:46:44.120 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.121 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:46:44.121 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:46:44.121 DEBUG 2756 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:44.122 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.123 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:46:44.124 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:44.125 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.125 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:46:44.126 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:44.126 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.127 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:46:44.127 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:44.128 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.128 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:46:44.128 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:46:44.129 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.129 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:46:44.130 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:44.131 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.131 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:46:44.132 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:44.133 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:44.133 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:46:44.133 DEBUG 2756 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:46:44.185  INFO 2756 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:44.186  INFO 2756 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:44.186  INFO 2756 --- [http-nio-8080-exec-7] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:46:44.186 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:46:44.187 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:46:44.188 DEBUG 2756 --- [http-nio-8080-exec-7] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:46:49.483  INFO 2756 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:49.483  INFO 2756 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:49.483  INFO 2756 --- [http-nio-8080-exec-8] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:46:49.484 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2023-12-11 15:46:49.484 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 2(Integer)
+2023-12-11 15:46:49.485 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:46:49.485 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders WHERE status = ? order by order_time desc LIMIT ?
+2023-12-11 15:46:49.485 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 2(Integer), 10(Integer)
+2023-12-11 15:46:49.486 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 1
+2023-12-11 15:46:49.486 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:46:49.486 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:46:49.487 DEBUG 2756 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:46:49.501  INFO 2756 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:46:49.502  INFO 2756 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:46:49.502  INFO 2756 --- [http-nio-8080-exec-3] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:46:49.502 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:46:49.502 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:46:49.503 DEBUG 2756 --- [http-nio-8080-exec-3] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:47:00.016  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:47:00.016517800
+2023-12-11 15:47:00.017 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:47:00.017 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:32:00.016517800(LocalDateTime)
+2023-12-11 15:47:00.018 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:48:00.003  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:48:00.003352
+2023-12-11 15:48:00.004 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:48:00.004 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:33:00.004356400(LocalDateTime)
+2023-12-11 15:48:00.006 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:49:00.012  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:49:00.012386300
+2023-12-11 15:49:00.043 ERROR 2756 --- [scheduling-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 60021
+2023-12-11 15:49:00.044 ERROR 2756 --- [scheduling-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 135922
+2023-12-11 15:49:00.060 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:49:00.060 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:34:00.012386300(LocalDateTime)
+2023-12-11 15:49:00.067 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:50:00.004  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:50:00.004151800
+2023-12-11 15:50:00.006 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:50:00.006 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:35:00.005163400(LocalDateTime)
+2023-12-11 15:50:00.007 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:51:00.015  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:51:00.015223600
+2023-12-11 15:51:00.016 ERROR 2756 --- [scheduling-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 60009
+2023-12-11 15:51:00.025 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:51:00.026 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:36:00.015223600(LocalDateTime)
+2023-12-11 15:51:00.034 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:52:00.012  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:52:00.012194300
+2023-12-11 15:52:00.012 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:52:00.012 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:37:00.012386100(LocalDateTime)
+2023-12-11 15:52:00.013 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:53:00.010  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:53:00.010265300
+2023-12-11 15:53:00.010 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:53:00.011 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:38:00.010265300(LocalDateTime)
+2023-12-11 15:53:00.012 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:54:00.015  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:54:00.015058700
+2023-12-11 15:54:00.016 ERROR 2756 --- [scheduling-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 60003
+2023-12-11 15:54:00.019 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:54:00.019 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:39:00.015058700(LocalDateTime)
+2023-12-11 15:54:00.025 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:55:00.015  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:55:00.015602100
+2023-12-11 15:55:00.016 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:55:00.016 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:40:00.015602100(LocalDateTime)
+2023-12-11 15:55:00.017 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:56:00.009  INFO 2756 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:56:00.009184300
+2023-12-11 15:56:00.009 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:56:00.009 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:41:00.009184300(LocalDateTime)
+2023-12-11 15:56:00.010 DEBUG 2756 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:56:13.221  INFO 2756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-12-11 15:56:13.225  INFO 2756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-12-11 15:56:17.758  INFO 9652 --- [main] com.sky.SkyApplication                   : Starting SkyApplication using Java 20.0.2.1 on DESKTOP-AIN70JA with PID 9652 (D:\project\Java_project\skyProject\skyOut\Sky-take-out\sky-server\target\classes started by ma in D:\project\Java_project\skyProject\skyOut\Sky-take-out)
+2023-12-11 15:56:17.760  INFO 9652 --- [main] com.sky.SkyApplication                   : The following 1 profile is active: "dev"
+2023-12-11 15:56:18.521  INFO 9652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-11 15:56:18.523  INFO 9652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-11 15:56:18.546  INFO 9652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-12-11 15:56:19.271  INFO 9652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-11 15:56:19.281  INFO 9652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-11 15:56:19.282  INFO 9652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-11 15:56:19.387  INFO 9652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-11 15:56:19.387  INFO 9652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1587 ms
+2023-12-11 15:56:19.528  INFO 9652 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-12-11 15:56:19.642  INFO 9652 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-11 15:56:19.922  INFO 9652 --- [main] com.sky.config.OssConfiguration          : 开始创建阿里云文件上传工具类对象，AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tJwTE1itg2srDShqwLa, accessKeySecret=jvmNfZVXECqwd4mEHNRIQzOXRJRPXy, bucketName=mtc-take-out)
+2023-12-11 15:56:20.498  INFO 9652 --- [main] com.sky.config.WebMvcConfiguration       : 开始注册自定义拦截器...
+2023-12-11 15:56:20.595  INFO 9652 --- [main] com.sky.config.WebMvcConfiguration       : 准备生成接口文档
+2023-12-11 15:56:20.665  INFO 9652 --- [main] com.sky.config.WebMvcConfiguration       : 开启扩展消息转化器...
+2023-12-11 15:56:20.674  INFO 9652 --- [main] com.sky.config.WebMvcConfiguration       : 开始静态资源映射
+2023-12-11 15:56:21.295  INFO 9652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-11 15:56:21.878  INFO 9652 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-11 15:56:21.879  INFO 9652 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-11 15:56:21.882  INFO 9652 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-12-11 15:56:22.022  INFO 9652 --- [main] com.sky.SkyApplication                   : Started SkyApplication in 4.71 seconds (JVM running for 5.346)
+2023-12-11 15:56:22.026  INFO 9652 --- [main] com.sky.SkyApplication                   : server started
+2023-12-11 15:56:22.319  INFO 9652 --- [http-nio-8080-exec-3] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:56:23.958  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:
+2023-12-11 15:56:25.307  INFO 9652 --- [http-nio-8080-exec-2] com.sky.controller.user.UserController   : 微信用户登录，0f33YMGa1jAqwG0xuKGa13Ca5B43YMG9
+2023-12-11 15:56:26.010 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-11 15:56:26.041 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-11 15:56:26.067 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-11 15:56:26.092  INFO 9652 --- [http-nio-8080-exec-4] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:56:26.108  INFO 9652 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODYsInVzZXJJZCI6NH0.SxMMOXBfDXJOgKFI4FA28wNAjZiEXsPUFpaf7Nt6Hnk
+2023-12-11 15:56:26.116  INFO 9652 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODYsInVzZXJJZCI6NH0.SxMMOXBfDXJOgKFI4FA28wNAjZiEXsPUFpaf7Nt6Hnk
+2023-12-11 15:56:26.123  INFO 9652 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:26.123  INFO 9652 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:26.144 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-11 15:56:26.145 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-11 15:56:26.149 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 10
+2023-12-11 15:56:26.150 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:56:26.153 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:56:26.155 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:56:26.187  INFO 9652 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODYsInVzZXJJZCI6NH0.SxMMOXBfDXJOgKFI4FA28wNAjZiEXsPUFpaf7Nt6Hnk
+2023-12-11 15:56:26.188  INFO 9652 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:29.064  INFO 9652 --- [http-nio-8080-exec-8] com.sky.controller.user.UserController   : 微信用户登录，0d3Cq60003ZycR1oqQ300uM8J04Cq60g
+2023-12-11 15:56:29.303 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-11 15:56:29.303 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-11 15:56:29.304 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-11 15:56:29.317  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:29.318  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:29.319 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-11 15:56:29.320 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-11 15:56:29.320  INFO 9652 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:29.322  INFO 9652 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:29.323 DEBUG 9652 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 15:56:29.323 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 10
+2023-12-11 15:56:29.323 DEBUG 9652 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 15:56:29.325 DEBUG 9652 --- [http-nio-8080-exec-10] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 15:56:29.336  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:29.337  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:30.870  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:30.871  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:30.875  INFO 9652 --- [http-nio-8080-exec-1] c.sky.controller.user.OrdersController   : 查询历史订单记录，查询的请求为：OrdersPageQueryDTO(page=1, pageSize=10, number=null, phone=null, status=null, beginTime=null, endTime=null, userId=null)
+2023-12-11 15:56:30.924 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.pageQueryOrders_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE user_id = ?
+2023-12-11 15:56:30.924 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.pageQueryOrders_COUNT            : ==> Parameters: 4(Long)
+2023-12-11 15:56:30.928 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.pageQueryOrders_COUNT            : <==      Total: 1
+2023-12-11 15:56:30.930 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.mapper.OrdersMapper.pageQueryOrders  : ==>  Preparing: select * from orders WHERE user_id = ? order by order_time desc LIMIT ?
+2023-12-11 15:56:30.931 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.mapper.OrdersMapper.pageQueryOrders  : ==> Parameters: 4(Long), 10(Integer)
+2023-12-11 15:56:30.937 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.mapper.OrdersMapper.pageQueryOrders  : <==      Total: 10
+2023-12-11 15:56:30.938 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.938 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:56:30.941 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:30.941 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.942 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:56:30.943 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:30.944 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.945 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:56:30.947 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:56:30.948 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.948 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:56:30.949 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:30.950 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.950 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:56:30.952 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:30.953 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.954 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:56:30.956 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:30.956 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.957 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:56:30.958 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:56:30.959 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.959 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:56:30.961 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:30.961 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.962 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:56:30.963 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:30.963 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:30.963 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:56:30.964 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:32.643  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:32.644  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:32.645  INFO 9652 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 查询历史订单记录，查询的请求为：OrdersPageQueryDTO(page=1, pageSize=10, number=null, phone=null, status=null, beginTime=null, endTime=null, userId=null)
+2023-12-11 15:56:32.647 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.pageQueryOrders_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE user_id = ?
+2023-12-11 15:56:32.648 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.pageQueryOrders_COUNT            : ==> Parameters: 4(Long)
+2023-12-11 15:56:32.649 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.pageQueryOrders_COUNT            : <==      Total: 1
+2023-12-11 15:56:32.649 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.mapper.OrdersMapper.pageQueryOrders  : ==>  Preparing: select * from orders WHERE user_id = ? order by order_time desc LIMIT ?
+2023-12-11 15:56:32.650 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.mapper.OrdersMapper.pageQueryOrders  : ==> Parameters: 4(Long), 10(Integer)
+2023-12-11 15:56:32.652 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.mapper.OrdersMapper.pageQueryOrders  : <==      Total: 10
+2023-12-11 15:56:32.653 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.653 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:56:32.655 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:32.655 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.656 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:56:32.657 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:32.657 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.658 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:56:32.658 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:56:32.659 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.659 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:56:32.660 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:32.660 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.660 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:56:32.661 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:32.661 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.661 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:56:32.663 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:32.663 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.663 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:56:32.665 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:56:32.665 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.665 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:56:32.666 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:32.666 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.667 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:56:32.667 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:32.667 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:32.667 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:56:32.668 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:36.179  INFO 9652 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:36.180  INFO 9652 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:36.181  INFO 9652 --- [http-nio-8080-exec-2] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为20
+2023-12-11 15:56:36.182 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:56:36.182 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 20(Long)
+2023-12-11 15:56:36.185 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:56:36.185 DEBUG 9652 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:56:36.185 DEBUG 9652 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:56:36.187 DEBUG 9652 --- [http-nio-8080-exec-2] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:56:36.191 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:36.192 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:56:36.193 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:42.277  INFO 9652 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:56:42.278  INFO 9652 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:56:42.279  INFO 9652 --- [http-nio-8080-exec-7] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:56:42.281 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2023-12-11 15:56:42.282 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 3(Integer)
+2023-12-11 15:56:42.282 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:56:42.283 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders WHERE status = ? order by order_time desc LIMIT ?
+2023-12-11 15:56:42.283 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 3(Integer), 10(Integer)
+2023-12-11 15:56:42.284 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 1
+2023-12-11 15:56:42.288 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:42.288 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:56:42.289 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:42.302  INFO 9652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:56:42.304  INFO 9652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:56:42.304  INFO 9652 --- [http-nio-8080-exec-6] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:56:42.304 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:56:42.305 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:56:42.306 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:56:42.992  INFO 9652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:56:42.992  INFO 9652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:56:42.993  INFO 9652 --- [http-nio-8080-exec-5] c.sky.controller.admin.OrdersController  : 派送订单，订单编号为：20
+2023-12-11 15:56:42.993 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:56:42.994 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 20(Long)
+2023-12-11 15:56:42.995 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:56:42.997 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.update       : ==>  Preparing: update orders SET pay_status=?, pay_method=?, checkout_time=?, status = ? where id = ?
+2023-12-11 15:56:42.997 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.update       : ==> Parameters: 1(Integer), 1(Integer), 2023-12-11T15:45:57(LocalDateTime), 4(Integer), 20(Long)
+2023-12-11 15:56:43.032 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.update       : <==    Updates: 1
+2023-12-11 15:56:43.041  INFO 9652 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:56:43.041  INFO 9652 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:56:43.042  INFO 9652 --- [http-nio-8080-exec-8] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:56:43.042 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2023-12-11 15:56:43.043 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 3(Integer)
+2023-12-11 15:56:43.043 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:56:43.053  INFO 9652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:56:43.054  INFO 9652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:56:43.055  INFO 9652 --- [http-nio-8080-exec-9] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:56:43.055 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:56:43.055 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:56:43.056 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:56:53.036  INFO 9652 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:53.037  INFO 9652 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:53.037  INFO 9652 --- [http-nio-8080-exec-10] c.sky.controller.user.OrdersController   : 查询历史订单记录，查询的请求为：OrdersPageQueryDTO(page=1, pageSize=10, number=null, phone=null, status=null, beginTime=null, endTime=null, userId=null)
+2023-12-11 15:56:53.038 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.pageQueryOrders_COUNT            : ==>  Preparing: SELECT count(0) FROM orders WHERE user_id = ?
+2023-12-11 15:56:53.038 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.pageQueryOrders_COUNT            : ==> Parameters: 4(Long)
+2023-12-11 15:56:53.039 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.pageQueryOrders_COUNT            : <==      Total: 1
+2023-12-11 15:56:53.040 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.mapper.OrdersMapper.pageQueryOrders  : ==>  Preparing: select * from orders WHERE user_id = ? order by order_time desc LIMIT ?
+2023-12-11 15:56:53.040 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.mapper.OrdersMapper.pageQueryOrders  : ==> Parameters: 4(Long), 10(Integer)
+2023-12-11 15:56:53.042 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.mapper.OrdersMapper.pageQueryOrders  : <==      Total: 10
+2023-12-11 15:56:53.042 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.043 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:56:53.044 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:53.044 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.045 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:56:53.046 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:53.047 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.047 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:56:53.048 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:56:53.048 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.048 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:56:53.049 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:53.050 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.050 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:56:53.051 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:53.052 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.052 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:56:53.053 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:53.054 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.054 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:56:53.055 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:56:53.055 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.055 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:56:53.056 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:53.057 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.057 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:56:53.058 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:53.058 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:53.058 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:56:53.060 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:56:54.661  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:54.662  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:54.662  INFO 9652 --- [http-nio-8080-exec-3] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:56:54.663 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:56:54.663 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:56:54.664 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:56:54.664 DEBUG 9652 --- [http-nio-8080-exec-3] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:56:54.665 DEBUG 9652 --- [http-nio-8080-exec-3] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:56:54.665 DEBUG 9652 --- [http-nio-8080-exec-3] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:56:54.666 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:54.666 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:56:54.666 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:56:55.681  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:55.682  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:55.682  INFO 9652 --- [http-nio-8080-exec-1] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:56:55.682 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:56:55.683 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:56:55.684 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:56:56.884  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:56:56.885  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:56:56.885  INFO 9652 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:56:56.885 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:56:56.885 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:56:56.887 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:56:56.887 DEBUG 9652 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:56:56.887 DEBUG 9652 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:56:56.888 DEBUG 9652 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:56:56.888 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:56:56.888 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:56:56.889 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:00.006  INFO 9652 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:57:00.006301600
+2023-12-11 15:57:00.007 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:57:00.007 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:42:00.006301600(LocalDateTime)
+2023-12-11 15:57:00.008 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:57:01.311  INFO 9652 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:57:01.312  INFO 9652 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:57:01.312  INFO 9652 --- [http-nio-8080-exec-7] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:57:01.312  INFO 9652 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:57:01.313  INFO 9652 --- [http-nio-8080-exec-2] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 15:57:01.314 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 15:57:01.314  INFO 9652 --- [http-nio-8080-exec-7] com.sky.controller.admin.ShopController  : 获取当前店铺的营业状态为：营业中
+2023-12-11 15:57:01.314 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 15:57:01.317 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 15:57:01.317 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 15:57:01.318 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 15:57:01.319 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 15:57:01.320 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.320 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:57:01.321 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:01.322 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.323 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 15:57:01.324 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:57:01.324 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.324 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 15:57:01.325 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:57:01.326 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.326 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 15:57:01.327 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:01.328 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.328 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 15:57:01.329 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:01.330 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.330 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 15:57:01.331 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:57:01.332 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.332 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 15:57:01.334 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 15:57:01.334 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.335 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 15:57:01.336 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:01.336 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.337 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 15:57:01.338 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:57:01.338 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:01.339 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 15:57:01.340 DEBUG 9652 --- [http-nio-8080-exec-2] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 15:57:01.385  INFO 9652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 15:57:01.386  INFO 9652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 15:57:01.386  INFO 9652 --- [http-nio-8080-exec-6] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 15:57:01.387 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 15:57:01.387 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 15:57:01.388 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 15:57:07.616  INFO 9652 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:57:07.617  INFO 9652 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:57:07.617  INFO 9652 --- [http-nio-8080-exec-8] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:57:07.617 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:57:07.618 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:57:07.619 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:57:08.697  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:57:08.697  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:57:08.697  INFO 9652 --- [http-nio-8080-exec-9] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:57:08.698 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:57:08.698 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:57:08.699 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:57:08.699 DEBUG 9652 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:57:08.700 DEBUG 9652 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:57:08.701 DEBUG 9652 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:57:08.701 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:08.701 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:57:08.702 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:40.149  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:57:40.150  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:57:40.150  INFO 9652 --- [http-nio-8080-exec-3] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:57:40.150 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:57:40.150 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:57:40.151 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:57:41.976  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:57:41.977  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:57:41.977  INFO 9652 --- [http-nio-8080-exec-1] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:57:41.977 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:57:41.977 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:57:41.978 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:57:41.979 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:57:41.979 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:57:41.980 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:57:41.981 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:41.981 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:57:41.982 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:57:43.037  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:57:43.038  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:57:43.038  INFO 9652 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:57:43.039 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:57:43.039 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:57:43.040 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:57:44.405  INFO 9652 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:57:44.405  INFO 9652 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:57:44.406  INFO 9652 --- [http-nio-8080-exec-7] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:57:44.406 DEBUG 9652 --- [http-nio-8080-exec-7] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:57:44.406 DEBUG 9652 --- [http-nio-8080-exec-7] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:57:44.407 DEBUG 9652 --- [http-nio-8080-exec-7] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:57:44.407 DEBUG 9652 --- [http-nio-8080-exec-7] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:57:44.407 DEBUG 9652 --- [http-nio-8080-exec-7] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:57:44.408 DEBUG 9652 --- [http-nio-8080-exec-7] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:57:44.409 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:57:44.409 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:57:44.410 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:58:00.014  INFO 9652 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:58:00.014904
+2023-12-11 15:58:00.015 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:58:00.015 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:43:00.015905200(LocalDateTime)
+2023-12-11 15:58:00.016 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:58:14.622  INFO 9652 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:14.623  INFO 9652 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:14.623  INFO 9652 --- [http-nio-8080-exec-2] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:58:14.623 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:14.623 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:14.624 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:16.661  INFO 9652 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:16.661  INFO 9652 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:16.662  INFO 9652 --- [http-nio-8080-exec-6] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:58:16.662 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:16.662 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:16.663 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:16.663 DEBUG 9652 --- [http-nio-8080-exec-6] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:58:16.664 DEBUG 9652 --- [http-nio-8080-exec-6] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:58:16.664 DEBUG 9652 --- [http-nio-8080-exec-6] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:58:16.665 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:58:16.665 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:58:16.665 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:58:17.608  INFO 9652 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:17.608  INFO 9652 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:17.609  INFO 9652 --- [http-nio-8080-exec-5] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:58:17.609 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:17.609 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:17.610 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:18.795  INFO 9652 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:18.795  INFO 9652 --- [http-nio-8080-exec-8] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:18.796  INFO 9652 --- [http-nio-8080-exec-8] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:58:18.796 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:18.796 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:18.797 DEBUG 9652 --- [http-nio-8080-exec-8] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:18.797 DEBUG 9652 --- [http-nio-8080-exec-8] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:58:18.798 DEBUG 9652 --- [http-nio-8080-exec-8] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:58:18.798 DEBUG 9652 --- [http-nio-8080-exec-8] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:58:18.799 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:58:18.799 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:58:18.799 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:58:22.026  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:22.027  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:22.027  INFO 9652 --- [http-nio-8080-exec-9] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:58:22.027 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:22.027 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:22.028 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:23.302  INFO 9652 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:23.303  INFO 9652 --- [http-nio-8080-exec-10] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:23.303  INFO 9652 --- [http-nio-8080-exec-10] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:58:23.303 DEBUG 9652 --- [http-nio-8080-exec-10] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:23.304 DEBUG 9652 --- [http-nio-8080-exec-10] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:23.305 DEBUG 9652 --- [http-nio-8080-exec-10] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:23.305 DEBUG 9652 --- [http-nio-8080-exec-10] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:58:23.305 DEBUG 9652 --- [http-nio-8080-exec-10] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:58:23.306 DEBUG 9652 --- [http-nio-8080-exec-10] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:58:23.307 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:58:23.307 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:58:23.308 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:58:29.988  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:29.989  INFO 9652 --- [http-nio-8080-exec-3] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:29.989  INFO 9652 --- [http-nio-8080-exec-3] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:58:29.989 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:29.989 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:29.990 DEBUG 9652 --- [http-nio-8080-exec-3] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:30.999  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:31.000  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:31.000  INFO 9652 --- [http-nio-8080-exec-1] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:58:31.000 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:31.000 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:31.001 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:31.002 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:58:31.002 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:58:31.003 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:58:31.003 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:58:31.003 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:58:31.004 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:58:47.016  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:47.016  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:47.016  INFO 9652 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:58:47.017 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:47.017 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:47.018 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:48.022  INFO 9652 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:58:48.023  INFO 9652 --- [http-nio-8080-exec-7] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:58:48.023  INFO 9652 --- [http-nio-8080-exec-7] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 15:58:48.023 DEBUG 9652 --- [http-nio-8080-exec-7] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:58:48.023 DEBUG 9652 --- [http-nio-8080-exec-7] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:58:48.024 DEBUG 9652 --- [http-nio-8080-exec-7] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 15:58:48.025 DEBUG 9652 --- [http-nio-8080-exec-7] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 15:58:48.025 DEBUG 9652 --- [http-nio-8080-exec-7] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 15:58:48.025 DEBUG 9652 --- [http-nio-8080-exec-7] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 15:58:48.026 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 15:58:48.026 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 15:58:48.027 DEBUG 9652 --- [http-nio-8080-exec-7] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 15:59:00.015  INFO 9652 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T15:59:00.015974400
+2023-12-11 15:59:00.016 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 15:59:00.016 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:44:00.016971100(LocalDateTime)
+2023-12-11 15:59:00.017 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 15:59:13.611  INFO 9652 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 15:59:13.611  INFO 9652 --- [http-nio-8080-exec-2] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 15:59:13.612  INFO 9652 --- [http-nio-8080-exec-2] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 15:59:13.612 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 15:59:13.612 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 15:59:13.613 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 16:00:00.017  INFO 9652 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T16:00:00.017116400
+2023-12-11 16:00:00.017 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 16:00:00.017 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:45:00.017116400(LocalDateTime)
+2023-12-11 16:00:00.018 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0
+2023-12-11 16:00:03.732  INFO 9652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:03.732  INFO 9652 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:03.733  INFO 9652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:03.733  INFO 9652 --- [http-nio-8080-exec-8] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:03.734  INFO 9652 --- [http-nio-8080-exec-8] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 16:00:03.736 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 16:00:03.736  INFO 9652 --- [http-nio-8080-exec-5] com.sky.controller.admin.ShopController  : 获取当前店铺的营业状态为：营业中
+2023-12-11 16:00:03.736 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 16:00:03.739 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 16:00:03.739 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 16:00:03.740 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 16:00:03.740  INFO 9652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:03.741  INFO 9652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:03.742  INFO 9652 --- [http-nio-8080-exec-9] c.sky.controller.admin.OrdersController  : 查询订单详情，订单id为21
+2023-12-11 16:00:03.742 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 16:00:03.743 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.743 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:03.744 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:03.745 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.745 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 16:00:03.746 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:03.746 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.746 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 16:00:03.747 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 16:00:03.747 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.747 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 16:00:03.748 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:03.748 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.748 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 16:00:03.749 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:03.750 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.750 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 16:00:03.752 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:03.752 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.752 ERROR 9652 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 214423
+2023-12-11 16:00:03.752 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 16:00:03.753 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 16:00:03.754 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 16:00:03.754 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 16:00:03.755 DEBUG 9652 --- [http-nio-8080-exec-9] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 16:00:03.755 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.755 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 16:00:03.757 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:03.757 DEBUG 9652 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 16:00:03.757 DEBUG 9652 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 16:00:03.758 DEBUG 9652 --- [http-nio-8080-exec-9] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 16:00:03.759 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.759 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 16:00:03.760 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:03.761 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.761 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:03.762 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:03.762 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:03.762 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 16:00:03.763 DEBUG 9652 --- [http-nio-8080-exec-8] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:03.815  INFO 9652 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:03.816  INFO 9652 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:03.816  INFO 9652 --- [http-nio-8080-exec-10] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 16:00:03.817 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 16:00:03.817 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 16:00:03.819 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 16:00:09.089  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 16:00:09.089  INFO 9652 --- [http-nio-8080-exec-1] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 16:00:09.090  INFO 9652 --- [http-nio-8080-exec-1] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 16:00:09.090 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 16:00:09.091 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 16:00:09.092 DEBUG 9652 --- [http-nio-8080-exec-1] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 16:00:09.093 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 16:00:09.094 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 16:00:09.101 DEBUG 9652 --- [http-nio-8080-exec-1] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 16:00:09.103 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:09.103 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:09.105 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:09.698  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 16:00:09.699  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 16:00:09.700  INFO 9652 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 客户催单，21
+2023-12-11 16:00:09.700 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 16:00:09.700 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 16:00:09.702 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 16:00:13.247  INFO 9652 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:13.247  INFO 9652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:13.247  INFO 9652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:13.248  INFO 9652 --- [http-nio-8080-exec-6] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:13.248  INFO 9652 --- [http-nio-8080-exec-2] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:13.248  INFO 9652 --- [http-nio-8080-exec-5] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:13.248  INFO 9652 --- [http-nio-8080-exec-5] c.sky.controller.admin.OrdersController  : 查询订单详情，订单id为21
+2023-12-11 16:00:13.249 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 16:00:13.249  INFO 9652 --- [http-nio-8080-exec-6] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 16:00:13.249 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 16:00:13.250 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 16:00:13.250 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 16:00:13.250  INFO 9652 --- [http-nio-8080-exec-2] com.sky.controller.admin.ShopController  : 获取当前店铺的营业状态为：营业中
+2023-12-11 16:00:13.250 DEBUG 9652 --- [http-nio-8080-exec-5] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 16:00:13.250 DEBUG 9652 --- [http-nio-8080-exec-5] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 16:00:13.251 DEBUG 9652 --- [http-nio-8080-exec-5] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 16:00:13.251 DEBUG 9652 --- [http-nio-8080-exec-5] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 16:00:13.252 DEBUG 9652 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.252 DEBUG 9652 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:13.254 DEBUG 9652 --- [http-nio-8080-exec-5] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:13.254 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 16:00:13.254 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 16:00:13.254 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 16:00:13.255 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 16:00:13.256 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.256 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:13.258 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:13.259 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.259 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 16:00:13.260 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:13.261 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.261 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 16:00:13.263 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 16:00:13.263 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.263 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 16:00:13.264 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:13.265 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.266 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 16:00:13.267 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:13.267 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.268 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 16:00:13.269 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:13.269 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.270 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 16:00:13.271 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 16:00:13.271 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.272 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 16:00:13.274 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:13.275 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.275 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 16:00:13.276 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:13.277 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:13.277 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 16:00:13.278 DEBUG 9652 --- [http-nio-8080-exec-6] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:13.332  INFO 9652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:13.333  INFO 9652 --- [http-nio-8080-exec-9] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:13.334  INFO 9652 --- [http-nio-8080-exec-9] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 16:00:13.334 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 16:00:13.334 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 16:00:13.336 DEBUG 9652 --- [http-nio-8080-exec-9] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 16:00:16.034  INFO 9652 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:16.034  INFO 9652 --- [http-nio-8080-exec-10] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:16.038  INFO 9652 --- [http-nio-8080-exec-10] c.sky.controller.admin.OrdersController  : 接单，订单id为：OrdersConfirmDTO(id=21, status=null)
+2023-12-11 16:00:16.038 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.updateDeliveryStatus  : ==>  Preparing: update orders set status = 3 where id = ?
+2023-12-11 16:00:16.038 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.updateDeliveryStatus  : ==> Parameters: 21(Long)
+2023-12-11 16:00:16.058 DEBUG 9652 --- [http-nio-8080-exec-10] c.s.m.OrdersMapper.updateDeliveryStatus  : <==    Updates: 1
+2023-12-11 16:00:16.070  INFO 9652 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:16.071  INFO 9652 --- [http-nio-8080-exec-3] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:16.071  INFO 9652 --- [http-nio-8080-exec-3] c.sky.controller.admin.OrdersController  : 订单搜索，根据条件搜索
+2023-12-11 16:00:16.072 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.conditionSearch_COUNT            : ==>  Preparing: SELECT count(0) FROM orders
+2023-12-11 16:00:16.072 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.conditionSearch_COUNT            : ==> Parameters: 
+2023-12-11 16:00:16.073 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.conditionSearch_COUNT            : <==      Total: 1
+2023-12-11 16:00:16.073 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.mapper.OrdersMapper.conditionSearch  : ==>  Preparing: select * from orders order by order_time desc LIMIT ?
+2023-12-11 16:00:16.074 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.mapper.OrdersMapper.conditionSearch  : ==> Parameters: 10(Integer)
+2023-12-11 16:00:16.074 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.mapper.OrdersMapper.conditionSearch  : <==      Total: 10
+2023-12-11 16:00:16.075 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.075 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:16.076 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:16.076 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.076 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 20(Long)
+2023-12-11 16:00:16.077 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:16.078 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.078 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 19(Long)
+2023-12-11 16:00:16.079 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 16:00:16.080 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.080 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 18(Long)
+2023-12-11 16:00:16.080 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:16.081 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.081 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 17(Long)
+2023-12-11 16:00:16.081 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:16.081 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.082 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 16(Long)
+2023-12-11 16:00:16.082 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:16.082 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.082 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 15(Long)
+2023-12-11 16:00:16.083 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 2
+2023-12-11 16:00:16.083 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.083 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 14(Long)
+2023-12-11 16:00:16.084 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:16.084 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.084 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 13(Long)
+2023-12-11 16:00:16.084 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:16.084 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:16.084 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : ==> Parameters: 12(Long)
+2023-12-11 16:00:16.085 DEBUG 9652 --- [http-nio-8080-exec-3] c.s.m.O.selectByOrderId                  : <==      Total: 1
+2023-12-11 16:00:16.098  INFO 9652 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzAyMjg3MzQ5fQ.TjgUmCwr2Q5rcVRx5Cs08mu2dWnXfmQSFYEFTI8ybL0
+2023-12-11 16:00:16.099  INFO 9652 --- [http-nio-8080-exec-1] c.s.i.JwtTokenAdminInterceptor           : 当前员工id：
+2023-12-11 16:00:16.099  INFO 9652 --- [http-nio-8080-exec-1] c.sky.controller.admin.OrdersController  : 各个状态的订单数量统计查询
+2023-12-11 16:00:16.099 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.OrdersMapper.selectStatistics      : ==>  Preparing: SELECT SUM(IF(status = 2, 1, 0)) AS to_be_confirmed, SUM(IF(status = 3, 1, 0)) AS confirmed, SUM(IF(status = 4, 1, 0)) AS delivery_in_progress FROM orders;
+2023-12-11 16:00:16.099 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.OrdersMapper.selectStatistics      : ==> Parameters: 
+2023-12-11 16:00:16.100 DEBUG 9652 --- [http-nio-8080-exec-1] c.s.m.OrdersMapper.selectStatistics      : <==      Total: 1
+2023-12-11 16:00:17.448  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg1ODksInVzZXJJZCI6NH0.FRPDjHqGIpb0LB5dKctvOCPX0wWIaMHmeMeZUD54Fvs
+2023-12-11 16:00:17.449  INFO 9652 --- [http-nio-8080-exec-4] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 16:00:17.450  INFO 9652 --- [http-nio-8080-exec-4] c.sky.controller.user.OrdersController   : 查询订单详情，订单id为21
+2023-12-11 16:00:17.450 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==>  Preparing: select * from orders where id = ?
+2023-12-11 16:00:17.450 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : ==> Parameters: 21(Long)
+2023-12-11 16:00:17.451 DEBUG 9652 --- [http-nio-8080-exec-4] com.sky.mapper.OrdersMapper.selectById   : <==      Total: 1
+2023-12-11 16:00:17.451 DEBUG 9652 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : ==>  Preparing: select * from address_book where id = ?
+2023-12-11 16:00:17.451 DEBUG 9652 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : ==> Parameters: 3(Long)
+2023-12-11 16:00:17.452 DEBUG 9652 --- [http-nio-8080-exec-4] c.sky.mapper.AddressBookMapper.getById   : <==      Total: 1
+2023-12-11 16:00:17.452 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==>  Preparing: select * from order_detail where order_id = ?
+2023-12-11 16:00:17.453 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : ==> Parameters: 21(Long)
+2023-12-11 16:00:17.454 DEBUG 9652 --- [http-nio-8080-exec-4] c.s.m.O.selectByOrderId                  : <==      Total: 3
+2023-12-11 16:00:45.328  INFO 9652 --- [http-nio-8080-exec-7] com.sky.controller.user.ShopController   : 获取当前店铺的营业状态为：营业中
+2023-12-11 16:00:48.766  INFO 9652 --- [http-nio-8080-exec-2] com.sky.controller.user.UserController   : 微信用户登录，0a36Tc100N7tbR1CCJ000syN8o36Tc1U
+2023-12-11 16:00:49.016 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.UserMapper.getByOpenId    : ==>  Preparing: select * from user where openid = ?
+2023-12-11 16:00:49.016 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.UserMapper.getByOpenId    : ==> Parameters: oBysn5aScedWAu3uWXqOHeTJVe5g(String)
+2023-12-11 16:00:49.017 DEBUG 9652 --- [http-nio-8080-exec-2] com.sky.mapper.UserMapper.getByOpenId    : <==      Total: 1
+2023-12-11 16:00:49.032  INFO 9652 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg4NDksInVzZXJJZCI6NH0.-lqMVgXVjbjliUPZSlop80KIrDEGuqetVZ6AJDX4dj0
+2023-12-11 16:00:49.033  INFO 9652 --- [http-nio-8080-exec-5] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 16:00:49.034 DEBUG 9652 --- [http-nio-8080-exec-5] c.s.mapper.CategoryMapper.selectByType   : ==>  Preparing: select * from category where status = 1 order by sort asc,create_time desc
+2023-12-11 16:00:49.034 DEBUG 9652 --- [http-nio-8080-exec-5] c.s.mapper.CategoryMapper.selectByType   : ==> Parameters: 
+2023-12-11 16:00:49.035 DEBUG 9652 --- [http-nio-8080-exec-5] c.s.mapper.CategoryMapper.selectByType   : <==      Total: 10
+2023-12-11 16:00:49.037  INFO 9652 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg4NDksInVzZXJJZCI6NH0.-lqMVgXVjbjliUPZSlop80KIrDEGuqetVZ6AJDX4dj0
+2023-12-11 16:00:49.038  INFO 9652 --- [http-nio-8080-exec-6] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 16:00:49.038 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==>  Preparing: select * from shopping_cart WHERE user_id = ?
+2023-12-11 16:00:49.039 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : ==> Parameters: 4(Long)
+2023-12-11 16:00:49.040 DEBUG 9652 --- [http-nio-8080-exec-6] com.sky.mapper.ShoppingCartMapper.list   : <==      Total: 0
+2023-12-11 16:00:49.055  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDIyODg4NDksInVzZXJJZCI6NH0.-lqMVgXVjbjliUPZSlop80KIrDEGuqetVZ6AJDX4dj0
+2023-12-11 16:00:49.056  INFO 9652 --- [http-nio-8080-exec-9] c.s.interceptor.JwtTokenUserInterceptor  : 当前用户的id：4
+2023-12-11 16:01:00.001  INFO 9652 --- [scheduling-1] com.sky.task.OrderTask                   : 定时处理超时订单：2023-12-11T16:01:00.001818800
+2023-12-11 16:01:00.001 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==>  Preparing: select * from orders where status = ? and order_time < ?
+2023-12-11 16:01:00.001 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : ==> Parameters: 1(Integer), 2023-12-11T15:46:00.001818800(LocalDateTime)
+2023-12-11 16:01:00.002 DEBUG 9652 --- [scheduling-1] c.s.m.O.getByStatusAndOrderTimeLT        : <==      Total: 0

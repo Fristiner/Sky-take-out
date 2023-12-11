@@ -63,4 +63,7 @@ public interface OrderService {
 
 
     OrderStatisticsVO statistics();
+
+
+    void reminder(Long id);
 }
