@@ -26,3 +26,7 @@ sky:
     we-chat-pay-cert-file-path: 1111
     notify-url: 111
     refund-notify-url: 1111
+  shop:
+    address: 北京东路
+  baidu:
+    ak: Tj8fb3c5qdNKPAoE0yRbwe2aDLVUi88B

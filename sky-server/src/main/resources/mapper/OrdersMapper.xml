@@ -20,10 +20,10 @@
     <update id="update" parameterType="com.sky.entity.Orders">
         update orders
         <set>
-            <if test="cancelReason != null and cancelReason!='' ">
+            <if test="cancelReason != null">
                 cancel_reason=#{cancelReason},
             </if>
-            <if test="rejectionReason != null and rejectionReason!='' ">
+            <if test="rejectionReason != null">
                 rejection_reason=#{rejectionReason},
             </if>
             <if test="cancelTime != null">
@@ -80,6 +80,59 @@
             order by order_time desc
         </where>
 
+    </select>
+    <!--    <select id="conditionSearch" resultType="com.sky.vo.OrderVO">-->
+    <!--        select * from orders-->
+    <!--        <where>-->
+    <!--            <if test="phone != null">-->
+    <!--                and phone = #{phone}-->
+    <!--            </if>-->
+    <!--            <if test="status != null">-->
+    <!--                and status = #{status}-->
+    <!--            </if>-->
+    <!--            <if test="number != null">-->
+    <!--                and number = #{number}-->
+    <!--            </if>-->
+    <!--            <if test="userId != null">-->
+    <!--                and user_id = #{userId}-->
+    <!--            </if>-->
+
+    <!--            <if test="endTime !=null and beginTime != null">-->
+    <!--                and order_time between #{beginTime} and #{endTime}-->
+    <!--            </if>-->
+    <!--            &lt;!&ndash;            <if test="endTime != null">&ndash;&gt;-->
+    <!--            &lt;!&ndash;                and order_time < #{endTime}&ndash;&gt;-->
+    <!--            &lt;!&ndash;            </if>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <if test="beginTime != null">&ndash;&gt;-->
+    <!--            &lt;!&ndash;                and order_time > #{beginTime}&ndash;&gt;-->
+    <!--            &lt;!&ndash;            </if>&ndash;&gt;-->
+    <!--        </where>-->
+    <!--        order by order_time desc-->
+
+    <!--    </select>-->
+    <select id="conditionSearch" resultType="Orders">
+        select * from orders
+        <where>
+            <if test="number != null and number!=''">
+                and number like concat('%',#{number},'%')
+            </if>
+            <if test="phone != null and phone!=''">
+                and phone like concat('%',#{phone},'%')
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="beginTime != null">
+                and order_time &gt;= #{beginTime}
+            </if>
+            <if test="endTime != null">
+                and order_time &lt;= #{endTime}
+            </if>
+        </where>
+        order by order_time desc
     </select>
 
 

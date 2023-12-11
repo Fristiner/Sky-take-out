@@ -3,9 +3,15 @@ package com.sky.mapper;
 import com.github.pagehelper.Page;
 import com.sky.dto.OrdersPageQueryDTO;
 import com.sky.entity.Orders;
+import com.sky.vo.OrderStatisticsVO;
 import com.sky.vo.OrderVO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 /* *
  * @packing com.sky.mapper
@@ -41,4 +47,26 @@ public interface OrdersMapper {
 
 
     Page<OrderVO> pageQueryOrders(OrdersPageQueryDTO ordersPageQueryDTO);
+
+    Page<Orders> conditionSearch(OrdersPageQueryDTO ordersPageQueryDTO);
+
+    @Update("update orders set status = 3 where id = #{id}")
+    void updateDeliveryStatus(Long id);
+
+
+    @Update("update orders set  status =#{status}  where id = #{id};")
+    void updateStatus(@Param(value = "status") Integer deliveryInProgress, Long id);
+
+
+    @Select("SELECT\n" +
+            "    SUM(IF(status = 2, 1, 0))  AS to_be_confirmed,\n" +
+            "    SUM(IF(status = 3, 1, 0)) AS confirmed,\n" +
+            "    SUM(IF(status = 4, 1, 0)) AS delivery_in_progress\n" +
+            "FROM orders;")
+    OrderStatisticsVO selectStatistics();
+
+
+    @Select("select * from orders where status = #{status} and order_time < #{orderTime}")
+    List<Orders> getByStatusAndOrderTimeLT(Integer status, LocalDateTime orderTime);
+
 }

@@ -22,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("userOrderController")
+@RestController("userOrdersController")
 @RequestMapping("/user/order")
 @Api(tags = "用户端订单相关接口")
 @Slf4j
@@ -113,9 +113,10 @@ public class OrdersController {
 
     @PutMapping("/cancel/{id}")
     @ApiOperation("取消订单")
-    public Result cancel(@PathVariable(value = "id") Long id) {
+    public Result cancel(@PathVariable(value = "id") Long id) throws Exception {
         // 取消订单了订单数据要保留，更具status即可
         log.info("取消订单，订单id为：{}", id);
+        //
         orderService.cancel(id);
         return Result.success();
 
