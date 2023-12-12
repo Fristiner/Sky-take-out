@@ -1,10 +1,13 @@
 package com.sky.service.impl;
 
+import com.sky.dto.GoodsSalesDTO;
 import com.sky.entity.Orders;
+import com.sky.mapper.OrdersDetailMapper;
 import com.sky.mapper.OrdersMapper;
 import com.sky.mapper.UserMapper;
 import com.sky.service.ReportService;
 import com.sky.vo.OrderReportVO;
+import com.sky.vo.SalesTop10ReportVO;
 import com.sky.vo.TurnoverReportVO;
 import com.sky.vo.UserReportVO;
 import lombok.extern.slf4j.Slf4j;
@@ -19,6 +22,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -31,6 +35,8 @@ public class ReportServiceImpl implements ReportService {
     private OrdersMapper ordersMapper;
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private OrdersDetailMapper ordersDetailMapper;
 
     /**
      * 统计指定时间区间内的营业额数据
@@ -191,6 +197,34 @@ public class ReportServiceImpl implements ReportService {
                 .orderCountList(StringUtils.join(orderCountList, ","))
                 .build();
     }
+
+    @Override
+    public SalesTop10ReportVO getSalesTop10(LocalDate begin, LocalDate end) {
+        LocalDateTime beginTime = LocalDateTime.of(begin, LocalTime.MIN);
+        LocalDateTime endTime = LocalDateTime.of(end, LocalTime.MAX);
+
+        List<GoodsSalesDTO> salesDTO = ordersMapper.getSalesTop10(beginTime, endTime);
+
+        List<String> nameList = salesDTO.stream().map(GoodsSalesDTO::getName).collect(Collectors.toList());
+
+        List<Integer> numberList = salesDTO.stream().map(GoodsSalesDTO::getNumber).collect(Collectors.toList());
+
+
+        return SalesTop10ReportVO
+                .builder()
+                .nameList(StringUtils.join(nameList, ","))
+                .numberList(StringUtils.join(numberList, ","))
+                .build();
+    }
+
+
+    //商品名称列表，以逗号分隔，例如：鱼香肉丝,宫保鸡丁,水煮鱼
+//        private String nameList;
+
+    //销量列表，以逗号分隔，例如：260,215,200
+//        private String numberList;
+//        select od.name,sum(od.number) aa from order_detail  od ,orders o where od.order_id = o.id
+//        and o.status = 5 group by od.name order by aa desc limit 0,10;
 
 
     private Integer getOrderCount(LocalDateTime begin, LocalDateTime end, Integer status) {
