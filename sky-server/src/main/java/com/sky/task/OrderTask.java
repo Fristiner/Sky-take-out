@@ -29,7 +29,6 @@ public class OrderTask {
      */
     // 每分钟触发一次
     @Scheduled(cron = "0 * * * * ?")
-
     public void processTimeOutOrder() {
         log.info("定时处理超时订单：{}", LocalDateTime.now());
 
@@ -64,7 +63,6 @@ public class OrderTask {
             for (Orders orders : orderList) {
                 orders.setStatus(Orders.COMPLETED);
                 ordersMapper.update(orders);
-
             }
         }
     }
