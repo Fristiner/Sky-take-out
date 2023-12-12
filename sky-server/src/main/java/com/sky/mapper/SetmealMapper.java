@@ -6,7 +6,6 @@ import com.sky.dto.SetmealPageQueryDTO;
 import com.sky.entity.Setmeal;
 import com.sky.enumeration.OperationType;
 import com.sky.vo.DishItemVO;
-import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -75,6 +74,7 @@ public interface SetmealMapper {
 
     /**
      * 设置套餐的起售停售
+     *
      * @param id
      * @param status
      */
@@ -84,4 +84,7 @@ public interface SetmealMapper {
 
 
     void update(Setmeal setmeal);
+
+    @Select("select count(*) from setmeal where status = #{status}")
+    Integer selectByStatus(Integer status);
 }

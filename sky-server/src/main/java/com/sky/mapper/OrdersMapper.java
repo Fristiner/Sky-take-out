@@ -80,9 +80,14 @@ public interface OrdersMapper {
      */
     Double sumByMap(Map map);
 
-
+    /*
+        根据status 查询数目
+     */
     Integer countByMap(Map map);
 
 
     List<GoodsSalesDTO> getSalesTop10(LocalDateTime begin, LocalDateTime end);
+
+    //    @Select("select count(*) from orders where status = #{status}")
+    Integer selectCountByStatus(Integer status);
 }

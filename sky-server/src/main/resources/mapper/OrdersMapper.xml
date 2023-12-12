@@ -178,6 +178,14 @@
             </if>
         </where>
     </select>
+    <select id="selectCountByStatus" resultType="java.lang.Integer">
+        select count(*) from orders
+        <where>
+            <if test="status != null">
+                status = #{status}
+            </if>
+        </where>
+    </select>
 
 
 </mapper>
