@@ -19,6 +19,4 @@ import java.lang.annotation.Target;
 public @interface AutoFill {
     // 指定数据库操作类型：update,insert
     OperationType value();
-
-
 }

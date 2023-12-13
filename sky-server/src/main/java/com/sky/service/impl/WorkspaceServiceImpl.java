@@ -14,9 +14,7 @@ import com.sky.vo.SetmealOverViewVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -93,12 +91,19 @@ public class WorkspaceServiceImpl implements WorkspaceService {
     }
 
     @Override
-    public BusinessDataVO businessData() {
+    public BusinessDataVO businessData(LocalDateTime begin, LocalDateTime end) {
 //        private Double turnover;//营业额
         // 今天总数目
-        LocalDateTime timeToNow = LocalDateTime.now();
-        LocalDateTime end = LocalDateTime.of(LocalDate.from(timeToNow), LocalTime.MAX);
-        LocalDateTime begin = LocalDateTime.of(LocalDate.from(timeToNow), LocalTime.MIN);
+//        LocalDateTime timeToNow = LocalDateTime.now();
+//        LocalDateTime end = LocalDateTime.of(LocalDate.from(timeToNow), LocalTime.MAX);
+//        LocalDateTime begin = LocalDateTime.of(LocalDate.from(timeToNow), LocalTime.MIN);
+        BusinessDataVO businessDataVO = BusinessDataVO.builder()
+                .newUsers(0)
+                .orderCompletionRate(0.0)
+                .turnover(0.0)
+                .unitPrice(0.0)
+                .validOrderCount(0).build();
+
         Map map = new HashMap<>();
         map.put("begin", begin);
         map.put("end", end);
@@ -112,20 +117,39 @@ public class WorkspaceServiceImpl implements WorkspaceService {
 //        private Integer validOrderCount;//有效订单数 已经完成的订单
         Integer validOrderCount = ordersMapper.countByMap(map);
 //        private Double orderCompletionRate;//订单完成率
-        Double orderCompletionRate = validOrderCount.doubleValue() / totalOrders;
+        Double orderCompletionRate = 0.0;
+        if (validOrderCount != null) {
+            orderCompletionRate = validOrderCount.doubleValue() / totalOrders;
+        }
+
+        Double unitPrice = 0.0;
+        if (turnover != null && validOrderCount != null) {
+            unitPrice = turnover / validOrderCount;
+        }
 
 //        private Double unitPrice;//平均客单价
-        Double unitPrice = turnover / validOrderCount;
         // 新增用户就是 user表
 //        private Integer newUsers;//新增用户
         Integer newUsers = userMapper.countByMap(map);
 
-        return BusinessDataVO.builder()
-                .newUsers(newUsers)
-                .orderCompletionRate(orderCompletionRate)
-                .turnover(turnover)
-                .unitPrice(unitPrice)
-                .validOrderCount(validOrderCount).build();
+        if (turnover != null) {
+            businessDataVO.setTurnover(turnover);
+        }
+        if (validOrderCount != null) {
+            businessDataVO.setValidOrderCount(validOrderCount);
+        }
+        if (orderCompletionRate != null) {
+            businessDataVO.setOrderCompletionRate(orderCompletionRate);
+        }
+        if (newUsers != null) {
+            businessDataVO.setNewUsers(newUsers);
+        }
+        if (unitPrice != null) {
+            businessDataVO.setUnitPrice(unitPrice);
+        }
+
+
+        return businessDataVO;
 
     }
 }
